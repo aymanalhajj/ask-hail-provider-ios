@@ -1,0 +1,147 @@
+
+/* Class = "UIButton"; normalTitle = "حفظ التعديلات"; ObjectID = "0Ch-6x-VHH"; */
+"0Ch-6x-VHH.normalTitle" = "Save modifications";
+
+/* Class = "UILabel"; text = "+966123456789"; ObjectID = "1BY-kN-hR3"; */
+"1BY-kN-hR3.text" = "+966123456789";
+
+/* Class = "UITextField"; placeholder = "الحي"; ObjectID = "2b2-30-FLn"; */
+"2b2-30-FLn.placeholder" = "region";
+
+/* Class = "UILabel"; text = "وسائل التواصل الإجتماعي"; ObjectID = "3bD-ao-77i"; */
+"3bD-ao-77i.text" = "Social media";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5xZ-Bu-GDp"; */
+"5xZ-Bu-GDp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6AX-Eu-iyb"; */
+"6AX-Eu-iyb.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "تعطيل الإعلان"; ObjectID = "6Te-lp-223"; */
+"6Te-lp-223.text" = "Disable advertising";
+
+/* Class = "UILabel"; text = "طرق التواصل"; ObjectID = "7iB-6f-hWm"; */
+"7iB-6f-hWm.text" = "'communication way";
+
+/* Class = "UIButton"; normalTitle = "+ رقم آخر "; ObjectID = "9BH-fF-mhX"; */
+"9BH-fF-mhX.normalTitle" = "+ Another number";
+
+/* Class = "UITextField"; placeholder = "تحديد العنوان على الخريطة"; ObjectID = "9Cf-ef-DtO"; */
+"9Cf-ef-DtO.placeholder" = "Determine the address on the map";
+
+/* Class = "UILabel"; text = "ر . س"; ObjectID = "AHj-Y1-Fmb"; */
+"AHj-Y1-Fmb.text" = "SAR";
+
+/* Class = "UIButton"; normalTitle = "حفظ التعديلات"; ObjectID = "Asu-t8-2bk"; */
+"Asu-t8-2bk.normalTitle" = "Save modifications";
+
+/* Class = "UILabel"; text = "الصور"; ObjectID = "B9s-CQ-wjt"; */
+"B9s-CQ-wjt.text" = "Pictures";
+
+/* Class = "UILabel"; text = "تعديل طرق التواصل"; ObjectID = "BAs-VO-DOd"; */
+"BAs-VO-DOd.text" = "Modify methods of communication";
+
+/* Class = "UILabel"; text = "التواصل داخل التطبيق إجباري"; ObjectID = "Blc-9t-GXj"; */
+"Blc-9t-GXj.text" = "Communication within the application is mandatory";
+
+/* Class = "UILabel"; text = "التواصل عبر المحادثات (شات)"; ObjectID = "C85-cY-fYW"; */
+"C85-cY-fYW.text" = "Communicate via chatting";
+
+/* Class = "UIButton"; normalTitle = "حفظ التعديلات"; ObjectID = "CpE-ZB-Bmg"; */
+"CpE-ZB-Bmg.normalTitle" = "Save modifications";
+
+/* Class = "UILabel"; text = "الأقسم"; ObjectID = "DSs-DC-WAm"; */
+"DSs-DC-WAm.text" = "sections";
+
+/* Class = "UIButton"; normalTitle = "+ إضافة صورة/فيديو اخر "; ObjectID = "EAV-12-QAN"; */
+"EAV-12-QAN.normalTitle" = "+ Add another photo / video";
+
+/* Class = "UITextField"; placeholder = "عنوان الاعلان"; ObjectID = "HAT-bu-btx"; */
+"HAT-bu-btx.placeholder" = "Ad title";
+
+/* Class = "UITextField"; placeholder = "الجهة"; ObjectID = "Hwm-jv-1ko"; */
+"Hwm-jv-1ko.placeholder" = "region";
+
+/* Class = "UITextField"; placeholder = "فيسبوك"; ObjectID = "Jb7-of-XaM"; */
+"Jb7-of-XaM.placeholder" = "Facebook";
+
+/* Class = "UITextField"; placeholder = "سناب شات"; ObjectID = "JvC-OY-Oam"; */
+"JvC-OY-Oam.placeholder" = "SnapChat";
+
+/* Class = "UILabel"; text = "تعديل تفاصيل الإعلان"; ObjectID = "K52-6W-PWU"; */
+"K52-6W-PWU.text" = "Edit ad details";
+
+/* Class = "UILabel"; text = "صورة ترويجية للعقار (صورة أو منشور ترويجي للعقار)"; ObjectID = "M1Q-ah-Tqn"; */
+"M1Q-ah-Tqn.text" = "Promotional photo of the ad \n (photo or promotional brochure)";
+
+/* Class = "UILabel"; text = "عدّل طرق التواصل المتاحة"; ObjectID = "M73-o2-jPX"; */
+"M73-o2-jPX.text" = "Modify available communication methods";
+
+/* Class = "UILabel"; text = "تعديل أقسام الإعلان"; ObjectID = "Nk5-9d-CAi"; */
+"Nk5-9d-CAi.text" = "Edit ad sections";
+
+/* Class = "UILabel"; text = "أضف صور وفيديوهات للعقار (حد أقصى 2 فيديو)"; ObjectID = "OxR-8m-uXc"; */
+"OxR-8m-uXc.text" = "Add photos and videos of the Ad \n (maximum 2 videos)";
+
+/* Class = "UILabel"; text = "التواصل عبر مكالمة هاتفية"; ObjectID = "Plj-4g-9YM"; */
+"Plj-4g-9YM.text" = "Communicate via a phone call";
+
+/* Class = "UITextField"; placeholder = "الموقع الإلكتروني"; ObjectID = "Qfo-fO-HnT"; */
+"Qfo-fO-HnT.placeholder" = "website";
+
+/* Class = "UILabel"; text = "التواصل عبر واتساب"; ObjectID = "Sez-BL-1Fq"; */
+"Sez-BL-1Fq.text" = "Communication via WhatsApp";
+
+/* Class = "UITextField"; placeholder = "القسم الفرعي"; ObjectID = "TPE-9C-gWa"; */
+"TPE-9C-gWa.placeholder" = "Subsection";
+
+/* Class = "UIButton"; normalTitle = "تأكيد المواصفات"; ObjectID = "UuG-ea-O08"; */
+"UuG-ea-O08.normalTitle" = "Specification Confirmation";
+
+/* Class = "UILabel"; text = "تراجع"; ObjectID = "ZVg-gB-CRx"; */
+"ZVg-gB-CRx.text" = "Cancel";
+
+/* Class = "UITextField"; placeholder = "القسم"; ObjectID = "bVt-wf-283"; */
+"bVt-wf-283.placeholder" = "Section";
+
+/* Class = "UITextField"; placeholder = "تويتر"; ObjectID = "d6P-Jr-bw9"; */
+"d6P-Jr-bw9.placeholder" = "Twitter";
+
+/* Class = "UITextField"; placeholder = "السعر"; ObjectID = "eQM-jF-owa"; */
+"eQM-jF-owa.placeholder" = "price";
+
+/* Class = "UILabel"; text = "عدّل وسائل التواصل الإجتماعي"; ObjectID = "enT-FT-lfB"; */
+"enT-FT-lfB.text" = "Modify social media";
+
+/* Class = "UILabel"; text = "+966123456789"; ObjectID = "fZ0-Ub-9OP"; */
+"fZ0-Ub-9OP.text" = "+966123456789";
+
+/* Class = "UILabel"; text = "حدد نوع العقار"; ObjectID = "fn1-D7-zac"; */
+"fn1-D7-zac.text" = "Select the type of ad";
+
+/* Class = "UIButton"; normalTitle = "إضافة الصور"; ObjectID = "g1R-ub-vX5"; */
+"g1R-ub-vX5.normalTitle" = "Add photos";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "i7O-7o-efD"; */
+"i7O-7o-efD.text" = "Enter Ad details";
+
+/* Class = "UITextField"; placeholder = "انستاغرام"; ObjectID = "j2j-q9-vhj"; */
+"j2j-q9-vhj.placeholder" = "Instagram";
+
+/* Class = "UILabel"; text = "تعطيل"; ObjectID = "jUx-cM-tQS"; */
+"jUx-cM-tQS.text" = "Disable";
+
+/* Class = "UILabel"; text = "تعديل بيانات الاعلان"; ObjectID = "kso-uP-4LQ"; */
+"kso-uP-4LQ.text" = "Modify the advertisement data";
+
+/* Class = "UILabel"; text = "وسائل التواصل الإجتماعي"; ObjectID = "oMw-ES-elB"; */
+"oMw-ES-elB.text" = "Social media";
+
+/* Class = "UIButton"; normalTitle = "+ رقم آخر "; ObjectID = "pvN-Vv-VOa"; */
+"pvN-Vv-VOa.normalTitle" = "+ Another number";
+
+/* Class = "UILabel"; text = "تعديل أقسام الإعلان"; ObjectID = "roC-ld-Xmw"; */
+"roC-ld-Xmw.text" = "Edit ad sections";
+
+/* Class = "UILabel"; text = "المواصفات"; ObjectID = "sfw-r1-P0o"; */
+"sfw-r1-P0o.text" = "Specifications";

@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "5 R.S"; ObjectID = "C7r-OK-8sl"; */
+"C7r-OK-8sl.text" = "٥ س.ر";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CWc-rG-bX4"; */
+"CWc-rG-bX4.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Promo Code"; ObjectID = "Kqe-af-1T3"; */
+"Kqe-af-1T3.normalTitle" = "كود الخصم";
+
+/* Class = "UILabel"; text = "Start Point"; ObjectID = "LlP-fs-uww"; */
+"LlP-fs-uww.text" = "نقطة البداية";
+
+/* Class = "UILabel"; text = "Select the departure time"; ObjectID = "QxI-fZ-cNI"; */
+"QxI-fZ-cNI.text" = "اختر وقت المغادرة";
+
+/* Class = "UILabel"; text = "Start Point"; ObjectID = "S6p-MZ-xt1"; */
+"S6p-MZ-xt1.text" = "نقطة البداية";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dxV-Zh-8n9"; */
+"dxV-Zh-8n9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Confirm arrimed time"; ObjectID = "eGu-K7-K96"; */
+"eGu-K7-K96.normalTitle" = "اكد وقت الوصول";
+
+/* Class = "UIButton"; normalTitle = "Make Trip"; ObjectID = "i0I-XH-SmQ"; */
+"i0I-XH-SmQ.normalTitle" = "عمل رحلة";
+
+/* Class = "UILabel"; text = "Pay way"; ObjectID = "k1L-qY-nvF"; */
+"k1L-qY-nvF.text" = "طرق الدفع";
+
+/* Class = "UIButton"; normalTitle = "Confirm start Point"; ObjectID = "npp-gp-G3e"; */
+"npp-gp-G3e.normalTitle" = "اكد نقطة البداية";
+
+/* Class = "UILabel"; text = "Total Price"; ObjectID = "seY-3G-JXV"; */
+"seY-3G-JXV.text" = "السعر الكلى";
+
+/* Class = "UILabel"; text = "Car Type"; ObjectID = "uUi-oM-tZd"; */
+"uUi-oM-tZd.text" = "نوع السيارة";
+
+/* Class = "UIButton"; normalTitle = "Cancel Trip"; ObjectID = "wbZ-QR-hYf"; */
+"wbZ-QR-hYf.normalTitle" = "الغاء الرحلة";

@@ -1,0 +1,105 @@
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "0MI-Wh-ujF"; */
+"0MI-Wh-ujF.text" = "تواصل معنا";
+
+/* Class = "UILabel"; text = "start location"; ObjectID = "0Tn-0W-mHE"; */
+"0Tn-0W-mHE.text" = "نقطة البداية";
+
+/* Class = "UILabel"; text = "arrive location"; ObjectID = "1qN-rD-fno"; */
+"1qN-rD-fno.text" = "مكان الوصول";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "4cA-1s-SsK"; */
+"4cA-1s-SsK.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Compliences"; ObjectID = "5sz-ah-LnX"; */
+"5sz-ah-LnX.text" = "الشكاوى";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "7st-EA-4cf"; */
+"7st-EA-4cf.normalTitle" = "ارسال";
+
+/* Class = "UILabel"; text = "message text"; ObjectID = "Bsk-nb-xMG"; */
+"Bsk-nb-xMG.text" = "عنوان الرسالة";
+
+/* Class = "UIButton"; normalTitle = "Waiting Trips"; ObjectID = "Gd9-6U-Pce"; */
+"Gd9-6U-Pce.normalTitle" = "الرحالات المنتظرة";
+
+/* Class = "UILabel"; text = "36"; ObjectID = "HWG-bT-TBc"; */
+"HWG-bT-TBc.text" = "36";
+
+/* Class = "UILabel"; text = "main"; ObjectID = "HbF-fc-diE"; */
+"HbF-fc-diE.text" = "الرئيسية";
+
+/* Class = "UITextView"; text = "ipsum dolor sit er elit lamet, consectetaur cillised do  quis "; ObjectID = "OLM-ET-KAd"; */
+"OLM-ET-KAd.text" = "ipsum dolor sit er elit lamet, consectetaur cillised do  quis ";
+
+/* Class = "UIButton"; normalTitle = "Last Trips"; ObjectID = "OYC-RQ-zmI"; */
+"OYC-RQ-zmI.normalTitle" = "الرحالات السابقة";
+
+/* Class = "UILabel"; text = "Terms and Condition"; ObjectID = "OcP-Kq-oKG"; */
+"OcP-Kq-oKG.text" = "الشروط والاحكام ";
+
+/* Class = "UITextField"; placeholder = "Plams Reasone"; ObjectID = "Q6B-ku-QSJ"; */
+"Q6B-ku-QSJ.placeholder" = "سبب الشكوى";
+
+/* Class = "UILabel"; text = "Reason :"; ObjectID = "Rcm-fy-n5g"; */
+"Rcm-fy-n5g.text" = "السبب:";
+
+/* Class = "UILabel"; text = "Plaming Number:"; ObjectID = "Rqi-Cx-Wr9"; */
+"Rqi-Cx-Wr9.text" = "رقم الشكوى:";
+
+/* Class = "UILabel"; text = "discount code"; ObjectID = "SFX-lZ-sdH"; */
+"SFX-lZ-sdH.text" = "كود الخصم";
+
+/* Class = "UILabel"; text = "25 Oct 2019"; ObjectID = "U0o-jd-5pd"; */
+"U0o-jd-5pd.text" = "25 Oct 2019";
+
+/* Class = "UILabel"; text = "Send Complience"; ObjectID = "W14-Ai-bDa"; */
+"W14-Ai-bDa.text" = "ارسال شكوى";
+
+/* Class = "UILabel"; text = "Captin is Later"; ObjectID = "WcY-1Y-rzd"; */
+"WcY-1Y-rzd.text" = "الكابتن متاخر";
+
+/* Class = "UILabel"; text = "Terms&Conditions"; ObjectID = "YoK-OS-iOJ"; */
+"YoK-OS-iOJ.text" = "الشروط والاحكام";
+
+/* Class = "UIBarButtonItem"; title = "My Trips"; ObjectID = "YwW-hk-v5u"; */
+"YwW-hk-v5u.title" = "رحلاتى";
+
+/* Class = "UILabel"; text = "Mohab Mowafy"; ObjectID = "gPl-dc-4qS"; */
+"gPl-dc-4qS.text" = "Mohab Mowafy";
+
+/* Class = "UILabel"; text = "Terms&Conditions"; ObjectID = "hTK-Yl-gOC"; */
+"hTK-Yl-gOC.text" = "الشروط والاحكام";
+
+/* Class = "UIButton"; normalTitle = "send"; ObjectID = "iP0-Bs-eGp"; */
+"iP0-Bs-eGp.normalTitle" = "ارسال";
+
+/* Class = "UILabel"; text = "phone number"; ObjectID = "idT-eO-LRw"; */
+"idT-eO-LRw.text" = "رقم التليفون";
+
+/* Class = "UILabel"; text = "You have a discount code"; ObjectID = "lwD-ro-JKf"; */
+"lwD-ro-JKf.text" = "انت تمتلك كود خصم";
+
+/* Class = "UITextView"; text = "Loadins....."; ObjectID = "muW-9s-CFB"; */
+"muW-9s-CFB.text" = "تحميل...";
+
+/* Class = "UILabel"; text = "564432"; ObjectID = "nl4-9c-706"; */
+"nl4-9c-706.text" = "564432";
+
+/* Class = "UIButton"; normalTitle = "log out"; ObjectID = "pfE-lo-QlL"; */
+"pfE-lo-QlL.normalTitle" = "تسجيل خروج";
+
+/* Class = "UILabel"; text = "Complet Data to Creat Plams"; ObjectID = "utu-Ix-wne"; */
+"utu-Ix-wne.text" = "اكمل البيانات لانشاء شكوى";
+
+/* Class = "UIBarButtonItem"; title = "contact us"; ObjectID = "vT1-i3-Zpc"; */
+"vT1-i3-Zpc.title" = "تواصل معنا";
+
+/* Class = "UILabel"; text = "My Trips"; ObjectID = "vTk-0e-O9r"; */
+"vTk-0e-O9r.text" = "رحلاتى";
+
+/* Class = "UIBarButtonItem"; title = "terms and conditions"; ObjectID = "vda-at-NOZ"; */
+"vda-at-NOZ.title" = "الشروط والاحكام";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "x1H-Eo-PVd"; */
+"x1H-Eo-PVd.text" = "تواصل معنا";

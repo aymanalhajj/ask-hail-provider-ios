@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="88" id="rQU-5A-dXx" customClass="NotificationCells" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rQU-5A-dXx" id="CVV-sx-gjg">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="قام حسن بالتعليق على سؤالك" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNp-Im-avE">
+                        <rect key="frame" x="102" y="10" width="216" height="18"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منذ 4 ساعات" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-4F-EdF">
+                        <rect key="frame" x="24" y="13" width="70" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="0IC-EA-ChJ"/>
+                            <constraint firstAttribute="height" constant="12" id="iH0-wl-JrX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ما هي أفضل أحياء حائل؟" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk5-vH-zky">
+                        <rect key="frame" x="24" y="30" width="292" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="yAA-zn-yOR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                        <color key="textColor" red="0.22352941179999999" green="0.80392156859999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNC-Wf-E1c">
+                        <rect key="frame" x="24" y="78" width="292" height="2"/>
+                        <color key="backgroundColor" red="0.86472409959999996" green="0.90460127589999995" blue="0.93552184100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="7Yj-5L-G1x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RNp-Im-avE" firstAttribute="top" secondItem="CVV-sx-gjg" secondAttribute="top" constant="10" id="3OA-TL-dxQ"/>
+                    <constraint firstItem="fNC-Wf-E1c" firstAttribute="top" secondItem="Wk5-vH-zky" secondAttribute="bottom" constant="8" id="9O1-Mp-ATS"/>
+                    <constraint firstItem="Wk5-vH-zky" firstAttribute="top" secondItem="RNp-Im-avE" secondAttribute="bottom" constant="2" id="Mkv-qt-fpE"/>
+                    <constraint firstItem="Wk5-vH-zky" firstAttribute="leading" secondItem="CVV-sx-gjg" secondAttribute="leading" constant="24" id="QWD-Fz-77B"/>
+                    <constraint firstAttribute="trailing" secondItem="fNC-Wf-E1c" secondAttribute="trailing" constant="24" id="TOV-k5-a3G"/>
+                    <constraint firstItem="6F5-4F-EdF" firstAttribute="leading" secondItem="CVV-sx-gjg" secondAttribute="leading" constant="24" id="act-BD-kI2"/>
+                    <constraint firstAttribute="bottom" secondItem="fNC-Wf-E1c" secondAttribute="bottom" constant="8" id="bIx-cc-ugg"/>
+                    <constraint firstItem="RNp-Im-avE" firstAttribute="leading" secondItem="6F5-4F-EdF" secondAttribute="trailing" constant="8" id="fGy-hR-SSV"/>
+                    <constraint firstItem="6F5-4F-EdF" firstAttribute="centerY" secondItem="RNp-Im-avE" secondAttribute="centerY" id="lSa-VT-Cdl"/>
+                    <constraint firstAttribute="trailing" secondItem="Wk5-vH-zky" secondAttribute="trailing" constant="24" id="nYl-Ad-6Vz"/>
+                    <constraint firstItem="fNC-Wf-E1c" firstAttribute="leading" secondItem="CVV-sx-gjg" secondAttribute="leading" constant="24" id="nk9-J1-L2l"/>
+                    <constraint firstAttribute="trailing" secondItem="RNp-Im-avE" secondAttribute="trailing" constant="22" id="ymf-oy-dTn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="RJR-LO-6kB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="CellDec" destination="Wk5-vH-zky" id="rtR-g5-YcB"/>
+                <outlet property="CellTime" destination="6F5-4F-EdF" id="REm-df-31j"/>
+                <outlet property="CellTitle" destination="RNp-Im-avE" id="XYi-xz-x2T"/>
+                <outlet property="lineView" destination="fNC-Wf-E1c" id="aHb-mr-7Nb"/>
+            </connections>
+            <point key="canvasLocation" x="152.17391304347828" y="123.21428571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

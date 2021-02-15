@@ -1,0 +1,147 @@
+
+/* Class = "UITextField"; placeholder = "    الاسم بالكامل"; ObjectID = "0Zn-kj-w5A"; */
+"0Zn-kj-w5A.placeholder" = "    الاسم بالكامل";
+
+/* Class = "UILabel"; text = "(2/3)"; ObjectID = "2RK-2k-a4S"; */
+"2RK-2k-a4S.text" = "(2/3)";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "79F-C5-b9b"; */
+"79F-C5-b9b.text" = "+966";
+
+/* Class = "UILabel"; text = "تم التحقق من الكود بنجاح. بإمكانك الآن إعادة تعيين كلمة المرور لحسابك"; ObjectID = "BJo-Oe-9IS"; */
+"BJo-Oe-9IS.text" = "تم التحقق من الكود بنجاح. بإمكانك الآن إعادة تعيين كلمة المرور لحسابك";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "E5s-VY-0lC"; */
+"E5s-VY-0lC.text" = "+966";
+
+/* Class = "UITextField"; placeholder = "    البريد الإلكتروني"; ObjectID = "IQx-Cv-iht"; */
+"IQx-Cv-iht.placeholder" = "    البريد الإلكتروني";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "IR2-6T-ySc"; */
+"IR2-6T-ySc.normalTitle" = "تحقق";
+
+/* Class = "UILabel"; text = "دخول لحساب مُسجّل"; ObjectID = "KNO-qF-ils"; */
+"KNO-qF-ils.text" = "دخول لحساب مُسجّل";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "LMq-Qt-FGJ"; */
+"LMq-Qt-FGJ.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Mxx-vu-vNd"; */
+"Mxx-vu-vNd.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Nw4-zW-vmM"; */
+"Nw4-zW-vmM.normalTitle" = "التالي";
+
+/* Class = "UITextField"; placeholder = "    كلمة المرور"; ObjectID = "O4f-J5-Bwc"; */
+"O4f-J5-Bwc.placeholder" = "    كلمة المرور";
+
+/* Class = "UILabel"; text = "دخول لحساب مُسجّل"; ObjectID = "OUp-Ln-cQe"; */
+"OUp-Ln-cQe.text" = "دخول لحساب مُسجّل";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "Op3-a6-yHe"; */
+"Op3-a6-yHe.text" = "+966";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "PBz-kA-wcB"; */
+"PBz-kA-wcB.placeholder" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "RlQ-qV-fzy"; */
+"RlQ-qV-fzy.text" = "تسجيل حساب جديد";
+
+/* Class = "UILabel"; text = "أدخل رقم الجوال المُسجل بحسابك"; ObjectID = "SDs-Wc-tcc"; */
+"SDs-Wc-tcc.text" = "أدخل رقم الجوال المُسجل بحسابك";
+
+/* Class = "UILabel"; text = "(1/3)"; ObjectID = "Sgn-I4-Spx"; */
+"Sgn-I4-Spx.text" = "(1/3)";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Tgk-pq-qXH"; */
+"Tgk-pq-qXH.normalTitle" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "UAz-89-Kd4"; */
+"UAz-89-Kd4.normalTitle" = "التالي";
+
+/* Class = "UILabel"; text = "شكراً لتسجيلك معنا! بإمكانك الآن استخدام تطبيق اسأل حائل بدون قيود"; ObjectID = "UWS-ho-PfR"; */
+"UWS-ho-PfR.text" = "شكراً لتسجيلك معنا! بإمكانك الآن استخدام تطبيق اسأل حائل بدون قيود";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "Wgr-i9-jD9"; */
+"Wgr-i9-jD9.text" = "استعادة كلمة المرور";
+
+/* Class = "UILabel"; text = "(3/3)"; ObjectID = "Y3G-q9-s55"; */
+"Y3G-q9-s55.text" = "(3/3)";
+
+/* Class = "UILabel"; text = "(3/3)"; ObjectID = "anY-pZ-gZD"; */
+"anY-pZ-gZD.text" = "(3/3)";
+
+/* Class = "UILabel"; text = "تم التحقق من الكود بنجاح. يرجى استكمال معلوماتك أدناه"; ObjectID = "eiL-gA-cCU"; */
+"eiL-gA-cCU.text" = "تم التحقق من الكود بنجاح. يرجى استكمال معلوماتك أدناه";
+
+/* Class = "UITextField"; placeholder = "تاكيد كلمة المرور"; ObjectID = "eoh-fI-xQa"; */
+"eoh-fI-xQa.placeholder" = "تاكيد كلمة المرور";
+
+/* Class = "UILabel"; text = "تم التسجيل بنجاح"; ObjectID = "fxg-RP-Xd2"; */
+"fxg-RP-Xd2.text" = "تم التسجيل بنجاح";
+
+/* Class = "UILabel"; text = "أدخل رقم الجوال الخاص بك"; ObjectID = "h4U-JY-oML"; */
+"h4U-JY-oML.text" = "أدخل رقم الجوال الخاص بك";
+
+/* Class = "UILabel"; text = "أدخل بيانات الحساب"; ObjectID = "hry-rY-kRm"; */
+"hry-rY-kRm.text" = "أدخل بيانات الحساب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hsr-aq-Pjv"; */
+"hsr-aq-Pjv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "ihL-2O-pr8"; */
+"ihL-2O-pr8.placeholder" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "jSQ-VX-iej"; */
+"jSQ-VX-iej.text" = "تسجيل حساب جديد";
+
+/* Class = "UILabel"; text = "في إسأل حائل لقطاع الأعمال"; ObjectID = "kOp-Wu-Mmo"; */
+"kOp-Wu-Mmo.text" = "في إسأل حائل لقطاع الأعمال";
+
+/* Class = "UILabel"; text = "تم ارسال كود مكون من 4 أرقام في رسالة قصيرة لجوالك. يرجى ادخال الكود للمتابعة"; ObjectID = "o0H-gU-gNb"; */
+"o0H-gU-gNb.text" = "تم ارسال كود مكون من 4 أرقام في رسالة قصيرة لجوالك. يرجى ادخال الكود للمتابعة";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "o5Y-K2-kgd"; */
+"o5Y-K2-kgd.normalTitle" = "تحقق";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور"; ObjectID = "pLw-de-yZf"; */
+"pLw-de-yZf.placeholder" = "كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "نسيت كلمة المرور؟"; ObjectID = "pwZ-KD-eUc"; */
+"pwZ-KD-eUc.normalTitle" = "نسيت كلمة المرور؟";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "sjX-MG-FZC"; */
+"sjX-MG-FZC.text" = "تسجيل حساب جديد";
+
+/* Class = "UIButton"; normalTitle = "دخول"; ObjectID = "tDa-Ts-RbE"; */
+"tDa-Ts-RbE.normalTitle" = "دخول";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "uF0-rC-5Q6"; */
+"uF0-rC-5Q6.placeholder" = "رقم الجوال";
+
+/* Class = "UILabel"; text = "لم تستلم الكود؟"; ObjectID = "v1A-1i-0pV"; */
+"v1A-1i-0pV.text" = "لم تستلم الكود؟";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "v68-Dd-82R"; */
+"v68-Dd-82R.text" = "استعادة كلمة المرور";
+
+/* Class = "UILabel"; text = "مرحباً"; ObjectID = "vnp-Fu-3qX"; */
+"vnp-Fu-3qX.text" = "مرحباً";
+
+/* Class = "UILabel"; text = "(2/3)"; ObjectID = "w0o-Uf-EVl"; */
+"w0o-Uf-EVl.text" = "(2/3)";
+
+/* Class = "UILabel"; text = "(1/3)"; ObjectID = "xqV-F4-q9M"; */
+"xqV-F4-q9M.text" = "(1/3)";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور الجديدة"; ObjectID = "z5K-KW-s6z"; */
+"z5K-KW-s6z.placeholder" = "كلمة المرور الجديدة";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "z7P-Ug-xmO"; */
+"z7P-Ug-xmO.text" = "تسجيل حساب جديد";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "zJ7-Vl-8LX"; */
+"zJ7-Vl-8LX.text" = "استعادة كلمة المرور";
+
+/* Class = "UILabel"; text = "لم تستلم الكود؟"; ObjectID = "zjR-FB-I0A"; */
+"zjR-FB-I0A.text" = "لم تستلم الكود؟";

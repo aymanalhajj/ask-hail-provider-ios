@@ -1,0 +1,48 @@
+
+/* Class = "UILabel"; text = "+سيتم إظهار اسمك في تفاصيل السؤال"; ObjectID = "5aL-xz-8Nj"; */
+"5aL-xz-8Nj.text" = "+ Your name will be shown in the question details";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل السؤال"; ObjectID = "JUE-XK-0WP"; */
+"JUE-XK-0WP.text" = "Enter the question details";
+
+/* Class = "UILabel"; text = "حذف"; ObjectID = "LKU-uP-PM1"; */
+"LKU-uP-PM1.text" = "delete";
+
+/* Class = "UILabel"; text = "تعديل بيانات السؤال"; ObjectID = "MFK-ej-jgO"; */
+"MFK-ej-jgO.text" = "Modify the question data";
+
+/* Class = "UILabel"; text = "عدّل تفاصيل العقار"; ObjectID = "Rlj-v7-bIl"; */
+"Rlj-v7-bIl.text" = "Edit property details";
+
+/* Class = "UILabel"; text = "إظهار اسمك كناشر السؤال"; ObjectID = "T0I-jb-iqZ"; */
+"T0I-jb-iqZ.text" = "Show your name as the publisher of the question";
+
+/* Class = "UILabel"; text = "الصورة"; ObjectID = "Ugj-Uq-ZVj"; */
+"Ugj-Uq-ZVj.text" = "Image";
+
+/* Class = "UILabel"; text = "حذف السؤال"; ObjectID = "X3a-SL-JWs"; */
+"X3a-SL-JWs.text" = "Delete question";
+
+/* Class = "UITextField"; placeholder = "أدخل تفاصيل السؤال"; ObjectID = "XGC-5g-xoM"; */
+"XGC-5g-xoM.placeholder" = "Enter the question details";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل السؤال"; ObjectID = "a3w-8i-RkW"; */
+"a3w-8i-RkW.text" = "Enter the question details";
+
+/* Class = "UIButton"; normalTitle = "حفظ التعديلات"; ObjectID = "dSB-M4-y7B"; */
+"dSB-M4-y7B.normalTitle" = "Save modifications";
+
+/* Class = "UILabel"; text = "التفاصيل"; ObjectID = "euz-Je-AJ4"; */
+"euz-Je-AJ4.text" = "the details";
+
+/* Class = "UILabel"; text = "تعديل تفاصيل السؤال"; ObjectID = "hV2-Ro-pnT"; */
+"hV2-Ro-pnT.text" = "Edit question details";
+
+/* Class = "UILabel"; text = "تراجع"; ObjectID = "nbG-Lg-4e4"; */
+"nbG-Lg-4e4.text" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "حفظ التعديلات"; ObjectID = "ou4-2i-0ve"; */
+"ou4-2i-0ve.normalTitle" = "Save modifications";
+
+/* Class = "UILabel"; text = "تعديل تفاصيل السؤال"; ObjectID = "qVc-YI-TVF"; */
+"qVc-YI-TVF.text" = "Edit question details";

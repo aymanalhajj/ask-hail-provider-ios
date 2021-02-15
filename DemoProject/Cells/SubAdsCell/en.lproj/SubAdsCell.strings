@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "45"; ObjectID = "2ck-Ka-8y2"; */
+"2ck-Ka-8y2.text" = "45";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "TZk-0n-NER"; */
+"TZk-0n-NER.text" = "SAR";
+
+/* Class = "UILabel"; text = "3,589"; ObjectID = "aj6-Fu-DZU"; */
+"aj6-Fu-DZU.text" = "3,589";
+
+/* Class = "UILabel"; text = "32,658"; ObjectID = "bAV-Ka-8fn"; */
+"bAV-Ka-8fn.text" = "32,658";
+
+/* Class = "UILabel"; text = "للبيع شاليه بحائل حي الشفاء"; ObjectID = "pC7-0l-0In"; */
+"pC7-0l-0In.text" = "For sale a chalet in Hail Hay Al-Shifa";
+
+/* Class = "UILabel"; text = "كم"; ObjectID = "swl-Rx-cEI"; */
+"swl-Rx-cEI.text" = "Km";
+
+/* Class = "UILabel"; text = "مميز"; ObjectID = "xvu-AS-FIm"; */
+"xvu-AS-FIm.text" = "Featured";

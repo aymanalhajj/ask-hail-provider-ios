@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "3eL-v7-Y3c"; */
+"3eL-v7-Y3c.text" = "+966";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Rl7-3s-xPA"; */
+"Rl7-3s-xPA.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "Vbz-6U-G3a"; */
+"Vbz-6U-G3a.placeholder" = "phone number";
+
+/* Class = "UIButton"; normalTitle = "تأكيد"; ObjectID = "ZSX-Y4-QqB"; */
+"ZSX-Y4-QqB.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "رقم تواصل اخر"; ObjectID = "qCz-Al-6Mb"; */
+"qCz-Al-6Mb.text" = "Other number";

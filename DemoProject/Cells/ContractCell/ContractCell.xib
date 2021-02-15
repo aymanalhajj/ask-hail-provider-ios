@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="159" id="7Q7-Uj-PaV" customClass="ContractCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="7Q7-Uj-PaV" id="pii-K4-VZ5">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم العقد المتاح للتنزيل" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7L-OY-PPm">
+                        <rect key="frame" x="140" y="16" width="171" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5dh-ph-U62"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="17"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ الإضافة : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-iY-RIe">
+                        <rect key="frame" x="231" y="48" width="80" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="a9c-xS-8sg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW2-Jz-eTS">
+                        <rect key="frame" x="16" y="16" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="KsF-8m-wm1"/>
+                            <constraint firstAttribute="height" constant="24" id="q7j-ZS-5YM"/>
+                        </constraints>
+                        <state key="normal" image="download"/>
+                        <connections>
+                            <action selector="DownloadAction:" destination="7Q7-Uj-PaV" eventType="touchUpInside" id="gnc-bT-1S7"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqW-by-2tw">
+                        <rect key="frame" x="16" y="72" width="295" height="1.5"/>
+                        <color key="backgroundColor" red="0.84671914579999996" green="0.87304651740000005" blue="0.91234427689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.5" id="vEs-a3-2Qa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 24 سبتمبر 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRT-Ds-6UG">
+                        <rect key="frame" x="142" y="50" width="85" height="12"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="cTd-iY-RIe" firstAttribute="top" secondItem="b7L-OY-PPm" secondAttribute="bottom" constant="8" id="8s0-LP-nlO"/>
+                    <constraint firstAttribute="trailing" secondItem="b7L-OY-PPm" secondAttribute="trailing" constant="16" id="CG4-BG-cbv"/>
+                    <constraint firstItem="fW2-Jz-eTS" firstAttribute="leading" secondItem="pii-K4-VZ5" secondAttribute="leading" constant="16" id="EjF-Hd-qRY"/>
+                    <constraint firstItem="fW2-Jz-eTS" firstAttribute="centerY" secondItem="b7L-OY-PPm" secondAttribute="centerY" id="M32-JO-hRZ"/>
+                    <constraint firstAttribute="bottom" secondItem="VqW-by-2tw" secondAttribute="bottom" id="P1J-17-deh"/>
+                    <constraint firstItem="VqW-by-2tw" firstAttribute="leading" secondItem="pii-K4-VZ5" secondAttribute="leading" constant="16" id="P2y-f0-6dT"/>
+                    <constraint firstItem="cTd-iY-RIe" firstAttribute="trailing" secondItem="b7L-OY-PPm" secondAttribute="trailing" id="RBh-qM-8ef"/>
+                    <constraint firstItem="b7L-OY-PPm" firstAttribute="top" secondItem="pii-K4-VZ5" secondAttribute="top" constant="16" id="VnN-fI-hme"/>
+                    <constraint firstAttribute="trailing" secondItem="VqW-by-2tw" secondAttribute="trailing" constant="16" id="m1V-u9-yco"/>
+                    <constraint firstItem="cTd-iY-RIe" firstAttribute="leading" secondItem="FRT-Ds-6UG" secondAttribute="trailing" constant="4" id="nzW-R8-QLC"/>
+                    <constraint firstItem="VqW-by-2tw" firstAttribute="top" secondItem="cTd-iY-RIe" secondAttribute="bottom" constant="8" id="ohS-az-AXs"/>
+                    <constraint firstItem="FRT-Ds-6UG" firstAttribute="centerY" secondItem="cTd-iY-RIe" secondAttribute="centerY" id="sc4-DU-5Z0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="UTA-iu-Ck2"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="Date" destination="FRT-Ds-6UG" id="ysc-ZT-u1f"/>
+                <outlet property="Datelbl" destination="cTd-iY-RIe" id="gkB-og-vGX"/>
+                <outlet property="LineView" destination="VqW-by-2tw" id="kia-4l-o00"/>
+                <outlet property="contreactTitle" destination="b7L-OY-PPm" id="5bS-83-9Hb"/>
+            </connections>
+            <point key="canvasLocation" x="139.85507246376812" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="download" width="24" height="24"/>
+    </resources>
+</document>

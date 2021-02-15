@@ -1,0 +1,33 @@
+
+/* Class = "UILabel"; text = "حذف"; ObjectID = "4A1-2k-97u"; */
+"4A1-2k-97u.text" = "Delete";
+
+/* Class = "UILabel"; text = "الاشعارات"; ObjectID = "FIj-zV-fKh"; */
+"FIj-zV-fKh.text" = "Notification";
+
+/* Class = "UILabel"; text = "تراجع"; ObjectID = "RHO-3J-eyS"; */
+"RHO-3J-eyS.text" = "Cancel";
+
+/* Class = "UILabel"; text = "حذف"; ObjectID = "TNb-TC-jis"; */
+"TNb-TC-jis.text" = "Delete";
+
+/* Class = "UILabel"; text = "حذف الاشعار "; ObjectID = "eXX-bn-qKE"; */
+"eXX-bn-qKE.text" = "Delete notification";
+
+/* Class = "UILabel"; text = "حذف كل الإشعارات"; ObjectID = "lCh-lU-tUE"; */
+"lCh-lU-tUE.text" = "Delete all notification";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oLa-JX-5Cl"; */
+"oLa-JX-5Cl.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rig-MY-cSS"; */
+"rig-MY-cSS.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "تراجع"; ObjectID = "sKn-Lj-B2j"; */
+"sKn-Lj-B2j.text" = "Cancel";
+
+/* Class = "UILabel"; text = "لا توجد إشعارات في الوقت الحالي"; ObjectID = "u4a-9k-pGg"; */
+"u4a-9k-pGg.text" = "There are no notifications at this time.";
+
+/* Class = "UIButton"; normalTitle = "حذف الكل"; ObjectID = "xrO-Fw-nS1"; */
+"xrO-Fw-nS1.normalTitle" = "Delete All";

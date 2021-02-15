@@ -1,0 +1,6 @@
+framework module LXStatusAlert {
+  umbrella header "LXStatusAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

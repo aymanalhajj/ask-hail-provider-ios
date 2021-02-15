@@ -1,0 +1,147 @@
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "00P-d9-svl"; */
+"00P-d9-svl.text" = "duration";
+
+/* Class = "UILabel"; text = "987654321123456789"; ObjectID = "21g-AD-BOn"; */
+"21g-AD-BOn.text" = "987654321123456789";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "2FG-Xf-yL1"; */
+"2FG-Xf-yL1.text" = "Pay the package cost";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "302-iv-I31"; */
+"302-iv-I31.normalTitle" = "next";
+
+/* Class = "UITextField"; placeholder = "البنك المحول منه"; ObjectID = "3RE-Qq-myZ"; */
+"3RE-Qq-myZ.placeholder" = "The bank from which it is transferred";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "4qd-9h-5Bn"; */
+"4qd-9h-5Bn.text" = "price";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "7LS-Bd-OZG"; */
+"7LS-Bd-OZG.text" = "day";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "87r-Bt-70d"; */
+"87r-Bt-70d.text" = "500";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "8V6-cI-iuU"; */
+"8V6-cI-iuU.text" = "SAR";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "9cl-fu-ArF"; */
+"9cl-fu-ArF.text" = "For Marketing and Real Estate Investments Offices";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "DVU-ai-bWw"; */
+"DVU-ai-bWw.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "تحويل بنكي"; ObjectID = "HmB-wo-RCa"; */
+"HmB-wo-RCa.text" = "Bank transfer";
+
+/* Class = "UILabel"; text = "تمييز الإعلان"; ObjectID = "IHr-Gs-toA"; */
+"IHr-Gs-toA.text" = "Special ad";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "ImZ-PE-p6a"; */
+"ImZ-PE-p6a.text" = "day";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "KwP-nj-qEd"; */
+"KwP-nj-qEd.text" = "price";
+
+/* Class = "UITextField"; placeholder = "رقم الحساب المحول منه"; ObjectID = "LhA-Tz-9rb"; */
+"LhA-Tz-9rb.placeholder" = "The account number which he is transferred";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "MfK-rF-Oe0"; */
+"MfK-rF-Oe0.text" = "duration";
+
+/* Class = "UILabel"; text = "حدد احد الخيارات التالية لمتابعة الشراء"; ObjectID = "PFR-rE-cod"; */
+"PFR-rE-cod.text" = "Select one of the following options to continue purchasing.";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "PUr-Ow-pSf"; */
+"PUr-Ow-pSf.text" = "500";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "QuG-fG-nG0"; */
+"QuG-fG-nG0.text" = "day";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "Qym-Cf-5Lg"; */
+"Qym-Cf-5Lg.text" = "Pay the package cost";
+
+/* Class = "UIButton"; normalTitle = "تأكيد التحويل"; ObjectID = "RH1-0v-kcq"; */
+"RH1-0v-kcq.normalTitle" = "Transfer Confirmation";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "RUv-9g-r1L"; */
+"RUv-9g-r1L.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "رقم الحساب"; ObjectID = "Sk0-il-QK6"; */
+"Sk0-il-QK6.text" = "account number";
+
+/* Class = "UILabel"; text = "الأيبان"; ObjectID = "Twa-R4-sTg"; */
+"Twa-R4-sTg.text" = "IBAN";
+
+/* Class = "UILabel"; text = "SA01234567899876543210"; ObjectID = "UU4-bO-4mH"; */
+"UU4-bO-4mH.text" = "SA01234567899876543210";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "Uit-Hu-ide"; */
+"Uit-Hu-ide.text" = "60";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "WqX-1R-g9s"; */
+"WqX-1R-g9s.text" = "500";
+
+/* Class = "UILabel"; text = "حدد احد الخيارات التالية لمتابعة الشراء"; ObjectID = "Xnp-bo-b8h"; */
+"Xnp-bo-b8h.text" = "Select one of the following options to continue purchasing.";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "bMM-Nw-AnD"; */
+"bMM-Nw-AnD.text" = "SAR";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "f56-hc-XAt"; */
+"f56-hc-XAt.text" = "SAR";
+
+/* Class = "UILabel"; text = "دفع الكتروني"; ObjectID = "g8M-eK-Pwl"; */
+"g8M-eK-Pwl.text" = "E-Payment";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "h0b-sh-NnF"; */
+"h0b-sh-NnF.text" = "60";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "hIP-WM-8p6"; */
+"hIP-WM-8p6.text" = "duration";
+
+/* Class = "UILabel"; text = "يضمن تمييز إعلانك نسبة نجاح أكبر مع المستخدمين حيث يظهر الإعلان دائماً على رأس الصفحة المعروض بها"; ObjectID = "hgO-n4-wc5"; */
+"hgO-n4-wc5.text" = "Distinguishing your ad guarantees a greater success rate with users, as the ad always appears on the top of the page on which it is displayed.";
+
+/* Class = "UILabel"; text = "تمييز الإعلان"; ObjectID = "hig-DU-N3h"; */
+"hig-DU-N3h.text" = "Special ad";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "hyT-3w-mcz"; */
+"hyT-3w-mcz.text" = "For Marketing and Real Estate Investments Offices";
+
+/* Class = "UILabel"; text = "أدخل بيانات التحويل لإتمام الإشتراك"; ObjectID = "iTk-py-h7r"; */
+"iTk-py-h7r.text" = "Enter the transfer information to complete the subscription.";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "nkf-dE-JNr"; */
+"nkf-dE-JNr.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "qas-fv-Dfu"; */
+"qas-fv-Dfu.text" = "Pay the package cost";
+
+/* Class = "UITextField"; placeholder = "إسم المحول"; ObjectID = "riv-5h-WhM"; */
+"riv-5h-WhM.placeholder" = "Transfer Name";
+
+/* Class = "UILabel"; text = "اختر أين تريد أن يظهر إعلانك"; ObjectID = "vbq-D5-kkm"; */
+"vbq-D5-kkm.text" = "Choose where you want your ad to appear.";
+
+/* Class = "UILabel"; text = "تمييز الإعلان"; ObjectID = "w3E-7i-whi"; */
+"w3E-7i-whi.text" = "Special ad";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "wnJ-Vu-ksl"; */
+"wnJ-Vu-ksl.text" = "60";
+
+/* Class = "UILabel"; text = "اسم المستفيد"; ObjectID = "yEM-h6-8pn"; */
+"yEM-h6-8pn.text" = "Beneficiary Name";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "yp6-IN-DM4"; */
+"yp6-IN-DM4.text" = "price";
+
+/* Class = "UILabel"; text = "المستفيد"; ObjectID = "yrb-b8-1wi"; */
+"yrb-b8-1wi.text" = "beneficiary";
+
+/* Class = "UITextField"; placeholder = "مكان الظهور"; ObjectID = "zEf-z1-Q5t"; */
+"zEf-z1-Q5t.placeholder" = "Place of appearance";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "zxQ-LT-7l0"; */
+"zxQ-LT-7l0.text" = "For Marketing and Real Estate Investments Offices";

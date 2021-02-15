@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="nwq-Cj-DKX" customClass="ReceverCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nwq-Cj-DKX" id="Gxh-qF-6YC">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ofq-2K-Zz6">
+                        <rect key="frame" x="0.0" y="8" width="173" height="87"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:36" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2z-tt-LpP">
+                                <rect key="frame" x="115" y="37.5" width="50" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bpZ-Hd-rgo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                <color key="textColor" red="0.1350436807" green="0.38095894460000002" blue="0.59467291830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="وعليكم السلام" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dco-0Q-fGN">
+                                <rect key="frame" x="16" y="8" width="95" height="71"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                <color key="textColor" red="0.1350436807" green="0.38095894460000002" blue="0.59467291830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Q2z-tt-LpP" firstAttribute="leading" secondItem="dco-0Q-fGN" secondAttribute="trailing" constant="4" id="33G-r3-d96"/>
+                            <constraint firstItem="dco-0Q-fGN" firstAttribute="top" secondItem="ofq-2K-Zz6" secondAttribute="top" constant="8" id="4Zs-Zf-raS"/>
+                            <constraint firstItem="Q2z-tt-LpP" firstAttribute="centerY" secondItem="dco-0Q-fGN" secondAttribute="centerY" id="BZb-Xj-xO5"/>
+                            <constraint firstItem="dco-0Q-fGN" firstAttribute="leading" secondItem="ofq-2K-Zz6" secondAttribute="leading" constant="16" id="KSC-a2-GXr"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="Moo-4N-DNA"/>
+                            <constraint firstAttribute="bottom" secondItem="dco-0Q-fGN" secondAttribute="bottom" constant="8" id="ZaW-pH-B8v"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="glv-B5-b4X"/>
+                            <constraint firstAttribute="trailing" secondItem="Q2z-tt-LpP" secondAttribute="trailing" constant="8" id="z1h-7Q-RPH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ofq-2K-Zz6" secondAttribute="bottom" constant="8" id="5Us-sa-FVo"/>
+                    <constraint firstItem="ofq-2K-Zz6" firstAttribute="leading" secondItem="Gxh-qF-6YC" secondAttribute="leading" id="cdC-qE-BXp"/>
+                    <constraint firstItem="ofq-2K-Zz6" firstAttribute="top" secondItem="Gxh-qF-6YC" secondAttribute="top" constant="8" id="cfr-Kf-ceb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="4eK-AS-4qC"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="CellMessge" destination="dco-0Q-fGN" id="VHH-XC-usT"/>
+                <outlet property="CellTime" destination="Q2z-tt-LpP" id="FAV-Yd-6yE"/>
+                <outlet property="bgView" destination="ofq-2K-Zz6" id="5Bb-U4-iOO"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="146.31696428571428"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,63 @@
+
+/* Class = "UILabel"; text = "3/3"; ObjectID = "037-yz-y3I"; */
+"037-yz-y3I.text" = "3/3";
+
+/* Class = "UILabel"; text = "إضافة سؤال جديد"; ObjectID = "1Bl-v1-O0O"; */
+"1Bl-v1-O0O.text" = "Add a new question";
+
+/* Class = "UIButton"; normalTitle = "تأكيد"; ObjectID = "3gd-QM-NdQ"; */
+"3gd-QM-NdQ.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "سيتم مراجعة سؤالك من قبل الإدارة قبل نشره، بإمكانك متابعة التحديثات من ردود ومحادثات في صفحة اسئلتي"; ObjectID = "5Qo-6Y-hYM"; */
+"5Qo-6Y-hYM.text" = "Your question will be reviewed by the administration before it is published. You can follow updates from responses and conversations on the My Questions page.";
+
+/* Class = "UIButton"; normalTitle = "عودة لصفحة اسأل حائل"; ObjectID = "Epl-QS-9vd"; */
+"Epl-QS-9vd.normalTitle" = "Back to the page Ask Hail";
+
+/* Class = "UIButton"; normalTitle = "إضافة"; ObjectID = "Fjc-LM-mrW"; */
+"Fjc-LM-mrW.normalTitle" = "add";
+
+/* Class = "UILabel"; text = "قبل أن تتمكن من نشر سؤال، يجب أن توافق على شروط وأحكام الإستخدام"; ObjectID = "L2R-yf-fX1"; */
+"L2R-yf-fX1.text" = "Before you can post a question, you must agree to the terms and conditions of use.";
+
+/* Class = "UILabel"; text = "إضافة سؤال جديد"; ObjectID = "Lz0-Dh-g8M"; */
+"Lz0-Dh-g8M.text" = "Add a new question";
+
+/* Class = "UITextField"; placeholder = "عنوان السؤال"; ObjectID = "Mun-Z9-VWI"; */
+"Mun-Z9-VWI.placeholder" = "Question title";
+
+/* Class = "UILabel"; text = "3/2"; ObjectID = "QsE-rh-J2c"; */
+"QsE-rh-J2c.text" = "3/2";
+
+/* Class = "UILabel"; text = "الشروط والأحكام"; ObjectID = "T6a-ug-fGc"; */
+"T6a-ug-fGc.text" = "Terms and Conditions";
+
+/* Class = "UILabel"; text = "3/1"; ObjectID = "TRe-oh-5Gs"; */
+"TRe-oh-5Gs.text" = "3/1";
+
+/* Class = "UILabel"; text = "إضافة سؤال جديد"; ObjectID = "UAp-AV-yn0"; */
+"UAp-AV-yn0.text" = "Add a new question";
+
+/* Class = "UILabel"; text = "أضف صورة او رسم"; ObjectID = "XPG-Ys-Lah"; */
+"XPG-Ys-Lah.text" = "Add a picture or a drawing";
+
+/* Class = "UILabel"; text = "الخصوصية"; ObjectID = "dSn-yN-Yvj"; */
+"dSn-yN-Yvj.text" = "Privacy";
+
+/* Class = "UIButton"; normalTitle = "اوافق على الشروط والأحكام"; ObjectID = "iJI-IG-V3Z"; */
+"iJI-IG-V3Z.normalTitle" = "I agree to terms and conditions";
+
+/* Class = "UILabel"; text = "إظهار اسمك كناشر السؤال"; ObjectID = "mMM-sh-bJp"; */
+"mMM-sh-bJp.text" = "Show your name as the publisher of the question";
+
+/* Class = "UILabel"; text = "إظهار اسمك في تفاصيل السؤال"; ObjectID = "nte-zE-ZGx"; */
+"nte-zE-ZGx.text" = "Show your name in the question details";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل السؤال"; ObjectID = "q8j-iG-1rq"; */
+"q8j-iG-1rq.text" = "Enter the question details";
+
+/* Class = "UIButton"; normalTitle = "بدون صورة"; ObjectID = "rZA-mL-E1w"; */
+"rZA-mL-E1w.normalTitle" = "Without picture";
+
+/* Class = "UILabel"; text = "تم إرسال سؤالك للإدارة"; ObjectID = "yJD-yj-HGk"; */
+"yJD-yj-HGk.text" = "Your question has been sent to the administration";

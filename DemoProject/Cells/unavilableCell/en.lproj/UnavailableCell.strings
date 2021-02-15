@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = " المكان غير متاح من يوم ..."; ObjectID = "DkP-Sl-09W"; */
+"DkP-Sl-09W.text" = "The place is not available from the day ...";
+
+/* Class = "UILabel"; text = "الأحد 4 أكتوبر 2020"; ObjectID = "EPa-gF-V5n"; */
+"EPa-gF-V5n.text" = "Sunday 4 October 2020";
+
+/* Class = "UILabel"; text = "سيتوفر المكان يوم خلال"; ObjectID = "Ihv-nl-4hN"; */
+"Ihv-nl-4hN.text" = "The place available in";
+
+/* Class = "UILabel"; text = "لمدة"; ObjectID = "Qcy-0i-oWI"; */
+"Qcy-0i-oWI.text" = "For a while";
+
+/* Class = "UILabel"; text = "365"; ObjectID = "ZVP-xY-kLd"; */
+"ZVP-xY-kLd.text" = "365";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "lPl-q7-vP3"; */
+"lPl-q7-vP3.text" = "day";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "o7Q-4p-jaK"; */
+"o7Q-4p-jaK.text" = "2";
+
+/* Class = "UIButton"; normalTitle = "حذف"; ObjectID = "ovK-N1-6p6"; */
+"ovK-N1-6p6.normalTitle" = "delete";
+
+/* Class = "UILabel"; text = "أيام"; ObjectID = "v9U-tt-2Mx"; */
+"v9U-tt-2Mx.text" = "days";

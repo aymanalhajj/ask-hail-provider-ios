@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="CommentCellTableViewCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="علي يقول" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTW-Uf-OAW">
+                        <rect key="frame" x="247" y="16" width="49" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="rPJ-Rd-EBM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.011764705882352941" green="0.29411764705882354" blue="0.53725490196078429" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منذ يومين" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agd-On-enV">
+                        <rect key="frame" x="24" y="16" width="53" height="12"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="وش سبب البيع؟" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwX-0z-Kp2">
+                        <rect key="frame" x="24" y="36" width="272" height="35"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                        <color key="textColor" red="0.011764705882352941" green="0.29411764705882354" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82Q-B9-g9B">
+                        <rect key="frame" x="217" y="75" width="79" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="I72-jd-4Wl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
+                        <state key="normal" title="حذف التعليق">
+                            <color key="titleColor" red="1" green="0.47843137254901957" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="DeleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tH5-ME-Sms"/>
+                        </connections>
+                    </button>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftt-xU-IM9">
+                        <rect key="frame" x="24" y="103" width="272" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="iMh-cP-h21"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="agd-On-enV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="3yf-Fg-FqF"/>
+                    <constraint firstItem="lwX-0z-Kp2" firstAttribute="trailing" secondItem="xTW-Uf-OAW" secondAttribute="trailing" id="C8V-NQ-6bn"/>
+                    <constraint firstItem="82Q-B9-g9B" firstAttribute="top" secondItem="lwX-0z-Kp2" secondAttribute="bottom" constant="4" id="Hhs-dE-0Vx"/>
+                    <constraint firstItem="xTW-Uf-OAW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="PhC-4s-giS"/>
+                    <constraint firstItem="ftt-xU-IM9" firstAttribute="top" secondItem="82Q-B9-g9B" secondAttribute="bottom" constant="4" id="SdG-op-H6o"/>
+                    <constraint firstItem="lwX-0z-Kp2" firstAttribute="top" secondItem="xTW-Uf-OAW" secondAttribute="bottom" constant="4" id="XU7-24-YIz"/>
+                    <constraint firstAttribute="trailing" secondItem="ftt-xU-IM9" secondAttribute="trailing" constant="24" id="Zzy-ol-T1v"/>
+                    <constraint firstItem="lwX-0z-Kp2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="hU6-3H-lfF"/>
+                    <constraint firstAttribute="bottom" secondItem="ftt-xU-IM9" secondAttribute="bottom" constant="8" id="ojn-fd-jtR"/>
+                    <constraint firstItem="82Q-B9-g9B" firstAttribute="trailing" secondItem="lwX-0z-Kp2" secondAttribute="trailing" id="qAM-0W-u3k"/>
+                    <constraint firstItem="agd-On-enV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="r5T-ps-feg"/>
+                    <constraint firstAttribute="trailing" secondItem="xTW-Uf-OAW" secondAttribute="trailing" constant="24" id="vjS-XE-TND"/>
+                    <constraint firstItem="ftt-xU-IM9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="wwA-KS-jqC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CommentName" destination="xTW-Uf-OAW" id="KUY-fO-3rk"/>
+                <outlet property="CommentText" destination="lwX-0z-Kp2" id="oxg-AM-3Lw"/>
+                <outlet property="CommentTime" destination="agd-On-enV" id="CiX-VM-ozg"/>
+                <outlet property="Deletbtn" destination="82Q-B9-g9B" id="GQk-pg-k6s"/>
+                <outlet property="DeleteBtnHight" destination="I72-jd-4Wl" id="XYT-y2-F4B"/>
+            </connections>
+            <point key="canvasLocation" x="130.43478260869566" y="105.13392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

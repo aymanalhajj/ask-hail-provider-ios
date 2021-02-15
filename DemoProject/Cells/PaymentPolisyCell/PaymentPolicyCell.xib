@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="255" id="KGk-i7-Jjw" customClass="PaymentPolicyCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="255"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="255"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عند بيع العقار" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl7-ha-Urs">
+                        <rect key="frame" x="8" y="16" width="311" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="lC1-CR-tiE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                        <color key="textColor" red="0.0078431372550000003" green="0.2901960784" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWR-vN-2Kz">
+                        <rect key="frame" x="8" y="48" width="311" height="191"/>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">العقار هو كل شيء ثابت في مكانه ولا يمكن نقله دون تلف، أي الأراضي والمباني والأشجار التي تتصل بالأرض اتصال قرار. و ينقسم العقار إلى قسمين : العقار بطبيعته والعقار بالتخصيص.وهو ما سبق ذكره، أي الأشياء التي تتصل بالأرض اتصال قرار. ولا يعد عقاراً بالنسبة للأرض إلا ما هو جزء منها. ويترتب على ذلك أن الكنز ليس عقاراً رغم كونه مدفوناً في باطن الأرض</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.055473528799999998" green="0.32780081030000002" blue="0.55675119159999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="16" name="Tajawal-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nl7-ha-Urs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0eo-r2-N3z"/>
+                    <constraint firstAttribute="bottom" secondItem="JWR-vN-2Kz" secondAttribute="bottom" constant="16" id="8Wb-v1-02L"/>
+                    <constraint firstItem="JWR-vN-2Kz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Aha-0k-PbX"/>
+                    <constraint firstAttribute="trailing" secondItem="nl7-ha-Urs" secondAttribute="trailing" constant="8" id="WY1-1t-sHc"/>
+                    <constraint firstAttribute="trailing" secondItem="JWR-vN-2Kz" secondAttribute="trailing" constant="8" id="Wp3-Eb-fyZ"/>
+                    <constraint firstItem="JWR-vN-2Kz" firstAttribute="top" secondItem="nl7-ha-Urs" secondAttribute="bottom" constant="16" id="Yq5-b6-u9Q"/>
+                    <constraint firstItem="nl7-ha-Urs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="o32-TH-VXX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="Title" destination="nl7-ha-Urs" id="W11-AJ-xQy"/>
+                <outlet property="discrebtion" destination="JWR-vN-2Kz" id="95D-oc-7Xe"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="182.47767857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

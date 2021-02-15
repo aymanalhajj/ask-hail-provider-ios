@@ -1,0 +1,360 @@
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "01P-mM-3Tg"; */
+"01P-mM-3Tg.text" = "For Marketing and Real Estate Investments Offices";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "1IP-GD-86k"; */
+"1IP-GD-86k.text" = "SAR";
+
+/* Class = "UILabel"; text = "حدد احد الخيارات التالية لمتابعة الشراء"; ObjectID = "1Qt-qY-N4u"; */
+"1Qt-qY-N4u.text" = "Select one of the following options to continue purchasing.";
+
+/* Class = "UIButton"; normalTitle = "إضافة الصور"; ObjectID = "1w1-h9-74G"; */
+"1w1-h9-74G.normalTitle" = "Add photos";
+
+/* Class = "UILabel"; text = "تم الدفع بنجاح عودة للرئيسية"; ObjectID = "1wb-Ov-YDn"; */
+"1wb-Ov-YDn.text" = "Payment was successful. Back to main";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "2Lf-5P-oNV"; */
+"2Lf-5P-oNV.text" = "60";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "2Yf-93-AQr"; */
+"2Yf-93-AQr.text" = "day";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "36R-5d-o77"; */
+"36R-5d-o77.text" = "Pay the package cost";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "3Az-PC-LOi"; */
+"3Az-PC-LOi.text" = "duration";
+
+/* Class = "UILabel"; text = "الإعلانات"; ObjectID = "3G0-yt-zcd"; */
+"3G0-yt-zcd.text" = "Ads";
+
+/* Class = "UILabel"; text = "+966123456789"; ObjectID = "42K-ip-G6u"; */
+"42K-ip-G6u.text" = "+966123456789";
+
+/* Class = "UITextField"; placeholder = "السعر"; ObjectID = "4Hr-VR-gY7"; */
+"4Hr-VR-gY7.placeholder" = "price";
+
+/* Class = "UITextField"; placeholder = "تحديد العنوان على الخريطة"; ObjectID = "4Ja-f0-gmF"; */
+"4Ja-f0-gmF.placeholder" = "Determine the address on the map";
+
+/* Class = "UILabel"; text = "إضافة اعلان جديد"; ObjectID = "4Nz-ee-gYp"; */
+"4Nz-ee-gYp.text" = "Add a new advertisement";
+
+/* Class = "UITextField"; placeholder = "القسم الفرعي"; ObjectID = "5C5-vU-FuJ"; */
+"5C5-vU-FuJ.placeholder" = "Subsection";
+
+/* Class = "UILabel"; text = "إضافة اعلان جديد"; ObjectID = "5Pe-XA-qnN"; */
+"5Pe-XA-qnN.text" = "Add a new advertisement";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "6ja-gG-R7L"; */
+"6ja-gG-R7L.text" = "For Marketing and Real Estate Investments Offices";
+
+/* Class = "UIButton"; normalTitle = "تأكيد التحويل"; ObjectID = "6yU-U7-bV4"; */
+"6yU-U7-bV4.normalTitle" = "Transfer Confirmation";
+
+/* Class = "UILabel"; text = "إضافة اعلان جديد"; ObjectID = "7WA-gV-X5l"; */
+"7WA-gV-X5l.text" = "Add a new advertisement";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "7nx-tZ-fM1"; */
+"7nx-tZ-fM1.text" = "500";
+
+/* Class = "UILabel"; text = "الإعلانات"; ObjectID = "9G3-QV-yGc"; */
+"9G3-QV-yGc.text" = "Ads";
+
+/* Class = "UILabel"; text = "أنت غير مشترك بأي باقة إعلانات من اسأل حائل، اختر احدى الباقات للمتابعة"; ObjectID = "9Rb-aX-uoa"; */
+"9Rb-aX-uoa.text" = "You are not subscribed to any ads package. Ask Hail, choose one of the packages to continue.";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "9WU-NX-8yX"; */
+"9WU-NX-8yX.text" = "duration";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "9hK-cQ-Gsn"; */
+"9hK-cQ-Gsn.text" = "price";
+
+/* Class = "UITextField"; placeholder = "البنك المحول منه"; ObjectID = "9r6-AY-VkS"; */
+"9r6-AY-VkS.placeholder" = "The bank from which it is transferred";
+
+/* Class = "UILabel"; text = "حدد طرق التواصل المتاحة"; ObjectID = "BNs-0C-3aj"; */
+"BNs-0C-3aj.text" = "Select available communication way";
+
+/* Class = "UIButton"; normalTitle = "تحديد"; ObjectID = "ByI-0F-fFZ"; */
+"ByI-0F-fFZ.normalTitle" = "select";
+
+/* Class = "UILabel"; text = "إضافة اعلان جديد"; ObjectID = "CS8-EG-56U"; */
+"CS8-EG-56U.text" = "Add a new advertisement";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "CwC-of-Ygz"; */
+"CwC-of-Ygz.text" = "500";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "DAb-Ro-CFZ"; */
+"DAb-Ro-CFZ.text" = "Enter Adv details";
+
+/* Class = "UILabel"; text = "ادفع الأن"; ObjectID = "DSP-rI-8aM"; */
+"DSP-rI-8aM.text" = "Pay now";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "Eb6-xN-0pL"; */
+"Eb6-xN-0pL.text" = "Pay the package cost";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "EkK-Bp-keM"; */
+"EkK-Bp-keM.text" = "500";
+
+/* Class = "UILabel"; text = "أضف صور وفيديوهات للعقار (حد أقصى 2 فيديو)"; ObjectID = "Eod-YL-kwG"; */
+"Eod-YL-kwG.text" = "Add photos and videos of the property (maximum 2 videos)";
+
+/* Class = "UILabel"; text = "التواصل عبر المحادثات (شات)"; ObjectID = "FUS-FC-Mt1"; */
+"FUS-FC-Mt1.text" = "Communicate via chatting";
+
+/* Class = "UILabel"; text = "ر . س"; ObjectID = "FeJ-gg-5R2"; */
+"FeJ-gg-5R2.text" = "SAR";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "Fjt-KF-CWz"; */
+"Fjt-KF-CWz.text" = "Pay the package cost";
+
+/* Class = "UILabel"; text = "الدفع لاحقاً"; ObjectID = "Gb5-56-Mgz"; */
+"Gb5-56-Mgz.text" = "Pay later";
+
+/* Class = "UILabel"; text = "7/5"; ObjectID = "H3c-az-Wxl"; */
+"H3c-az-Wxl.text" = "7/5";
+
+/* Class = "UILabel"; text = "987654321123456789"; ObjectID = "I42-8L-kTd"; */
+"I42-8L-kTd.text" = "987654321123456789";
+
+/* Class = "UILabel"; text = "التواصل عبر واتساب"; ObjectID = "IKB-1R-wDK"; */
+"IKB-1R-wDK.text" = "Communication via WhatsApp";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "JMh-D5-PSk"; */
+"JMh-D5-PSk.text" = "day";
+
+/* Class = "UITextField"; placeholder = "رقم الحساب المحول منه"; ObjectID = "Kgs-rd-1jF"; */
+"Kgs-rd-1jF.placeholder" = "The account number from which he is transferred";
+
+/* Class = "UIButton"; normalTitle = "عودة للرئيسية"; ObjectID = "Kzy-dt-F7H"; */
+"Kzy-dt-F7H.normalTitle" = "Back to Home";
+
+/* Class = "UIButton"; normalTitle = "+ إضافة صورة/فيديو اخر "; ObjectID = "L7J-sB-LMH"; */
+"L7J-sB-LMH.normalTitle" = "+ Add another photo / video";
+
+/* Class = "UILabel"; text = "إضافة إعلان جديد"; ObjectID = "LdL-hh-eri"; */
+"LdL-hh-eri.text" = "Add a new ad";
+
+/* Class = "UILabel"; text = "بإمكانك متابعة تحديثات الإعلان من ردود ومحادثات في صفحة إعلاناتي"; ObjectID = "Lvb-RD-Kmo"; */
+"Lvb-RD-Kmo.text" = "You can follow ad updates from responses and conversations on the My Ads page.";
+
+/* Class = "UILabel"; text = "الأيبان"; ObjectID = "Ml2-bD-A7j"; */
+"Ml2-bD-A7j.text" = "IBAN";
+
+/* Class = "UIButton"; normalTitle = "إعلاناتي"; ObjectID = "Mzc-KK-s8V"; */
+"Mzc-KK-s8V.normalTitle" = "My Ads";
+
+/* Class = "UILabel"; text = "صورة ترويجية للعقار"; ObjectID = "N69-WL-3Qs"; */
+"N69-WL-3Qs.text" = "Promotional photo of the ad";
+
+/* Class = "UILabel"; text = "تم ارسال بيانات التحويل"; ObjectID = "NGG-mJ-EyF"; */
+"NGG-mJ-EyF.text" = "The transfer data has been sent.";
+
+/* Class = "UIButton"; normalTitle = "تأكيد المواصفات"; ObjectID = "O2w-qk-API"; */
+"O2w-qk-API.normalTitle" = "Specification Confirmation";
+
+/* Class = "UILabel"; text = "7/6"; ObjectID = "O6W-pM-4mq"; */
+"O6W-pM-4mq.text" = "7/6";
+
+/* Class = "UILabel"; text = "7/4"; ObjectID = "OLP-ln-19S"; */
+"OLP-ln-19S.text" = "7/4";
+
+/* Class = "UILabel"; text = "إضافة إعلان جديد"; ObjectID = "P6J-NM-Cdp"; */
+"P6J-NM-Cdp.text" = "Add a new ad";
+
+/* Class = "UIButton"; normalTitle = "تأكيد"; ObjectID = "P8H-eW-NzI"; */
+"P8H-eW-NzI.normalTitle" = "confirm";
+
+/* Class = "UILabel"; text = "الشروط والأحكام"; ObjectID = "PXC-Fx-HAy"; */
+"PXC-Fx-HAy.text" = "Terms and Conditions";
+
+/* Class = "UILabel"; text = "التواصل عبر مكالمة هاتفية"; ObjectID = "PZf-tK-OuW"; */
+"PZf-tK-OuW.text" = "Communicate via a phone call";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "QXP-8X-AK7"; */
+"QXP-8X-AK7.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "حدد احد الخيارات التالية لمتابعة الشراء"; ObjectID = "QlD-We-gkS"; */
+"QlD-We-gkS.text" = "Select one of the following options to continue purchasing.";
+
+/* Class = "UITextField"; placeholder = "انستاغرام"; ObjectID = "Sxa-Rh-gq9"; */
+"Sxa-Rh-gq9.placeholder" = "Instagram";
+
+/* Class = "UILabel"; text = "اختيار "; ObjectID = "T3k-qF-X5b"; */
+"T3k-qF-X5b.text" = "Selection";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "U0g-6h-3n7"; */
+"U0g-6h-3n7.text" = "duration";
+
+/* Class = "UILabel"; text = "تم الدفع بنجاح"; ObjectID = "VL3-4O-wV2"; */
+"VL3-4O-wV2.text" = "Your payment was successful";
+
+/* Class = "UILabel"; text = "وقت الدفع"; ObjectID = "VLF-vE-kRR"; */
+"VLF-vE-kRR.text" = "Payment Time";
+
+/* Class = "UIButton"; normalTitle = "إلغاء"; ObjectID = "Vk9-eX-E0u"; */
+"Vk9-eX-E0u.normalTitle" = "Canvel";
+
+/* Class = "UILabel"; text = "7/3"; ObjectID = "Wjg-u8-34L"; */
+"Wjg-u8-34L.text" = "7/3";
+
+/* Class = "UITextField"; placeholder = "القسم"; ObjectID = "X56-vf-xFQ"; */
+"X56-vf-xFQ.placeholder" = "Section";
+
+/* Class = "UILabel"; text = "تحويل بنكي"; ObjectID = "X5U-aR-AeU"; */
+"X5U-aR-AeU.text" = "Bank transfer";
+
+/* Class = "UILabel"; text = "أدخل بيانات التحويل لإتمام الإشتراك"; ObjectID = "YiH-bF-zNf"; */
+"YiH-bF-zNf.text" = "Enter the transfer information to complete the subscription.";
+
+/* Class = "UILabel"; text = "حدد نوع العقار"; ObjectID = "ZLU-s1-he3"; */
+"ZLU-s1-he3.text" = "Select the type of Ads";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aJL-bX-a8x"; */
+"aJL-bX-a8x.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "عنوان الاعلان"; ObjectID = "aOV-eg-v7b"; */
+"aOV-eg-v7b.placeholder" = "Ad title";
+
+/* Class = "UILabel"; text = "(صورة أو منشور ترويجي للعقار)"; ObjectID = "aoy-BG-iCt"; */
+"aoy-BG-iCt.text" = "(Photo or promotional flyer)";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "atI-jd-uhH"; */
+"atI-jd-uhH.text" = "60";
+
+/* Class = "UIButton"; normalTitle = "تأكيد المواصفات"; ObjectID = "bdv-fo-T0V"; */
+"bdv-fo-T0V.normalTitle" = "save social";
+
+/* Class = "UILabel"; text = "اسم المستفيد"; ObjectID = "cGB-Hg-BpA"; */
+"cGB-Hg-BpA.text" = "Beneficiary Name";
+
+/* Class = "UIButton"; normalTitle = "اوافق على الشروط والأحكام"; ObjectID = "cpX-jX-atE"; */
+"cpX-jX-atE.normalTitle" = "I agree to the terms and conditions";
+
+/* Class = "UILabel"; text = "+966123456789"; ObjectID = "dGx-wf-Hfr"; */
+"dGx-wf-Hfr.text" = "+966123456789";
+
+/* Class = "UILabel"; text = "7/7"; ObjectID = "dkJ-mJ-h6R"; */
+"dkJ-mJ-h6R.text" = "7/7";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "dkx-SM-XTh"; */
+"dkx-SM-XTh.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "إضافة اعلان جديد"; ObjectID = "dmC-UK-DLZ"; */
+"dmC-UK-DLZ.text" = "Add a new advertisement";
+
+/* Class = "UITextField"; placeholder = "فيسبوك"; ObjectID = "e3o-eW-b68"; */
+"e3o-eW-b68.placeholder" = "Facebook";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "eR5-be-Iqc"; */
+"eR5-be-Iqc.text" = "price";
+
+/* Class = "UIButton"; normalTitle = "عودة لإضافة إعلان"; ObjectID = "ejZ-AQ-oXr"; */
+"ejZ-AQ-oXr.normalTitle" = "Back to add an ad";
+
+/* Class = "UITextField"; placeholder = "الجهة"; ObjectID = "fZo-KL-Ggx"; */
+"fZo-KL-Ggx.placeholder" = "region";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "faW-Wv-iYJ"; */
+"faW-Wv-iYJ.text" = "25";
+
+/* Class = "UILabel"; text = "قبل أن تتمكن من نشر الإعلان، يجب أن توافق على شروط وأحكام الإستخدام"; ObjectID = "fz9-pz-M3z"; */
+"fz9-pz-M3z.text" = "Before you can publish the advertisement, you must agree to the terms and conditions of use.";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "gWU-UV-OAO"; */
+"gWU-UV-OAO.text" = "25";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "gX7-kG-eth"; */
+"gX7-kG-eth.text" = "day";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gcY-0r-Q0J"; */
+"gcY-0r-Q0J.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "تويتر"; ObjectID = "h4f-Xb-TXR"; */
+"h4f-Xb-TXR.placeholder" = "Twitter";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "hST-Er-sD1"; */
+"hST-Er-sD1.text" = "For Marketing and Real Estate Investments Offices";
+
+/* Class = "UILabel"; text = "دفع الكتروني"; ObjectID = "heB-5x-s5t"; */
+"heB-5x-s5t.text" = "E-Payment";
+
+/* Class = "UILabel"; text = "7/2"; ObjectID = "i4t-Rj-HUR"; */
+"i4t-Rj-HUR.text" = "7/2";
+
+/* Class = "UILabel"; text = "SA01234567899876543210"; ObjectID = "iaA-Gn-YOa"; */
+"iaA-Gn-YOa.text" = "SA01234567899876543210";
+
+/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "iaK-4I-G5U"; */
+"iaK-4I-G5U.text" = "Enter Adv details";
+
+/* Class = "UITextField"; placeholder = "الحي"; ObjectID = "jfd-dl-ENa"; */
+"jfd-dl-ENa.placeholder" = "region";
+
+/* Class = "UITextField"; placeholder = "سناب شات"; ObjectID = "jrf-Wo-Ypf"; */
+"jrf-Wo-Ypf.placeholder" = "SnapChat";
+
+/* Class = "UILabel"; text = "التواصل داخل التطبيق إجباري"; ObjectID = "kZk-Wv-35L"; */
+"kZk-Wv-35L.text" = "Communication within the application is mandatory";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "lpp-GE-hKd"; */
+"lpp-GE-hKd.text" = "price";
+
+/* Class = "UIButton"; normalTitle = "+ رقم آخر "; ObjectID = "mls-Ik-Qrv"; */
+"mls-Ik-Qrv.normalTitle" = "+ Another number";
+
+/* Class = "UILabel"; text = "سيتم التأكد من التحويل من قبل الإدارة بإمكانك العودة لإستكمال نشر الإعلان"; ObjectID = "n11-Ex-uBD"; */
+"n11-Ex-uBD.text" = "The transfer will be confirmed by the administration. You can return to continue publishing the advertisement.";
+
+/* Class = "UIButton"; normalTitle = "+ رقم آخر "; ObjectID = "nhl-8M-mSa"; */
+"nhl-8M-mSa.normalTitle" = "+ Another number";
+
+/* Class = "UILabel"; text = "المستفيد"; ObjectID = "qH1-X3-P3L"; */
+"qH1-X3-P3L.text" = "beneficiary";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "qyG-IV-een"; */
+"qyG-IV-een.text" = "Integrated Package";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "rCH-Ud-Ika"; */
+"rCH-Ud-Ika.text" = "60";
+
+/* Class = "UILabel"; text = "في حالى الدفع لاحقاً"; ObjectID = "rx2-Q7-h7y"; */
+"rx2-Q7-h7y.text" = "If you pay later";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "s1U-kB-d9N"; */
+"s1U-kB-d9N.text" = "SAR";
+
+/* Class = "UILabel"; text = "دفع تكلفة الباقة"; ObjectID = "smu-e5-7kb"; */
+"smu-e5-7kb.text" = "Pay the package cost";
+
+/* Class = "UILabel"; text = "7/1"; ObjectID = "snU-O1-4ky"; */
+"snU-O1-4ky.text" = "7/1";
+
+/* Class = "UILabel"; text = "يجب دفع قيمة الباقة خلال 24 ساعة أو سيتم تعطيل الإعلان"; ObjectID = "tB2-sq-RPw"; */
+"tB2-sq-RPw.text" = "The value of the package must be paid within 24 hours, or the advertisement will be suspended.";
+
+/* Class = "UILabel"; text = "تم إضافة إعلانك بنجاح"; ObjectID = "tTU-xx-LxY"; */
+"tTU-xx-LxY.text" = "Your ad has been added successfully";
+
+/* Class = "UITextField"; placeholder = "إسم المحول"; ObjectID = "uBY-fd-jdp"; */
+"uBY-fd-jdp.placeholder" = "Transfer Name";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "uDe-cF-9ri"; */
+"uDe-cF-9ri.text" = "SAR";
+
+/* Class = "UILabel"; text = "25"; ObjectID = "uMK-OD-6Uv"; */
+"uMK-OD-6Uv.text" = "25";
+
+/* Class = "UILabel"; text = "الإعلانات"; ObjectID = "wWW-bw-j6w"; */
+"wWW-bw-j6w.text" = "Ads";
+
+/* Class = "UILabel"; text = "رقم الحساب"; ObjectID = "wzP-e1-fNZ"; */
+"wzP-e1-fNZ.text" = "account number";
+
+/* Class = "UITextField"; placeholder = "الموقع الإلكتروني"; ObjectID = "xpp-rl-GtC"; */
+"xpp-rl-GtC.placeholder" = "website";
+
+/* Class = "UIButton"; normalTitle = "تأكيد نوع العقار"; ObjectID = "zoQ-Nx-oNU"; */
+"zoQ-Nx-oNU.normalTitle" = "Confirm the type of ad";

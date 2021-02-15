@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BusinessSectorCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="183"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9t-V3-JL0">
+                        <rect key="frame" x="0.0" y="0.0" width="338" height="183"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starAdsImage" translatesAutoresizingMaskIntoConstraints="NO" id="aRY-6E-IFZ">
+                                <rect key="frame" x="0.0" y="0.0" width="338" height="183"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysV-us-dma">
+                                <rect key="frame" x="0.0" y="154" width="338" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شاليهات ومنتجعات واستراحات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STa-ga-IZp">
+                                        <rect key="frame" x="4" y="8" width="330" height="13"/>
+                                        <color key="backgroundColor" red="0.031372549019607843" green="0.30588235294117649" blue="0.54509803921568623" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.031372549019607843" green="0.30588235294117649" blue="0.54509803921568623" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="STa-ga-IZp" secondAttribute="trailing" constant="4" id="0EU-8r-Zf9"/>
+                                    <constraint firstAttribute="bottom" secondItem="STa-ga-IZp" secondAttribute="bottom" constant="8" id="Eha-dV-zds"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="UAl-Fh-7As"/>
+                                    <constraint firstItem="STa-ga-IZp" firstAttribute="leading" secondItem="ysV-us-dma" secondAttribute="leading" constant="4" id="YMA-ql-viR"/>
+                                    <constraint firstItem="STa-ga-IZp" firstAttribute="top" secondItem="ysV-us-dma" secondAttribute="top" constant="8" id="bMW-Vi-bte"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ysV-us-dma" secondAttribute="bottom" id="6Ov-xO-g5T"/>
+                            <constraint firstItem="aRY-6E-IFZ" firstAttribute="top" secondItem="u9t-V3-JL0" secondAttribute="top" id="XkQ-bb-7Sb"/>
+                            <constraint firstItem="aRY-6E-IFZ" firstAttribute="leading" secondItem="u9t-V3-JL0" secondAttribute="leading" id="hCy-2f-vAz"/>
+                            <constraint firstAttribute="bottom" secondItem="aRY-6E-IFZ" secondAttribute="bottom" id="hG3-pe-Wbc"/>
+                            <constraint firstAttribute="trailing" secondItem="ysV-us-dma" secondAttribute="trailing" id="j32-Tj-1So"/>
+                            <constraint firstAttribute="trailing" secondItem="aRY-6E-IFZ" secondAttribute="trailing" id="oAH-t3-sfQ"/>
+                            <constraint firstItem="ysV-us-dma" firstAttribute="leading" secondItem="u9t-V3-JL0" secondAttribute="leading" id="v5x-Rg-uOe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="u9t-V3-JL0" secondAttribute="bottom" id="4jf-jU-K8R"/>
+                <constraint firstItem="u9t-V3-JL0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cE8-kb-Ujs"/>
+                <constraint firstAttribute="trailing" secondItem="u9t-V3-JL0" secondAttribute="trailing" id="rvX-gL-qIe"/>
+                <constraint firstItem="u9t-V3-JL0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zHh-dg-h0P"/>
+            </constraints>
+            <size key="customSize" width="338" height="183"/>
+            <connections>
+                <outlet property="BackGroundImage" destination="aRY-6E-IFZ" id="e3y-k7-nHr"/>
+                <outlet property="title" destination="STa-ga-IZp" id="5dy-uU-7ha"/>
+            </connections>
+            <point key="canvasLocation" x="120.28985507246378" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="starAdsImage" width="327" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

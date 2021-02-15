@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="271" id="EMA-6d-Qhh" customClass="AskHailWithPhotoCell" customModule="Markati" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="271"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EMA-6d-Qhh" id="adp-EE-TIM">
+                <rect key="frame" x="0.0" y="0.0" width="358" height="271"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متطلبات استخراج رخصة مقاولات وتصاريح البناء" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vp-4r-tCe">
+                        <rect key="frame" x="16" y="160" width="326" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="G8v-Wo-Dro"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.28463882210000002" blue="0.49714124199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منذ 7 ساعات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmO-fA-rQQ">
+                        <rect key="frame" x="16" y="138" width="63.5" height="12"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.28463882210000002" blue="0.49714124199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...كريم يسأل" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-ql-Eos">
+                        <rect key="frame" x="253" y="132" width="69" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="KwG-EV-gWD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.28463882210000002" blue="0.49714124199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9Z-mJ-EO5">
+                        <rect key="frame" x="16" y="208" width="326" height="2"/>
+                        <color key="backgroundColor" red="0.92636305090000004" green="0.94660574200000003" blue="0.96599966289999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="vrh-fQ-ywq"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لا توجد ردود على السؤال حتى الآن" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQ1-uv-ckG">
+                        <rect key="frame" x="104" y="218" width="238" height="14"/>
+                        <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
+                        <color key="textColor" red="0.3191466033" green="0.8286136985" blue="0.94289267060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="‏‏NoPath - نسخة (8)" translatesAutoresizingMaskIntoConstraints="NO" id="gBM-PI-adn">
+                        <rect key="frame" x="16" y="16" width="326" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Wc0-Fr-qIk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQv-Ut-WRg">
+                        <rect key="frame" x="36" y="215" width="48" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جديد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s43-Ru-lOV">
+                                <rect key="frame" x="0.0" y="0.0" width="48" height="20"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.28463882210000002" blue="0.49714124199999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88156706090000003" green="0.97256463770000001" blue="0.99014574290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="s43-Ru-lOV" secondAttribute="bottom" id="7tT-kI-bRS"/>
+                            <constraint firstItem="s43-Ru-lOV" firstAttribute="top" secondItem="jQv-Ut-WRg" secondAttribute="top" id="K90-8M-BXQ"/>
+                            <constraint firstAttribute="width" constant="48" id="Sgk-5R-Cv9"/>
+                            <constraint firstItem="s43-Ru-lOV" firstAttribute="leading" secondItem="jQv-Ut-WRg" secondAttribute="leading" id="VOt-NU-Trg"/>
+                            <constraint firstAttribute="height" constant="20" id="nX2-VC-Ss7"/>
+                            <constraint firstAttribute="trailing" secondItem="s43-Ru-lOV" secondAttribute="trailing" id="oNQ-N6-lYK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="C9Z-mJ-EO5" firstAttribute="top" secondItem="3Vp-4r-tCe" secondAttribute="bottom" constant="16" id="0LD-0X-s3S"/>
+                    <constraint firstItem="C9Z-mJ-EO5" firstAttribute="leading" secondItem="adp-EE-TIM" secondAttribute="leading" constant="16" id="0M9-yC-U8q"/>
+                    <constraint firstItem="xQ1-uv-ckG" firstAttribute="leading" secondItem="jQv-Ut-WRg" secondAttribute="trailing" constant="20" id="2Hc-NI-075"/>
+                    <constraint firstItem="3Vp-4r-tCe" firstAttribute="leading" secondItem="adp-EE-TIM" secondAttribute="leading" constant="16" id="35h-3j-WPR"/>
+                    <constraint firstItem="3Vp-4r-tCe" firstAttribute="top" secondItem="KKD-ql-Eos" secondAttribute="bottom" constant="4" id="5VL-Mr-rRw"/>
+                    <constraint firstItem="gBM-PI-adn" firstAttribute="leading" secondItem="adp-EE-TIM" secondAttribute="leading" constant="16" id="67b-Ak-9hp"/>
+                    <constraint firstAttribute="trailing" secondItem="xQ1-uv-ckG" secondAttribute="trailing" constant="16" id="9wC-fn-ucR"/>
+                    <constraint firstAttribute="trailing" secondItem="gBM-PI-adn" secondAttribute="trailing" constant="16" id="CH0-LS-HZR"/>
+                    <constraint firstAttribute="trailing" secondItem="3Vp-4r-tCe" secondAttribute="trailing" constant="16" id="Dbn-AV-2F1"/>
+                    <constraint firstItem="jQv-Ut-WRg" firstAttribute="centerY" secondItem="xQ1-uv-ckG" secondAttribute="centerY" id="EXO-KJ-Mn5"/>
+                    <constraint firstItem="gBM-PI-adn" firstAttribute="top" secondItem="adp-EE-TIM" secondAttribute="top" constant="16" id="HX5-pi-LS6"/>
+                    <constraint firstItem="KKD-ql-Eos" firstAttribute="top" secondItem="gBM-PI-adn" secondAttribute="bottom" constant="16" id="LPG-X4-mO7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KKD-ql-Eos" secondAttribute="trailing" constant="16" id="P6k-hS-1YT"/>
+                    <constraint firstItem="jQv-Ut-WRg" firstAttribute="leading" secondItem="adp-EE-TIM" secondAttribute="leadingMargin" constant="16" id="YeQ-kE-OEE"/>
+                    <constraint firstAttribute="trailing" secondItem="C9Z-mJ-EO5" secondAttribute="trailing" constant="16" id="bGY-Zn-7Be"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="jQv-Ut-WRg" secondAttribute="bottom" constant="16" id="goS-ca-EO5"/>
+                    <constraint firstItem="VmO-fA-rQQ" firstAttribute="leading" secondItem="adp-EE-TIM" secondAttribute="leading" constant="16" id="l1Y-Sh-RO8"/>
+                    <constraint firstAttribute="bottom" secondItem="xQ1-uv-ckG" secondAttribute="bottom" constant="8" id="mTf-Kg-rpy"/>
+                    <constraint firstItem="xQ1-uv-ckG" firstAttribute="top" secondItem="C9Z-mJ-EO5" secondAttribute="bottom" constant="8" id="qcz-vc-T9o"/>
+                    <constraint firstItem="VmO-fA-rQQ" firstAttribute="centerY" secondItem="KKD-ql-Eos" secondAttribute="centerY" id="wtl-34-WqV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="dXd-dZ-AVt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="CellName" destination="KKD-ql-Eos" id="Bu3-3n-BAb"/>
+                <outlet property="CellTime" destination="VmO-fA-rQQ" id="N9e-JO-eUw"/>
+                <outlet property="CellTitle" destination="3Vp-4r-tCe" id="0Hc-Ex-BbW"/>
+                <outlet property="ImageHight" destination="Wc0-Fr-qIk" id="kdB-k3-m6B"/>
+                <outlet property="IsNewView" destination="jQv-Ut-WRg" id="iBw-f9-6OY"/>
+                <outlet property="askImage" destination="gBM-PI-adn" id="LfJ-3e-4LR"/>
+                <outlet property="cellHaveComment" destination="xQ1-uv-ckG" id="sVP-os-Obt"/>
+            </connections>
+            <point key="canvasLocation" x="113.04347826086958" y="144.30803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="‏‏NoPath - نسخة (8)" width="297" height="102"/>
+    </resources>
+</document>

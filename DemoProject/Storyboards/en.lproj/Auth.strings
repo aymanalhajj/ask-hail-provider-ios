@@ -1,0 +1,147 @@
+
+/* Class = "UITextField"; placeholder = "    الاسم بالكامل"; ObjectID = "0Zn-kj-w5A"; */
+"0Zn-kj-w5A.placeholder" = "    full name";
+
+/* Class = "UILabel"; text = "(2/3)"; ObjectID = "2RK-2k-a4S"; */
+"2RK-2k-a4S.text" = "(2/3)";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "79F-C5-b9b"; */
+"79F-C5-b9b.text" = "+966";
+
+/* Class = "UILabel"; text = "تم التحقق من الكود بنجاح. بإمكانك الآن إعادة تعيين كلمة المرور لحسابك"; ObjectID = "BJo-Oe-9IS"; */
+"BJo-Oe-9IS.text" = "The code has been verified successfully. You can now reset the password for your account";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "E5s-VY-0lC"; */
+"E5s-VY-0lC.text" = "+966";
+
+/* Class = "UITextField"; placeholder = "    البريد الإلكتروني"; ObjectID = "IQx-Cv-iht"; */
+"IQx-Cv-iht.placeholder" = "    E-mail";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "IR2-6T-ySc"; */
+"IR2-6T-ySc.normalTitle" = "Check";
+
+/* Class = "UILabel"; text = "دخول لحساب مُسجّل"; ObjectID = "KNO-qF-ils"; */
+"KNO-qF-ils.text" = "Log in to a registered account";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "LMq-Qt-FGJ"; */
+"LMq-Qt-FGJ.normalTitle" = "next";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Mxx-vu-vNd"; */
+"Mxx-vu-vNd.normalTitle" = "next";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Nw4-zW-vmM"; */
+"Nw4-zW-vmM.normalTitle" = "next";
+
+/* Class = "UITextField"; placeholder = "    كلمة المرور"; ObjectID = "O4f-J5-Bwc"; */
+"O4f-J5-Bwc.placeholder" = "    password";
+
+/* Class = "UILabel"; text = "دخول لحساب مُسجّل"; ObjectID = "OUp-Ln-cQe"; */
+"OUp-Ln-cQe.text" = "Log in to a registered account";
+
+/* Class = "UILabel"; text = "+966"; ObjectID = "Op3-a6-yHe"; */
+"Op3-a6-yHe.text" = "+966";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "PBz-kA-wcB"; */
+"PBz-kA-wcB.placeholder" = "Mobile number";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "RlQ-qV-fzy"; */
+"RlQ-qV-fzy.text" = "Register a new account";
+
+/* Class = "UILabel"; text = "أدخل رقم الجوال المُسجل بحسابك"; ObjectID = "SDs-Wc-tcc"; */
+"SDs-Wc-tcc.text" = "Enter the registered mobile number in your account.";
+
+/* Class = "UILabel"; text = "(1/3)"; ObjectID = "Sgn-I4-Spx"; */
+"Sgn-I4-Spx.text" = "(1/3)";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "Tgk-pq-qXH"; */
+"Tgk-pq-qXH.normalTitle" = "next";
+
+/* Class = "UIButton"; normalTitle = "التالي"; ObjectID = "UAz-89-Kd4"; */
+"UAz-89-Kd4.normalTitle" = "next";
+
+/* Class = "UILabel"; text = "شكراً لتسجيلك معنا! بإمكانك الآن استخدام تطبيق اسأل حائل بدون قيود"; ObjectID = "UWS-ho-PfR"; */
+"UWS-ho-PfR.text" = "Thank you for registering with us! You can now use the Ask Hail application without restrictions.";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "Wgr-i9-jD9"; */
+"Wgr-i9-jD9.text" = "Restore password";
+
+/* Class = "UILabel"; text = "(3/3)"; ObjectID = "Y3G-q9-s55"; */
+"Y3G-q9-s55.text" = "(3/3)";
+
+/* Class = "UILabel"; text = "(3/3)"; ObjectID = "anY-pZ-gZD"; */
+"anY-pZ-gZD.text" = "(3/3)";
+
+/* Class = "UILabel"; text = "تم التحقق من الكود بنجاح. يرجى استكمال معلوماتك أدناه"; ObjectID = "eiL-gA-cCU"; */
+"eiL-gA-cCU.text" = "The code has been verified successfully. Please complete your information below.";
+
+/* Class = "UITextField"; placeholder = "تاكيد كلمة المرور"; ObjectID = "eoh-fI-xQa"; */
+"eoh-fI-xQa.placeholder" = "confirm password";
+
+/* Class = "UILabel"; text = "تم التسجيل بنجاح"; ObjectID = "fxg-RP-Xd2"; */
+"fxg-RP-Xd2.text" = "successfully registered";
+
+/* Class = "UILabel"; text = "أدخل رقم الجوال الخاص بك"; ObjectID = "h4U-JY-oML"; */
+"h4U-JY-oML.text" = "Enter your mobile number";
+
+/* Class = "UILabel"; text = "أدخل بيانات الحساب"; ObjectID = "hry-rY-kRm"; */
+"hry-rY-kRm.text" = "Mobile number";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hsr-aq-Pjv"; */
+"hsr-aq-Pjv.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "ihL-2O-pr8"; */
+"ihL-2O-pr8.placeholder" = "Mobile number";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "jSQ-VX-iej"; */
+"jSQ-VX-iej.text" = "Register a new account";
+
+/* Class = "UILabel"; text = "في إسأل حائل لقطاع الأعمال"; ObjectID = "kOp-Wu-Mmo"; */
+"kOp-Wu-Mmo.text" = "Ask Hail to the business sector";
+
+/* Class = "UILabel"; text = "تم ارسال كود مكون من 4 أرقام في رسالة قصيرة لجوالك. يرجى ادخال الكود للمتابعة"; ObjectID = "o0H-gU-gNb"; */
+"o0H-gU-gNb.text" = "A 4-digit code has been sent to your mobile phone in an SMS. Please enter the code to continue.";
+
+/* Class = "UIButton"; normalTitle = "تحقق"; ObjectID = "o5Y-K2-kgd"; */
+"o5Y-K2-kgd.normalTitle" = "Check";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور"; ObjectID = "pLw-de-yZf"; */
+"pLw-de-yZf.placeholder" = "password";
+
+/* Class = "UIButton"; normalTitle = "نسيت كلمة المرور؟"; ObjectID = "pwZ-KD-eUc"; */
+"pwZ-KD-eUc.normalTitle" = "Forgot your password?";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "sjX-MG-FZC"; */
+"sjX-MG-FZC.text" = "Register a new account";
+
+/* Class = "UIButton"; normalTitle = "دخول"; ObjectID = "tDa-Ts-RbE"; */
+"tDa-Ts-RbE.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "رقم الجوال"; ObjectID = "uF0-rC-5Q6"; */
+"uF0-rC-5Q6.placeholder" = "Mobile number";
+
+/* Class = "UILabel"; text = "لم تستلم الكود؟"; ObjectID = "v1A-1i-0pV"; */
+"v1A-1i-0pV.text" = "Didn't receive the code?";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "v68-Dd-82R"; */
+"v68-Dd-82R.text" = "Restore password";
+
+/* Class = "UILabel"; text = "مرحباً"; ObjectID = "vnp-Fu-3qX"; */
+"vnp-Fu-3qX.text" = "Hello";
+
+/* Class = "UILabel"; text = "(2/3)"; ObjectID = "w0o-Uf-EVl"; */
+"w0o-Uf-EVl.text" = "(2/3)";
+
+/* Class = "UILabel"; text = "(1/3)"; ObjectID = "xqV-F4-q9M"; */
+"xqV-F4-q9M.text" = "(1/3)";
+
+/* Class = "UITextField"; placeholder = "كلمة المرور الجديدة"; ObjectID = "z5K-KW-s6z"; */
+"z5K-KW-s6z.placeholder" = "New Password";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "z7P-Ug-xmO"; */
+"z7P-Ug-xmO.text" = "Register a new account";
+
+/* Class = "UILabel"; text = "استعادة كلمة المرور"; ObjectID = "zJ7-Vl-8LX"; */
+"zJ7-Vl-8LX.text" = "Restore password";
+
+/* Class = "UILabel"; text = "لم تستلم الكود؟"; ObjectID = "zjR-FB-I0A"; */
+"zjR-FB-I0A.text" = "Didn't receive the code?";

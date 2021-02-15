@@ -1,0 +1,102 @@
+
+/* Class = "UIButton"; normalTitle = "Forrget Password ?"; ObjectID = "0rK-a5-Kpd"; */
+"0rK-a5-Kpd.normalTitle" = "Forrget Password ?";
+
+/* Class = "UITextField"; placeholder = "gender"; ObjectID = "0wE-Se-55r"; */
+"0wE-Se-55r.placeholder" = "gender";
+
+/* Class = "UILabel"; text = "Enter Validation code"; ObjectID = "14e-bV-D9X"; */
+"14e-bV-D9X.text" = "Enter Validation code";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "1sd-6m-6vK"; */
+"1sd-6m-6vK.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Enter Validation code"; ObjectID = "329-U6-2mR"; */
+"329-U6-2mR.text" = "Enter Validation code";
+
+/* Class = "UITextField"; placeholder = "Enter Your Phone number"; ObjectID = "5yv-4N-dTS"; */
+"5yv-4N-dTS.placeholder" = "Enter Your Phone number";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "7mF-l4-wVI"; */
+"7mF-l4-wVI.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "DC2-sQ-9EW"; */
+"DC2-sQ-9EW.normalTitle" = "Sign Up";
+
+/* Class = "UITextField"; placeholder = "user name"; ObjectID = "FSk-bo-shn"; */
+"FSk-bo-shn.placeholder" = "user name";
+
+/* Class = "UILabel"; text = "Enter Your Email"; ObjectID = "Ff8-jo-Ndg"; */
+"Ff8-jo-Ndg.text" = "Enter Your Email";
+
+/* Class = "UITextField"; placeholder = "Enter Code"; ObjectID = "Gd7-Z8-10V"; */
+"Gd7-Z8-10V.placeholder" = "Enter Code";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "KLZ-yW-c3B"; */
+"KLZ-yW-c3B.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label "; ObjectID = "Nms-ah-k4x"; */
+"Nms-ah-k4x.text" = "Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label ";
+
+/* Class = "UITextField"; placeholder = "Enter Code"; ObjectID = "Qy2-b2-7wc"; */
+"Qy2-b2-7wc.placeholder" = "Enter Code";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "Rkf-JX-pwS"; */
+"Rkf-JX-pwS.placeholder" = "password";
+
+/* Class = "UITextField"; text = "123456"; ObjectID = "Rkf-JX-pwS"; */
+"Rkf-JX-pwS.text" = "123456";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "TNz-pG-7BR"; */
+"TNz-pG-7BR.placeholder" = "password";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "UHd-v8-fTo"; */
+"UHd-v8-fTo.normalTitle" = "Confirm";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "XbD-Oe-hrb"; */
+"XbD-Oe-hrb.placeholder" = "Phone number";
+
+/* Class = "UIButton"; normalTitle = "I have account"; ObjectID = "YZv-BQ-Ldd"; */
+"YZv-BQ-Ldd.normalTitle" = "I have account";
+
+/* Class = "UITextField"; placeholder = "birthday"; ObjectID = "bQT-WE-aQO"; */
+"bQT-WE-aQO.placeholder" = "birthday";
+
+/* Class = "UIButton"; normalTitle = "Log in"; ObjectID = "bUb-8a-oTp"; */
+"bUb-8a-oTp.normalTitle" = "Log in";
+
+/* Class = "UITextField"; placeholder = "Enter Your Phone Number"; ObjectID = "cMX-Nn-qLx"; */
+"cMX-Nn-qLx.placeholder" = "Enter Your Phone Number";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "dBw-mC-ABL"; */
+"dBw-mC-ABL.placeholder" = "New Password";
+
+/* Class = "UITextField"; placeholder = "Enter Your Phone number"; ObjectID = "eZO-Tr-Uuw"; */
+"eZO-Tr-Uuw.placeholder" = "Enter Your Phone number";
+
+/* Class = "UIButton"; normalTitle = "New User"; ObjectID = "htX-hq-ayB"; */
+"htX-hq-ayB.normalTitle" = "New User";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "i8d-ge-azB"; */
+"i8d-ge-azB.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Change"; ObjectID = "mDw-RP-OnW"; */
+"mDw-RP-OnW.normalTitle" = "Change";
+
+/* Class = "UITextField"; placeholder = "Enter Your phone number"; ObjectID = "oea-eG-Gwo"; */
+"oea-eG-Gwo.placeholder" = "Enter Your phone number";
+
+/* Class = "UIButton"; normalTitle = "log in"; ObjectID = "phF-7C-mbw"; */
+"phF-7C-mbw.normalTitle" = "log in";
+
+/* Class = "UITextField"; placeholder = "confirm password"; ObjectID = "tJV-U0-kDe"; */
+"tJV-U0-kDe.placeholder" = "confirm password";
+
+/* Class = "UILabel"; text = "Enter Validation code"; ObjectID = "uAp-Mg-seE"; */
+"uAp-Mg-seE.text" = "Enter Validation code";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "wj1-Cf-gwn"; */
+"wj1-Cf-gwn.placeholder" = "Phone";
+
+/* Class = "UITextField"; text = "01008226145"; ObjectID = "wj1-Cf-gwn"; */
+"wj1-Cf-gwn.text" = "01008226145";

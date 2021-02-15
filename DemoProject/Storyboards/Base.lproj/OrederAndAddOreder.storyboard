@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+        <array key="Tajawal-Regular.ttf">
+            <string>Tajawal-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Order Add New NumberVC-->
+        <scene sceneID="f08-ye-HdI">
+            <objects>
+                <viewController storyboardIdentifier="OrderAddNewNumberVC" id="Bdb-zT-LiB" customClass="OrderAddNewNumberVC" customModule="Markati" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YDb-ap-K3a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxK-4N-H4m">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rl7-3s-xPA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <action selector="CancelAction:" destination="Bdb-zT-LiB" eventType="touchUpInside" id="j23-GA-h6Z"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Odd-8A-9PN">
+                                <rect key="frame" x="48" y="330.5" width="318" height="235"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم تواصل اخر" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-Al-6Mb">
+                                        <rect key="frame" x="108.5" y="24" width="101.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                        <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrc-DN-okg">
+                                        <rect key="frame" x="16" y="64" width="286" height="56"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="jcM-gp-czW">
+                                                <rect key="frame" x="238" y="16" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="HMm-Ob-M8O"/>
+                                                    <constraint firstAttribute="height" constant="24" id="lsO-3P-aCf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+966" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eL-v7-Y3c">
+                                                <rect key="frame" x="24" y="20" width="33.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                                <color key="textColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="43z-3y-dda">
+                                                <rect key="frame" x="0.0" y="54" width="286" height="2"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.80392156859999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="ECe-Eb-Hs9"/>
+                                                </constraints>
+                                            </view>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vbz-6U-G3a">
+                                                <rect key="frame" x="73.5" y="8" width="160.5" height="40"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Roq-DZ-Ry8"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="43z-3y-dda" secondAttribute="bottom" id="1y3-RL-ewM"/>
+                                            <constraint firstAttribute="trailing" secondItem="43z-3y-dda" secondAttribute="trailing" id="3kE-IH-d5b"/>
+                                            <constraint firstItem="3eL-v7-Y3c" firstAttribute="centerY" secondItem="rrc-DN-okg" secondAttribute="centerY" id="E1g-ek-8cC"/>
+                                            <constraint firstItem="Vbz-6U-G3a" firstAttribute="leading" secondItem="3eL-v7-Y3c" secondAttribute="trailing" constant="16" id="Ef2-pe-4NY"/>
+                                            <constraint firstItem="Vbz-6U-G3a" firstAttribute="centerY" secondItem="rrc-DN-okg" secondAttribute="centerY" id="Jwd-BL-279"/>
+                                            <constraint firstItem="43z-3y-dda" firstAttribute="leading" secondItem="rrc-DN-okg" secondAttribute="leading" id="S7q-JR-t5I"/>
+                                            <constraint firstItem="jcM-gp-czW" firstAttribute="leading" secondItem="Vbz-6U-G3a" secondAttribute="trailing" constant="4" id="Tvq-SS-edL"/>
+                                            <constraint firstAttribute="trailing" secondItem="jcM-gp-czW" secondAttribute="trailing" constant="24" id="kqZ-HI-CLv"/>
+                                            <constraint firstAttribute="height" constant="56" id="vg3-Dn-KaZ"/>
+                                            <constraint firstItem="jcM-gp-czW" firstAttribute="centerY" secondItem="rrc-DN-okg" secondAttribute="centerY" id="vxq-oK-cBQ"/>
+                                            <constraint firstItem="3eL-v7-Y3c" firstAttribute="leading" secondItem="rrc-DN-okg" secondAttribute="leading" constant="24" id="w1V-ye-ona"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-Y4-QqB">
+                                        <rect key="frame" x="16" y="144" width="286" height="56"/>
+                                        <color key="backgroundColor" red="0.97647058819999999" green="0.70588235290000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="htn-Vp-XBT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="18"/>
+                                        <state key="normal" title="تأكيد">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ConfirmAction:" destination="Bdb-zT-LiB" eventType="touchUpInside" id="aAD-6W-JSn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qCz-Al-6Mb" firstAttribute="centerX" secondItem="Odd-8A-9PN" secondAttribute="centerX" id="0d0-gD-rKV"/>
+                                    <constraint firstItem="ZSX-Y4-QqB" firstAttribute="leading" secondItem="Odd-8A-9PN" secondAttribute="leading" constant="16" id="0jF-hP-13O"/>
+                                    <constraint firstItem="ZSX-Y4-QqB" firstAttribute="top" secondItem="rrc-DN-okg" secondAttribute="bottom" constant="24" id="1wF-R3-Va4"/>
+                                    <constraint firstAttribute="height" constant="235" id="Hr8-Hj-0yo"/>
+                                    <constraint firstItem="rrc-DN-okg" firstAttribute="leading" secondItem="Odd-8A-9PN" secondAttribute="leading" constant="16" id="MzS-yS-iIG"/>
+                                    <constraint firstItem="rrc-DN-okg" firstAttribute="top" secondItem="qCz-Al-6Mb" secondAttribute="bottom" constant="24" id="PN8-WA-WPs"/>
+                                    <constraint firstItem="qCz-Al-6Mb" firstAttribute="top" secondItem="Odd-8A-9PN" secondAttribute="top" constant="24" id="Tga-fm-xbh"/>
+                                    <constraint firstAttribute="trailing" secondItem="rrc-DN-okg" secondAttribute="trailing" constant="16" id="oPj-qW-Wez"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZSX-Y4-QqB" secondAttribute="trailing" constant="16" id="tX9-V4-rkh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z28-5t-5U6"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GxK-4N-H4m" firstAttribute="top" secondItem="YDb-ap-K3a" secondAttribute="top" id="8a0-9V-Wtg"/>
+                            <constraint firstItem="Rl7-3s-xPA" firstAttribute="leading" secondItem="Z28-5t-5U6" secondAttribute="leading" id="GXO-zg-dex"/>
+                            <constraint firstItem="Z28-5t-5U6" firstAttribute="trailing" secondItem="Rl7-3s-xPA" secondAttribute="trailing" id="L2i-Ke-fdS"/>
+                            <constraint firstItem="Z28-5t-5U6" firstAttribute="trailing" secondItem="Odd-8A-9PN" secondAttribute="trailing" constant="48" id="L5c-bX-N4W"/>
+                            <constraint firstItem="Z28-5t-5U6" firstAttribute="bottom" secondItem="Rl7-3s-xPA" secondAttribute="bottom" id="RDM-AX-Pbj"/>
+                            <constraint firstItem="Odd-8A-9PN" firstAttribute="leading" secondItem="Z28-5t-5U6" secondAttribute="leading" constant="48" id="bEK-4G-9he"/>
+                            <constraint firstAttribute="bottom" secondItem="GxK-4N-H4m" secondAttribute="bottom" id="bWe-NH-GiM"/>
+                            <constraint firstAttribute="trailing" secondItem="GxK-4N-H4m" secondAttribute="trailing" id="fjY-Sa-We0"/>
+                            <constraint firstItem="Rl7-3s-xPA" firstAttribute="top" secondItem="YDb-ap-K3a" secondAttribute="top" id="g4g-Ek-rMG"/>
+                            <constraint firstItem="GxK-4N-H4m" firstAttribute="leading" secondItem="Z28-5t-5U6" secondAttribute="leading" id="h8u-4H-7F4"/>
+                            <constraint firstItem="Odd-8A-9PN" firstAttribute="centerX" secondItem="YDb-ap-K3a" secondAttribute="centerX" id="hvK-1h-O0L"/>
+                            <constraint firstItem="Odd-8A-9PN" firstAttribute="centerY" secondItem="YDb-ap-K3a" secondAttribute="centerY" id="mXF-DO-FsA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ConfirmBtn" destination="ZSX-Y4-QqB" id="TMk-Jm-BOi"/>
+                        <outlet property="PhoneImage" destination="jcM-gp-czW" id="Gqp-hp-fY6"/>
+                        <outlet property="PhoneLineView" destination="43z-3y-dda" id="ZGg-PZ-YVq"/>
+                        <outlet property="PhoneTf" destination="Vbz-6U-G3a" id="iUr-qw-mp3"/>
+                        <outlet property="PhoneView" destination="rrc-DN-okg" id="dSN-Do-QeG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQR-Wn-FUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5551" y="1342"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="phone" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

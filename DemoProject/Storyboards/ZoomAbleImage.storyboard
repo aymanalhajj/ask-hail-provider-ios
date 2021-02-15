@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo DetialsVC-->
+        <scene sceneID="T1d-fd-0nu">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetialsVC" id="yzz-Oy-apr" customClass="PhotoDetialsVC" customModule="Markati" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Jw-RH-Guw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I2-ux-715">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fLq-4c-QJJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML7-MZ-cpn">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonAction:" destination="yzz-Oy-apr" eventType="touchUpInside" id="B21-Wo-X8T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fLq-4c-QJJ" secondAttribute="bottom" id="8Fn-jz-PNa"/>
+                                    <constraint firstItem="fLq-4c-QJJ" firstAttribute="leading" secondItem="1I2-ux-715" secondAttribute="leading" id="Eey-lh-6aS"/>
+                                    <constraint firstAttribute="bottom" secondItem="ML7-MZ-cpn" secondAttribute="bottom" id="N8B-nx-qSY"/>
+                                    <constraint firstItem="ML7-MZ-cpn" firstAttribute="top" secondItem="1I2-ux-715" secondAttribute="top" id="OG4-aZ-cc1"/>
+                                    <constraint firstAttribute="trailing" secondItem="fLq-4c-QJJ" secondAttribute="trailing" id="Rxe-vW-UIy"/>
+                                    <constraint firstItem="ML7-MZ-cpn" firstAttribute="leading" secondItem="1I2-ux-715" secondAttribute="leading" id="S2v-Kv-iCz"/>
+                                    <constraint firstItem="fLq-4c-QJJ" firstAttribute="centerY" secondItem="1I2-ux-715" secondAttribute="centerY" id="VwB-th-9zg"/>
+                                    <constraint firstAttribute="trailing" secondItem="ML7-MZ-cpn" secondAttribute="trailing" id="WtB-td-Y5E"/>
+                                    <constraint firstItem="fLq-4c-QJJ" firstAttribute="centerX" secondItem="1I2-ux-715" secondAttribute="centerX" id="grY-ky-dj9"/>
+                                    <constraint firstItem="fLq-4c-QJJ" firstAttribute="top" secondItem="1I2-ux-715" secondAttribute="top" id="xLp-tO-QaP"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="yzz-Oy-apr" id="J88-QI-lxG"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="neJ-3F-S5V">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UBN-qv-KZ7"/>
+                                    <constraint firstAttribute="width" constant="40" id="ruo-1T-2kx"/>
+                                </constraints>
+                                <state key="normal" image="closeIcon">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="yzz-Oy-apr" eventType="touchUpInside" id="yFp-rt-DG6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QBv-RU-hqk"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="neJ-3F-S5V" firstAttribute="top" secondItem="QBv-RU-hqk" secondAttribute="top" constant="20" id="Hxh-CV-HFN"/>
+                            <constraint firstItem="1I2-ux-715" firstAttribute="leading" secondItem="QBv-RU-hqk" secondAttribute="leading" id="LJl-LZ-8sj"/>
+                            <constraint firstItem="QBv-RU-hqk" firstAttribute="trailing" secondItem="1I2-ux-715" secondAttribute="trailing" id="QfC-EI-K0g"/>
+                            <constraint firstItem="QBv-RU-hqk" firstAttribute="bottom" secondItem="1I2-ux-715" secondAttribute="bottom" id="aiy-Oj-y22"/>
+                            <constraint firstItem="QBv-RU-hqk" firstAttribute="trailing" secondItem="neJ-3F-S5V" secondAttribute="trailing" constant="20" id="ihV-lE-T9j"/>
+                            <constraint firstItem="1I2-ux-715" firstAttribute="top" secondItem="0Jw-RH-Guw" secondAttribute="top" id="jhP-ef-WgH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgPhoto" destination="fLq-4c-QJJ" id="tea-br-FjS"/>
+                        <outlet property="scrollView" destination="1I2-ux-715" id="7D4-k0-yOT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Upd-2m-sYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="302"/>
+        </scene>
+        <!--Photo DetialsVC1-->
+        <scene sceneID="oAc-We-gqS">
+            <objects>
+                <viewController storyboardIdentifier="PhotoDetialsVC1" id="eyf-is-nXc" customClass="PhotoDetialsVC1" customModule="Markati" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xah-sM-lpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE6-4b-Eba">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="eyf-is-nXc" eventType="touchUpInside" id="agC-M2-hzX"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Twm-X5-8V8">
+                                <rect key="frame" x="0.0" y="260.5" width="414" height="375"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Fp-Sg-fQ4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8Fp-Sg-fQ4" secondAttribute="height" multiplier="1:1" id="geN-Mq-wFm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8Fp-Sg-fQ4" firstAttribute="centerX" secondItem="Twm-X5-8V8" secondAttribute="centerX" id="6rq-v8-wrw"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Fp-Sg-fQ4" secondAttribute="bottom" id="SSy-iG-6gE"/>
+                                    <constraint firstItem="8Fp-Sg-fQ4" firstAttribute="leading" secondItem="Twm-X5-8V8" secondAttribute="leading" id="VRh-7h-UIT"/>
+                                    <constraint firstAttribute="width" secondItem="Twm-X5-8V8" secondAttribute="height" multiplier="1:1" id="Vak-LE-FV2"/>
+                                    <constraint firstItem="8Fp-Sg-fQ4" firstAttribute="top" secondItem="Twm-X5-8V8" secondAttribute="top" id="d0t-di-3Zt"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Fp-Sg-fQ4" secondAttribute="trailing" id="flS-n1-Kj4"/>
+                                    <constraint firstAttribute="height" constant="375" id="tYj-4C-dML"/>
+                                    <constraint firstItem="8Fp-Sg-fQ4" firstAttribute="centerY" secondItem="Twm-X5-8V8" secondAttribute="centerY" id="yf3-Z5-5fD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="eyf-is-nXc" id="nAe-my-ac7"/>
+                                </connections>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEd-yz-Mja">
+                                <rect key="frame" x="354" y="64" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Sr-1n-YcY"/>
+                                    <constraint firstAttribute="width" constant="40" id="yjK-jh-VZR"/>
+                                </constraints>
+                                <state key="normal" image="closeIcon">
+                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButtonAction:" destination="eyf-is-nXc" eventType="touchUpInside" id="2Hu-ar-Yab"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="48o-6d-I8i"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="0.85852581520000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Twm-X5-8V8" firstAttribute="centerY" secondItem="Xah-sM-lpU" secondAttribute="centerY" id="21Q-f8-1sO"/>
+                            <constraint firstItem="48o-6d-I8i" firstAttribute="bottom" secondItem="DE6-4b-Eba" secondAttribute="bottom" id="4CE-O9-5FP"/>
+                            <constraint firstItem="48o-6d-I8i" firstAttribute="trailing" secondItem="DE6-4b-Eba" secondAttribute="trailing" id="ADU-TA-9qk"/>
+                            <constraint firstItem="DE6-4b-Eba" firstAttribute="leading" secondItem="48o-6d-I8i" secondAttribute="leading" id="CyL-O5-LZ5"/>
+                            <constraint firstItem="48o-6d-I8i" firstAttribute="trailing" secondItem="8Fp-Sg-fQ4" secondAttribute="trailing" id="X2d-FA-LGT"/>
+                            <constraint firstItem="Twm-X5-8V8" firstAttribute="centerX" secondItem="Xah-sM-lpU" secondAttribute="centerX" id="bYc-Ya-Ul4"/>
+                            <constraint firstItem="8Fp-Sg-fQ4" firstAttribute="leading" secondItem="48o-6d-I8i" secondAttribute="leading" id="cge-2C-WZI"/>
+                            <constraint firstItem="48o-6d-I8i" firstAttribute="trailing" secondItem="Twm-X5-8V8" secondAttribute="trailing" id="dAu-vX-WTP"/>
+                            <constraint firstItem="Twm-X5-8V8" firstAttribute="leading" secondItem="48o-6d-I8i" secondAttribute="leading" id="gbA-qK-TdQ"/>
+                            <constraint firstItem="48o-6d-I8i" firstAttribute="trailing" secondItem="yEd-yz-Mja" secondAttribute="trailing" constant="20" id="h7q-w4-0I2"/>
+                            <constraint firstItem="Twm-X5-8V8" firstAttribute="centerY" secondItem="Xah-sM-lpU" secondAttribute="centerY" id="nET-bP-fKx"/>
+                            <constraint firstItem="yEd-yz-Mja" firstAttribute="top" secondItem="48o-6d-I8i" secondAttribute="top" constant="20" id="ptx-JZ-TEf"/>
+                            <constraint firstItem="DE6-4b-Eba" firstAttribute="top" secondItem="48o-6d-I8i" secondAttribute="top" id="xoU-1T-5IJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgPhoto" destination="8Fp-Sg-fQ4" id="DbH-v4-eRn"/>
+                        <outlet property="scrollView" destination="Twm-X5-8V8" id="lfk-e4-kwq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMk-vf-HNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="closeIcon" width="120" height="120"/>
+    </resources>
+</document>

@@ -1,0 +1,318 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "0py-pi-tgt"; */
+"0py-pi-tgt.text" = "0";
+
+/* Class = "UILabel"; text = "درجة الحرارة"; ObjectID = "10n-h5-avz"; */
+"10n-h5-avz.text" = "درجة الحرارة";
+
+/* Class = "UILabel"; text = "60"; ObjectID = "1Sp-L9-8sJ"; */
+"1Sp-L9-8sJ.text" = "60";
+
+/* Class = "UILabel"; text = "أيام"; ObjectID = "1kd-xx-LTT"; */
+"1kd-xx-LTT.text" = "أيام";
+
+/* Class = "UILabel"; text = "قم بتسجيل الدخول أو تسجيل حساب جديد لتتمكن من بدء محادثات مع المعلنين والناشرين في اسأل حائل"; ObjectID = "1qP-eN-4md"; */
+"1qP-eN-4md.text" = "قم بتسجيل الدخول أو تسجيل حساب جديد لتتمكن من بدء محادثات مع المعلنين والناشرين في اسأل حائل";
+
+/* Class = "UITextField"; placeholder = "تحديد اليوم"; ObjectID = "2hA-RT-UN4"; */
+"2hA-RT-UN4.placeholder" = "تحديد اليوم";
+
+/* Class = "UITabBarItem"; title = "HOME"; ObjectID = "2mh-1z-zg8"; */
+"2mh-1z-zg8.title" = "HOME";
+
+/* Class = "UILabel"; text = "الفجر"; ObjectID = "2ym-kA-asY"; */
+"2ym-kA-asY.text" = "الفجر";
+
+/* Class = "UILabel"; text = "12:02 م"; ObjectID = "3YC-oF-rs4"; */
+"3YC-oF-rs4.text" = "12:02 م";
+
+/* Class = "UILabel"; text = " (26)"; ObjectID = "590-2I-ysK"; */
+"590-2I-ysK.text" = " (26)";
+
+/* Class = "UILabel"; text = "إضافة جديد"; ObjectID = "5Nk-kV-vV9"; */
+"5Nk-kV-vV9.text" = "إضافة جديد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5Tm-k5-Bqi"; */
+"5Tm-k5-Bqi.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "إسأل حائل"; ObjectID = "5el-Ax-jvU"; */
+"5el-Ax-jvU.text" = "إسأل حائل";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "5wq-Ez-Qln"; */
+"5wq-Ez-Qln.text" = "ر.س";
+
+/* Class = "UILabel"; text = "الأيام المتبقية"; ObjectID = "6Cw-1x-p1v"; */
+"6Cw-1x-p1v.text" = "الأيام المتبقية";
+
+/* Class = "UILabel"; text = "تسجيل حساب جديد"; ObjectID = "6mh-gK-iMq"; */
+"6mh-gK-iMq.text" = "تسجيل حساب جديد";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "738-5w-doH"; */
+"738-5w-doH.text" = "100";
+
+/* Class = "UILabel"; text = "تاريخ الشراء"; ObjectID = "85n-36-4ZR"; */
+"85n-36-4ZR.text" = "تاريخ الشراء";
+
+/* Class = "UILabel"; text = "تعديل"; ObjectID = "8Et-UM-CDX"; */
+"8Et-UM-CDX.text" = "تعديل";
+
+/* Class = "UILabel"; text = "التوفر"; ObjectID = "9CR-WX-Y0V"; */
+"9CR-WX-Y0V.text" = "التوفر";
+
+/* Class = "UILabel"; text = "لن يكون المكان متاح من يوم"; ObjectID = "9uI-au-rCe"; */
+"9uI-au-rCe.text" = "لن يكون المكان متاح من يوم";
+
+/* Class = "UILabel"; text = "."; ObjectID = "ABV-4h-Via"; */
+"ABV-4h-Via.text" = ".";
+
+/* Class = "UILabel"; text = "سؤال"; ObjectID = "AJ1-CY-JPA"; */
+"AJ1-CY-JPA.text" = "سؤال";
+
+/* Class = "UILabel"; text = "الوصف"; ObjectID = "ALw-kr-Tw2"; */
+"ALw-kr-Tw2.text" = "الوصف";
+
+/* Class = "UITextField"; placeholder = "الجهة"; ObjectID = "Bgd-aQ-ptL"; */
+"Bgd-aQ-ptL.placeholder" = "الجهة";
+
+/* Class = "UILabel"; text = "No Comment"; ObjectID = "D11-X4-tmn"; */
+"D11-X4-tmn.text" = "No Comment";
+
+/* Class = "UILabel"; text = "تميز الإعلان"; ObjectID = "D97-M0-gid"; */
+"D97-M0-gid.text" = "تميز الإعلان";
+
+/* Class = "UILabel"; text = "فترة جديدة"; ObjectID = "DO4-rt-oQE"; */
+"DO4-rt-oQE.text" = "فترة جديدة";
+
+/* Class = "UILabel"; text = "الفترة"; ObjectID = "FHg-FP-bbe"; */
+"FHg-FP-bbe.text" = "الفترة";
+
+/* Class = "UILabel"; text = "لا يوجد وسائل تواصل"; ObjectID = "GT9-iH-8jZ"; */
+"GT9-iH-8jZ.text" = "لا يوجد وسائل تواصل";
+
+/* Class = "UILabel"; text = "إعلان"; ObjectID = "H2h-9v-ivl"; */
+"H2h-9v-ivl.text" = "إعلان";
+
+/* Class = "UILabel"; text = "@AskHail2020"; ObjectID = "Hea-qI-XkG"; */
+"Hea-qI-XkG.text" = "@AskHail2020";
+
+/* Class = "UILabel"; text = "حدف"; ObjectID = "Hev-Gf-TyA"; */
+"Hev-Gf-TyA.text" = "حدف";
+
+/* Class = "UIButton"; normalTitle = "إلغاء التصفية"; ObjectID = "If0-28-xMo"; */
+"If0-28-xMo.normalTitle" = "إلغاء التصفية";
+
+/* Class = "UILabel"; text = "تمييز"; ObjectID = "Isl-GA-UqE"; */
+"Isl-GA-UqE.text" = "تمييز";
+
+/* Class = "UILabel"; text = "حذف"; ObjectID = "KCe-lH-ZjM"; */
+"KCe-lH-ZjM.text" = "حذف";
+
+/* Class = "UILabel"; text = "سؤال رقم"; ObjectID = "KHq-Gd-lDx"; */
+"KHq-Gd-lDx.text" = "سؤال رقم";
+
+/* Class = "UILabel"; text = "No Comment"; ObjectID = "KKO-xi-QZU"; */
+"KKO-xi-QZU.text" = "No Comment";
+
+/* Class = "UILabel"; text = "إعلانات معطلة"; ObjectID = "L6j-NB-ZlC"; */
+"L6j-NB-ZlC.text" = "إعلانات معطلة";
+
+/* Class = "UIButton"; normalTitle = "عرض المزيد"; ObjectID = "MBq-t5-cox"; */
+"MBq-t5-cox.normalTitle" = "عرض المزيد";
+
+/* Class = "UIButton"; normalTitle = "إضافة إجابة"; ObjectID = "MRV-fm-yYy"; */
+"MRV-fm-yYy.normalTitle" = "إضافة إجابة";
+
+/* Class = "UILabel"; text = "العنوان"; ObjectID = "MVU-yA-lD6"; */
+"MVU-yA-lD6.text" = "العنوان";
+
+/* Class = "UILabel"; text = "لمكاتب التسويق والإستثمارات العقارية"; ObjectID = "MaP-lS-jxy"; */
+"MaP-lS-jxy.text" = "لمكاتب التسويق والإستثمارات العقارية";
+
+/* Class = "UILabel"; text = "تفاصيل الباقة"; ObjectID = "NMI-G5-xJa"; */
+"NMI-G5-xJa.text" = "تفاصيل الباقة";
+
+/* Class = "UILabel"; text = "الإجابات والردود"; ObjectID = "Nej-8m-2gi"; */
+"Nej-8m-2gi.text" = "الإجابات والردود";
+
+/* Class = "UITabBarItem"; title = "Chat"; ObjectID = "Nth-Yo-EYa"; */
+"Nth-Yo-EYa.title" = "Chat";
+
+/* Class = "UITabBarItem"; title = "Ask Hail"; ObjectID = "Otd-Y1-4dA"; */
+"Otd-Y1-4dA.title" = "Ask Hail";
+
+/* Class = "UILabel"; text = "اعلان رقم "; ObjectID = "Oyi-CF-dEU"; */
+"Oyi-CF-dEU.text" = "اعلان رقم ";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "Pfd-s0-Con"; */
+"Pfd-s0-Con.text" = "3";
+
+/* Class = "UILabel"; text = "لا توجد أسئلة جديدة في الوقت الحالي اضفط أيقونة + لإضافة سؤال جديد"; ObjectID = "Pzn-io-tsC"; */
+"Pzn-io-tsC.text" = "لا توجد أسئلة جديدة في الوقت الحالي اضفط أيقونة + لإضافة سؤال جديد";
+
+/* Class = "UILabel"; text = "أيام"; ObjectID = "SQO-Tx-x89"; */
+"SQO-Tx-x89.text" = "أيام";
+
+/* Class = "UILabel"; text = "تأكيد التحويل البنكي"; ObjectID = "SYC-SE-msT"; */
+"SYC-SE-msT.text" = "تأكيد التحويل البنكي";
+
+/* Class = "UILabel"; text = "500"; ObjectID = "TAz-Ne-QB8"; */
+"TAz-Ne-QB8.text" = "500";
+
+/* Class = "UIButton"; normalTitle = "صورة ترويجية"; ObjectID = "To7-cj-3xy"; */
+"To7-cj-3xy.normalTitle" = "صورة ترويجية";
+
+/* Class = "UITextView"; text = "اضافة تعليق"; ObjectID = "UXp-wb-fci"; */
+"UXp-wb-fci.text" = "اضافة تعليق";
+
+/* Class = "UILabel"; text = "لم تقم بنشر أي إعلانات\nإضغط علي + لإضافة إعلان جديد"; ObjectID = "Ugf-ft-Blk"; */
+"Ugf-ft-Blk.text" = "لم تقم بنشر أي إعلانات\nإضغط علي + لإضافة إعلان جديد";
+
+/* Class = "UILabel"; text = "06:59 م"; ObjectID = "Vup-Yc-7nD"; */
+"Vup-Yc-7nD.text" = "06:59 م";
+
+/* Class = "UILabel"; text = "كم"; ObjectID = "WmU-S9-ldT"; */
+"WmU-S9-ldT.text" = "كم";
+
+/* Class = "UILabel"; text = "المحادثات"; ObjectID = "Wz9-US-eN1"; */
+"Wz9-US-eN1.text" = "المحادثات";
+
+/* Class = "UILabel"; text = "تعديل"; ObjectID = "XLs-CA-kCJ"; */
+"XLs-CA-kCJ.text" = "تعديل";
+
+/* Class = "UILabel"; text = "عملية التحويل البنكي قيد المراجعة الان"; ObjectID = "XlI-qg-RaD"; */
+"XlI-qg-RaD.text" = "عملية التحويل البنكي قيد المراجعة الان";
+
+/* Class = "UILabel"; text = "السعر"; ObjectID = "YZf-9M-BnU"; */
+"YZf-9M-BnU.text" = "السعر";
+
+/* Class = "UITextField"; placeholder = "عدد الأيام"; ObjectID = "ZM6-ds-WIE"; */
+"ZM6-ds-WIE.placeholder" = "عدد الأيام";
+
+/* Class = "UILabel"; text = "المغرب"; ObjectID = "ZxK-Ch-NHA"; */
+"ZxK-Ch-NHA.text" = "المغرب";
+
+/* Class = "UITabBarItem"; title = "MORE"; ObjectID = "aIb-Wt-fee"; */
+"aIb-Wt-fee.title" = "MORE";
+
+/* Class = "UILabel"; text = "4.5"; ObjectID = "aQW-hu-gVV"; */
+"aQW-hu-gVV.text" = "4.5";
+
+/* Class = "UITextField"; placeholder = "اكتب رسالتك"; ObjectID = "bNa-KE-uEG"; */
+"bNa-KE-uEG.placeholder" = "اكتب رسالتك";
+
+/* Class = "UILabel"; text = "تاريخ التجديد"; ObjectID = "bWq-gq-dxN"; */
+"bWq-gq-dxN.text" = "تاريخ التجديد";
+
+/* Class = "UILabel"; text = "مميز"; ObjectID = "beW-rd-ZaS"; */
+"beW-rd-ZaS.text" = "مميز";
+
+/* Class = "UILabel"; text = "مواقيت الصلاة"; ObjectID = "bei-kY-VJa"; */
+"bei-kY-VJa.text" = "مواقيت الصلاة";
+
+/* Class = "UILabel"; text = "إسأل حائل"; ObjectID = "bpg-Rm-c2f"; */
+"bpg-Rm-c2f.text" = "إسأل حائل";
+
+/* Class = "UILabel"; text = "03:43 ص"; ObjectID = "bq7-nW-6Aq"; */
+"bq7-nW-6Aq.text" = "03:43 ص";
+
+/* Class = "UIButton"; normalTitle = "تصفية"; ObjectID = "bz4-xh-eVE"; */
+"bz4-xh-eVE.normalTitle" = "تصفية";
+
+/* Class = "UIButton"; normalTitle = "انطلق الآن"; ObjectID = "cWM-WU-Gi4"; */
+"cWM-WU-Gi4.normalTitle" = "انطلق الآن";
+
+/* Class = "UILabel"; text = "التقييمات"; ObjectID = "clA-by-xqI"; */
+"clA-by-xqI.text" = "التقييمات";
+
+/* Class = "UILabel"; text = "وسائل التواصل"; ObjectID = "eMj-gw-lJJ"; */
+"eMj-gw-lJJ.text" = "وسائل التواصل";
+
+/* Class = "UILabel"; text = "مواقيت الصلاة"; ObjectID = "edh-sF-l4R"; */
+"edh-sF-l4R.text" = "مواقيت الصلاة";
+
+/* Class = "UITextField"; placeholder = "الأقرب"; ObjectID = "fh4-hu-W5p"; */
+"fh4-hu-W5p.placeholder" = "الأقرب";
+
+/* Class = "UIButton"; normalTitle = "تأكيد"; ObjectID = "gGZ-A7-d55"; */
+"gGZ-A7-d55.normalTitle" = "تأكيد";
+
+/* Class = "UILabel"; text = "@AskHail6"; ObjectID = "gJl-9A-SGT"; */
+"gJl-9A-SGT.text" = "@AskHail6";
+
+/* Class = "UILabel"; text = "المواصفات"; ObjectID = "gxG-zq-at5"; */
+"gxG-zq-at5.text" = "المواصفات";
+
+/* Class = "UILabel"; text = "@AskHail20"; ObjectID = "huN-PD-dso"; */
+"huN-PD-dso.text" = "@AskHail20";
+
+/* Class = "UILabel"; text = "العشاء"; ObjectID = "l4M-7A-zoQ"; */
+"l4M-7A-zoQ.text" = "العشاء";
+
+/* Class = "UILabel"; text = "إعلاناتي "; ObjectID = "mSl-mE-FUO"; */
+"mSl-mE-FUO.text" = "إعلاناتي ";
+
+/* Class = "UILabel"; text = "دخول لحساب مُسجّل"; ObjectID = "n7y-2n-PsH"; */
+"n7y-2n-PsH.text" = "دخول لحساب مُسجّل";
+
+/* Class = "UILabel"; text = "ر.س"; ObjectID = "nIy-Xw-K8h"; */
+"nIy-Xw-K8h.text" = "ر.س";
+
+/* Class = "UILabel"; text = "تعطيل"; ObjectID = "nQk-Lx-kB9"; */
+"nQk-Lx-kB9.text" = "تعطيل";
+
+/* Class = "UILabel"; text = "الوصف"; ObjectID = "ow4-0n-IfL"; */
+"ow4-0n-IfL.text" = "الوصف";
+
+/* Class = "UITextField"; placeholder = "الحي"; ObjectID = "p4Z-lt-dbT"; */
+"p4Z-lt-dbT.placeholder" = "الحي";
+
+/* Class = "UILabel"; text = "فيديو"; ObjectID = "qJo-c0-qqs"; */
+"qJo-c0-qqs.text" = "فيديو";
+
+/* Class = "UILabel"; text = "@AskHail"; ObjectID = "qgB-yv-fR0"; */
+"qgB-yv-fR0.text" = "@AskHail";
+
+/* Class = "UILabel"; text = "توفر المكان"; ObjectID = "rN5-WR-SwI"; */
+"rN5-WR-SwI.text" = "توفر المكان";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ric-d0-zWL"; */
+"ric-d0-zWL.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "الظهر"; ObjectID = "sya-Gd-q9p"; */
+"sya-Gd-q9p.text" = "الظهر";
+
+/* Class = "UILabel"; text = "Ask Hail.com"; ObjectID = "tWQ-Up-7wS"; */
+"tWQ-Up-7wS.text" = "Ask Hail.com";
+
+/* Class = "UILabel"; text = "الباقة المتكاملة"; ObjectID = "u62-v8-tVF"; */
+"u62-v8-tVF.text" = "الباقة المتكاملة";
+
+/* Class = "UILabel"; text = "تصفية نتائج البحث"; ObjectID = "uLs-mp-RF9"; */
+"uLs-mp-RF9.text" = "تصفية نتائج البحث";
+
+/* Class = "UILabel"; text = "يوم"; ObjectID = "vWx-Z7-Jak"; */
+"vWx-Z7-Jak.text" = "يوم";
+
+/* Class = "UIButton"; normalTitle = "عرض تفاصيل الإعلان"; ObjectID = "wC0-lQ-qDi"; */
+"wC0-lQ-qDi.normalTitle" = "عرض تفاصيل الإعلان";
+
+/* Class = "UILabel"; text = "العصر"; ObjectID = "wHP-41-Tj4"; */
+"wHP-41-Tj4.text" = "العصر";
+
+/* Class = "UIButton"; normalTitle = "تفعيل الكل"; ObjectID = "wHn-ub-NDW"; */
+"wHn-ub-NDW.normalTitle" = "تفعيل الكل";
+
+/* Class = "UIButton"; normalTitle = "إضافة إجابة"; ObjectID = "wwq-TW-8XV"; */
+"wwq-TW-8XV.normalTitle" = "إضافة إجابة";
+
+/* Class = "UILabel"; text = "03:30 م"; ObjectID = "y7t-3t-Zgy"; */
+"y7t-3t-Zgy.text" = "03:30 م";
+
+/* Class = "UILabel"; text = "05:46 م"; ObjectID = "yVT-Sh-kQc"; */
+"yVT-Sh-kQc.text" = "05:46 م";
+
+/* Class = "UILabel"; text = "لن يكون متاح لمدة"; ObjectID = "z4A-VJ-nAL"; */
+"z4A-VJ-nAL.text" = "لن يكون متاح لمدة";
+
+/* Class = "UIButton"; normalTitle = "عرض إلاعلانات المعطل"; ObjectID = "zxw-O1-nhp"; */
+"zxw-O1-nhp.normalTitle" = "عرض إلاعلانات المعطل";
