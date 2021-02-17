@@ -73,20 +73,7 @@ class EditAskImageVC: UIViewController {
     
     
     @IBAction func ConfirmTermsAction(_ sender: Any) {
-        
-//        if Image.image == nil {
-//
-//            Image.borderWidth = 3
-//            Image.borderColor = Colors.errorLineView
-//
-//            self.view.shake()
-//
-//        } else {
-            
-            updateImage()
-       // }
-        
-        
+        updateImage()
     }
     
     

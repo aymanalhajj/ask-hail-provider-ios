@@ -12,12 +12,17 @@ struct RegisterModel_3 : Codable {
     let status : Bool?
     let code : String?
     let data : RegisterData_3?
+    let if_must_review_first : Bool?
+    let message : String?
 
     enum CodingKeys: String, CodingKey {
 
         case status = "status"
         case code = "code"
         case data = "data"
+        case if_must_review_first = "if_must_review_first"
+        case message = "message"
+        
     }
 
     init(from decoder: Decoder) throws {
@@ -25,6 +30,8 @@ struct RegisterModel_3 : Codable {
         status = try values.decodeIfPresent(Bool.self, forKey: .status)
         code = try values.decodeIfPresent(String.self, forKey: .code)
         data = try values.decodeIfPresent(RegisterData_3.self, forKey: .data)
+        if_must_review_first = try values.decodeIfPresent(Bool.self, forKey: .if_must_review_first)
+        message = try values.decodeIfPresent(String.self, forKey: .message)
     }
 
 }

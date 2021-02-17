@@ -189,7 +189,7 @@ extension AdsPaymentDetailsVC {
         
         print(Parameters)
         
-        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject], url: "\(hostName)user-add-advertisement/add-package") { (data : Level_6_Model?, String) in
+        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject], url: "\(hostName)businedd-add-advertisement/add-package") { (data : Level_6_Model?, String) in
             
             
             if String != nil {

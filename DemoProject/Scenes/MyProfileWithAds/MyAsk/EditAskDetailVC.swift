@@ -199,7 +199,7 @@ extension EditAskDetailVC {
                 }
                 
                 
-                self.navigationController?.popToViewController(ofClass: MyAskVC.self)
+                self.navigationController?.popViewController(animated: true)
                 self.navigationController?.view.makeToast("\(data.data?.message ?? "")")
                 
             }

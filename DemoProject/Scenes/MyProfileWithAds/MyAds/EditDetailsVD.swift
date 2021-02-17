@@ -368,7 +368,7 @@ extension EditDetailsVD : UIPickerViewDelegate, UIPickerViewDataSource  {
 
 extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return CurrentFeatureArray.count
+        return FeatureArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -377,50 +377,46 @@ extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
         
         setShadow(view: cell , width: 0, height: 2, shadowRadius: 3, shadowOpacity: 0.3, shadowColor: #colorLiteral(red: 0.7725490196, green: 0.8235294118, blue: 0.8862745098, alpha: 1))
         
-        
-        
-        for item in SelectedFeature {
-            
-            print(item.key , indexPath.row)
-            
-            if item.key == indexPath.row {
-                
-                cell.DetailTf.text = item.value.data_title
-                
-            }
-            
-        }
-        
-        
         if FeatureData {
-            
-            
-            
             
             let model = FeatureArray[indexPath.row]
             
-            
-            cell.ChoseDetailsBtn.isHidden = true
+            var x = 0
+            for item in CurrentFeatureArray {
+                if FeatureArray[indexPath.row].feature_id == item.specification_section_feature?.feature_id {
+                    
+                    cell.DetailTf.text = CurrentFeatureArray[x].specification_answer ?? ""
+                    
+                    if FeatureArray[indexPath.row].feature_type == "choose" {
+                        
+                        
+                        print("dssd")
+                        
+                        for item1 in FeatureArray[indexPath.row].feature_data ?? [] {
+                                                        
+                            if item1.data_title == item.specification_answer {
+                                self.SelectedFeature[indexPath.row] = item1
+                            }
+                            
+                        }
+                        
+                     
+                    }
+                }
+                x = x + 1
+            }
+            if cell.DetailTf.text == "" {
+                cell.DetailTf.placeholder = model.feature_name ?? ""
+            }
+           
             
             if model.feature_type == "choose" {
-                cell.arrow_doun.isHidden = false
                 cell.ChoseDetailsBtn.isHidden = false
+                cell.arrow_doun.isHidden = false
             }else{
-                cell.arrow_doun.isHidden = true
                 cell.ChoseDetailsBtn.isHidden = true
+                cell.arrow_doun.isHidden = true
             }
-            
-            for item in self.CurrentFeatureArray {
-                
-                if item.specification_section_feature?.feature_id == self.FeatureArray[indexPath.row].feature_id {
-
-                    cell.DetailTf.text = item.specification_answer
-                    
-                    
-                }
-                
-            }
-            
             
             
             cell.ChoseDetails = {
@@ -429,32 +425,21 @@ extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
                 vc.modalPresentationStyle = .fullScreen
                 vc.Delegte = self
                 vc.index = indexPath.row
-                vc.pageTitle = self.FeatureArray[indexPath.row].feature_name ?? ""
-                
-                
                 vc.FeatureData = self.FeatureArray[indexPath.row].feature_data ?? []
+                vc.pageTitle = self.FeatureArray[indexPath.row].feature_name ?? ""
                 self.addChild(vc)
                 vc.view.frame = self.view.frame
                 self.view.addSubview(vc.view)
                 vc.didMove(toParent: self)
-                return
-                
-                
-                
             }
             
         }
+        
         for item in SelectedFeature {
-            
             if item.key == indexPath.row {
-                
                 cell.DetailTf.text = item.value.data_title
-                
             }
-            
         }
-        
-        
         
         return cell
     }
@@ -528,7 +513,7 @@ extension EditDetailsVD {
             Parameters["features[\(x)]['answer']"] = "\(item.value.data_id ?? 0)"
             
             
-            print(self.FeatureArray[item.key].feature_id ?? 0 , item.value.data_feature_id ?? 0)
+            print(self.FeatureArray[item.key].feature_id ?? 0 , item.value.data_id ?? 0)
             x = x + 1
         }
         
@@ -541,16 +526,16 @@ extension EditDetailsVD {
             
             if FeatureArray[y].feature_type == "text" {
                 
-                
-                
-                if cell.DetailTf.text != "" {
+                if cell.DetailTf.text == "" {
+//                    Parameters["features[\(x)]['feature_id']"] = ""
+//                    Parameters["features[\(x)]['answer']"] = ""
                     
-                    print(y)
-                    
-                    Parameters["features[\(x)]['feature_id']"] = "\( FeatureArray[y].feature_id ?? 0)"
+                }else{
+                    Parameters["features[\(x)]['feature_id']"] = "\(FeatureArray[y].feature_id ?? 0)"
                     Parameters["features[\(x)]['answer']"] = cell.DetailTf.text ?? ""
+                    
+                    x = x + 1
                 }
-                x = x + 1
             }
             y = y + 1
             
@@ -627,7 +612,6 @@ extension EditDetailsVD {
                     self.desTxt.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
                 }
                 
-                self.DetailsCollectionView.reloadData()
                 print(data)
                 
             }
@@ -730,3 +714,4 @@ extension EditDetailsVD {
     }
     
 }
+

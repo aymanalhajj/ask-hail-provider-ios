@@ -776,6 +776,7 @@
 		4D9CC51C2549AFBA004526DA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CC2C0D5625DD7B4C002CE09B /* AskHailDetails */,
 				CC3C01FE257A678600E018D1 /* AdsVC */,
 				4DFFA3D9255611C600D56614 /* AddNewPopUpVC.swift */,
 				4DAB20D42549D16B00CF1BB1 /* HomeVC.swift */,
@@ -841,7 +842,6 @@
 			isa = PBXGroup;
 			children = (
 				4DCF31AE2559F49800F8E18B /* AskHailVC.swift */,
-				4D7FE449255A0DF300FE87CE /* AskHailDetailsVC.swift */,
 			);
 			path = AskHail;
 			sourceTree = "<group>";
@@ -1271,6 +1271,14 @@
 			path = MyAsk;
 			sourceTree = "<group>";
 		};
+		CC2C0D5625DD7B4C002CE09B /* AskHailDetails */ = {
+			isa = PBXGroup;
+			children = (
+				4D7FE449255A0DF300FE87CE /* AskHailDetailsVC.swift */,
+			);
+			path = AskHailDetails;
+			sourceTree = "<group>";
+		};
 		CC3C01FE257A678600E018D1 /* AdsVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1490,6 +1498,7 @@
 				C1A2C66B240B9C39003EE54F /* Resources */,
 				23485C3B71C1DE456A52E8B3 /* [CP] Embed Pods Frameworks */,
 				7C96B6AF6474AF9FB18D4AAA /* [CP] Copy Pods Resources */,
+				CC12C1BB25DCC36F00C6C17B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1659,6 +1668,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CC12C1BB25DCC36F00C6C17B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2100,7 +2128,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2192,6 +2220,7 @@
 				CODE_SIGN_ENTITLEMENTS = "DemoProject/اوصلك.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QS4RD9C4D4;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoProject/Configrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2199,7 +2228,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;
@@ -2222,7 +2251,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;

@@ -119,20 +119,16 @@ class AskHailDetailsVC: UIViewController ,UITextViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         getAskDetails()
         ShowComment()
         EditView.isHidden = true
         MainView.isHidden = true
         
-//        if isMyAsks == 1 {
-//
-//
-//
-//        }else{
-//            getAskDetails()
-//            ShowComment()
-//        }
+        if isMyAsks == 1 {
+            
+        }else{
+            
+        }
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -478,7 +474,7 @@ extension AskHailDetailsVC {
         self.view.lock()
 
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-question/\(ask_id)") { (data : ShowAskDetailsModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-question/\(ask_id)") { [self] (data : ShowAskDetailsModel?, String) in
             
             self.view.unlock()
             
@@ -491,15 +487,22 @@ extension AskHailDetailsVC {
                 guard let data = data else {
                     return
                 }
+                                
+                self.AskData = data.data?.question_details
                 
                 self.asker_id = "\(data.data?.question_details?.question_advertiser_id ?? 0)"
                 
-                if "\(data.data?.question_details?.question_advertiser_id ?? 0)" == Helper.getaUser_id() {
+                if "\(AskData?.question_advertiser_id ?? 0)" == Helper.getaUser_id() {
                     self.EditView.isHidden = false
                     self.CommentBtn.isHidden = true
+                }else{
+                    if self.isMyAsks == 1 {
+                        self.EditView.isHidden = false
+                        self.isMyAsks = 0
+                    }else{
+                        self.EditView.isHidden = false
+                    }
                 }
-                
-                self.AskData = data.data?.question_details
                 
                 self.askId.text = "\(data.data?.question_details?.question_id ?? 0)"
                 

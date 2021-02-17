@@ -133,8 +133,7 @@ class ServicesVC: UIViewController {
         UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
         
     }
-    
-    
+        
 }
 extension ServicesVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -159,7 +158,7 @@ extension ServicesVC : UITableViewDelegate , UITableViewDataSource {
             
             cell.DownloadFile = {
                 
-                self.downloadFileFromURL(url: URL(string: Model.service_file ?? "") as! NSURL)
+                UIApplication.shared.open((URL(string: Model.service_file ?? "")!))
                 
             }
             

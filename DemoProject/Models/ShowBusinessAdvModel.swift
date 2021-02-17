@@ -95,6 +95,8 @@ struct Advertisement_details : Codable {
     let adv_available_status : String?
     let adv_available_custom_status : String?
     let isWaiting : Bool?
+    let specification_answer_id : Int?
+    let specification_answer : String?
     
     enum CodingKeys: String, CodingKey {
 
@@ -137,6 +139,8 @@ struct Advertisement_details : Codable {
         case adv_available_status = "adv_available_status"
         case adv_available_custom_status = "adv_available_custom_status"
         case isWaiting = "isWaiting"
+        case specification_answer_id = "specification_answer_id"
+        case specification_answer = "specification_answer"
         
     }
 
@@ -181,6 +185,8 @@ struct Advertisement_details : Codable {
         adv_available_status = try values.decodeIfPresent(String.self, forKey: .adv_available_status)
         adv_available_custom_status = try values.decodeIfPresent(String.self, forKey: .adv_available_custom_status)
         isWaiting = try values.decodeIfPresent(Bool.self, forKey: .isWaiting)
+        specification_answer_id = try values.decodeIfPresent(Int.self, forKey: .specification_answer_id)
+        specification_answer = try values.decodeIfPresent(String.self, forKey: .specification_answer)
         
     }
 

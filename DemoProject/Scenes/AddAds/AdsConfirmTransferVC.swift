@@ -367,7 +367,7 @@ extension AdsConfirmTransferVC {
         
         print(param)
         
-        ApiServices.instance.getPosts(methodType: .post, parameters: param as [String : AnyObject] , url: "\(hostName)user-add-advertisement/add-package") { (data : Level_1_Model?, String) in
+        ApiServices.instance.getPosts(methodType: .post, parameters: param as [String : AnyObject] , url: "\(hostName)businedd-add-advertisement/add-package") { (data : Level_1_Model?, String) in
             
             self.view.unlock()
             

@@ -286,30 +286,39 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     
     @IBAction func ShareAds(_ sender: Any) {
 
-        let longLinkUrl = "https://askhail.page.link/?link=1\(self.AdId)"
-
-        DynamicLinkComponents.shortenURL(URL(string: longLinkUrl)!, options: nil) { shortUrl, warnings, error in
-            if error != nil{
-                let shareText = "\(self.AdsTitle.text ?? "")" + "\n" + longLinkUrl
-                let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
-                if(UIDevice.current.userInterfaceIdiom == .pad){
-                    vc.popoverPresentationController?.sourceView = self.view
-                }else{
-                    self.present(vc, animated: true, completion: {})
-                }
-            }
-            guard let url = shortUrl, error == nil else { return }
-            print("The short URL is: \(shortUrl)")
-            let shareText = "See the product on the askHailBusiness store" + "\n" + "\(shortUrl!)"
+        guard let link = URL(string: "https://askhail.page.link/advert/\(AdId)") else { return }
+        let dynamicLinksDomainURIPrefix = "https://askHail.page.link"
+        let linkBuilder = DynamicLinkComponents(link: link, domainURIPrefix: dynamicLinksDomainURIPrefix)
+        
+        linkBuilder?.iOSParameters = DynamicLinkIOSParameters(bundleID: "com.wesal.askHail")
+        linkBuilder?.iOSParameters?.appStoreID = "1542462594"
+        linkBuilder?.iOSParameters?.minimumAppVersion = "1.1.0"
+        
+        linkBuilder?.navigationInfoParameters = DynamicLinkNavigationInfoParameters()
+        linkBuilder?.navigationInfoParameters?.isForcedRedirectEnabled = true
+        
+        linkBuilder?.androidParameters = DynamicLinkAndroidParameters(packageName: "com.wesal.askhail")
+        linkBuilder?.androidParameters?.minimumVersion = 1
+        
+        guard let longDynamicLink = linkBuilder?.url else {
+            return
+            
+        }
+        print(longDynamicLink)
+        
+        DynamicLinkComponents.shortenURL(longDynamicLink, options: nil) { url, warnings, error in
+          guard let url = url, error == nil else { return }
+          print("The short URL is: \(url)")
+            
+            let shareText = "\(self.AdsTitle.text ?? "")" + "\n" + "\(url)"
             let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
             if(UIDevice.current.userInterfaceIdiom == .pad){
                 vc.popoverPresentationController?.sourceView = self.view
             }else{
                 self.present(vc, animated: true, completion: {})
             }
+            
         }
-
-        print("Share")
 
     }
     
@@ -480,7 +489,7 @@ extension BusinessAdsDetailsVC : UICollectionViewDataSource , UICollectionViewDe
         if FeatureData {
             let Model = FeatureArray[indexPath.row]
             
-            cell.CellTitle.text = Model.specification_section_feature?.feature_name ?? ""
+            cell.CellAnswer.text = Model.specification_answer ?? ""
             
             
         }
@@ -522,6 +531,7 @@ extension BusinessAdsDetailsVC : selectEditSection {
             let storyboard = UIStoryboard(name: EditAds_Story , bundle: nil)
             let vc  = storyboard.instantiateViewController(withIdentifier: "EditDetailsVD") as! EditDetailsVD
             vc.Ad_id = "\(AdData?.advertisement_details?.adv_id ?? 0)"
+            vc.CurrentFeatureArray = AdData?.advertisement_details?.adv_specifications ?? []
             navigationController?.pushViewController(vc, animated: true)
 
         }else if select == 3 {

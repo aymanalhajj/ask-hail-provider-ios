@@ -186,7 +186,8 @@ extension AskHailVC : UITableViewDataSource , UITableViewDelegate {
         vc.height = 0
         vc.ask_id = "\(AskHailArray[indexPath.row].question_id ?? 0)"
         vc.imageUrl = "\(AskHailArray[indexPath.row].question_image ?? "")"
-        
+        vc.asker_id = "\(AskHailArray[indexPath.row].question_advertiser_id ?? 0)"
+        vc.isMyAsks = 1
         navigationController?.pushViewController(vc, animated: true)
         
         return tableView.deselectRow(at: indexPath, animated: true)

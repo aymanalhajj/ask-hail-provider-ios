@@ -216,20 +216,33 @@ extension CreateAccount_3 {
                     return
                 }
                 
-                
-                Helper.Saveuser_id(user_id: "\(data.data?.advertiser_id ?? 0)")
-                Helper.Saveuser_namen(name: data.data?.advertiser_name ?? "" )
-                Helper.Saveuser_phone(phone: data.data?.advertiser_mobile ?? "")
-                Helper.Saveuser_Email(email: data.data?.advertiser_email ?? "")
-                Helper.SaveApitoken(token: data.data?.advertiser_api_token ?? "")
-                Helper.SavePackage_Id(PackageId: data.data?.advertiser_package_id ?? "")
-                Helper.SaveChatType(ChatState: "true")
-                
-                let storyboard = UIStoryboard(name: Authontication, bundle: nil)
-                let vc  = storyboard.instantiateViewController(withIdentifier: "SuccessCreateAccountVC") as! SuccessCreateAccountVC
-                self.navigationController?.pushViewController(vc, animated: true)
-                self.view.unlock()
+                if data.if_must_review_first == true {
                     
+                    let storyboard = UIStoryboard(name: Authontication, bundle: nil)
+                    let vc  = storyboard.instantiateViewController(withIdentifier: "SuccessCreateAccountVC") as! SuccessCreateAccountVC
+                    vc.messge = data.message ?? ""
+                    vc.if_must_review_first = data.if_must_review_first ?? true
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    self.view.unlock()
+                    
+                    
+                    
+                }else{
+                    Helper.Saveuser_id(user_id: "\(data.data?.advertiser_id ?? 0)")
+                    Helper.Saveuser_namen(name: data.data?.advertiser_name ?? "" )
+                    Helper.Saveuser_phone(phone: data.data?.advertiser_mobile ?? "")
+                    Helper.Saveuser_Email(email: data.data?.advertiser_email ?? "")
+                    Helper.SaveApitoken(token: data.data?.advertiser_api_token ?? "")
+                    Helper.SavePackage_Id(PackageId: data.data?.advertiser_package_id ?? "")
+                    Helper.SaveChatType(ChatState: "true")
+                    
+                    let storyboard = UIStoryboard(name: Authontication, bundle: nil)
+                    let vc  = storyboard.instantiateViewController(withIdentifier: "SuccessCreateAccountVC") as! SuccessCreateAccountVC
+                    vc.if_must_review_first = data.if_must_review_first ?? false
+                    vc.messge = data.message ?? ""
+                    self.navigationController?.pushViewController(vc, animated: true)
+                    self.view.unlock()
+                }
                 
                 print(data)
                 

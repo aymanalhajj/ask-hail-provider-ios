@@ -404,15 +404,14 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
             
             if body == "public" {
                 
-                print(body)
-                
-                //                guard let window = UIApplication.shared.keyWindow else{return}
-                //                let sb = UIStoryboard(name: Chat, bundle: nil)
-                //                var vc : UIViewControlle
-                //
-                //                vc = sb.instantiateViewController(withIdentifier: "inChatVCNav")
-                //                window.rootViewController = vc
-                //                UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
+                DynamicLinkModel.Product_id = type_id ?? ""
+                DynamicLinkModel.isDynamic = true
+                guard let window = UIApplication.shared.keyWindow else{return}
+                let sb = UIStoryboard(name: Home, bundle: nil)
+                var vc : UIViewController
+                vc = sb.instantiateViewController(withIdentifier: "HomeVC")
+                window.rootViewController = vc
+                UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
                 
             }else if body == "adv" {
                 
@@ -433,17 +432,6 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
                 let sb = UIStoryboard(name: MyProfile, bundle: nil)
                 var vc : UIViewController
                 vc = sb.instantiateViewController(withIdentifier: "MyPackgeVC")
-                window.rootViewController = vc
-                UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
-                
-            }else if body == "subscription" {
-                
-                DynamicLinkModel.Product_id = type_id ?? ""
-                DynamicLinkModel.isDynamic = true
-                guard let window = UIApplication.shared.keyWindow else{return}
-                let sb = UIStoryboard(name: Home, bundle: nil)
-                var vc : UIViewController
-                vc = sb.instantiateViewController(withIdentifier: "StarAdDetailsVC")
                 window.rootViewController = vc
                 UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
                 

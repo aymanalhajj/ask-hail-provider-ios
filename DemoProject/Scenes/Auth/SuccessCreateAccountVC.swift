@@ -15,13 +15,14 @@ class SuccessCreateAccountVC: UIViewController {
     @IBOutlet weak var MainText: UILabel!
     @IBOutlet weak var SubText: UILabel!
     
+    var messge = ""
+    
+    var if_must_review_first = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if L102Language.currentAppleLanguage() == englishLang {
-            MainText.text = "successfully registered"
-            SubText.text = "Thank you for registering with us! You can now use the Ask Hail application without restrictions"
-        }
+        SubText.text = messge
         
         ContinueBtn.setGradientTopToButtom(ColorTop: Colors.TopGradBtnColoer , ColorButtom: Colors.ButtomGradBtnColoer)
         
@@ -38,12 +39,21 @@ class SuccessCreateAccountVC: UIViewController {
     
     @IBAction func ContinueAction(_ sender: Any) {
         
-        guard let window = UIApplication.shared.keyWindow else{return}
-        let sb = UIStoryboard(name: Home, bundle: nil)
-        var vc : UIViewController
-        vc = sb.instantiateViewController(withIdentifier: "HomeVC")
-        window.rootViewController = vc
-        UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
+        if if_must_review_first == true {
+            guard let window = UIApplication.shared.keyWindow else{return}
+            let sb = UIStoryboard(name: Authontication, bundle: nil)
+            var vc : UIViewController
+            vc = sb.instantiateViewController(withIdentifier: "WelcomeVC")
+            window.rootViewController = vc
+            UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
+        }else{
+            guard let window = UIApplication.shared.keyWindow else{return}
+            let sb = UIStoryboard(name: Home, bundle: nil)
+            var vc : UIViewController
+            vc = sb.instantiateViewController(withIdentifier: "HomeVC")
+            window.rootViewController = vc
+            UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
+        }
         
     }
     
