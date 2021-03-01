@@ -142,10 +142,17 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource {
             cell.pageControl.numberOfPages =  Model.adv_media?.count ?? 0
             cell.PagerView.reloadData()
             cell.CellTitle.text = Model.adv_title
-            cell.Price.text = Model.adv_price
+            
             cell.distance.text = Model.adv_distance
             cell.ViewsNumber.text = Model.adv_views
             cell.CellRate.text = Model.adv_total_rate
+            
+            if Model.adv_price ?? "" == "0" {
+                cell.SARLbl.isHidden = true
+                cell.Price.isHidden = true
+            }else{
+                cell.Price.text = Model.adv_price
+            }
                         
             if L102Language.currentAppleLanguage() == englishLang {
                 cell.IsAvilabole.text = Model.adv_available_status
@@ -164,6 +171,8 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource {
             }else{
                 cell.IsAvilabole.textColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0.5803921569, alpha: 1)
             }
+            
+            
             
             cell.StarAdView.isHidden = true
             

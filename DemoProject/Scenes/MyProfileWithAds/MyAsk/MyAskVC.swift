@@ -170,9 +170,7 @@ extension MyAskVC : UITableViewDelegate,UITableViewDataSource {
         }else{
             
         }
-        vc.ask_id = "\(AskHailArray[indexPath.row].question_id ?? 0)"
-        vc.isMyAsks = 1
-        
+        vc.ask_id = "\(AskHailArray[indexPath.row].question_id ?? 0)"        
         navigationController?.pushViewController(vc, animated: true)
         
         return tableView.deselectRow(at: indexPath, animated: true)

@@ -1,9 +1,9 @@
-/*
+/* 
   Localizable.strings
-  MaiTenance
+  AskHailBusiness
 
-  Created by Abdullah tarek on 8/30/20.
-  Copyright © 2020 project. All rights reserved.
+  Created by Abdullah Tarek on 01/03/2021.
+  Copyright © 2021 MOHAB. All rights reserved.
 */
 "Please insert your phone number" = "من فضلك ادخل رقم الجوال";
 "Please insert message title" = "من فضلك ادخل عنوان الرسالة";
@@ -103,23 +103,22 @@
 "Advertisement" = "اعلان";
 "Order" = "طلب";
 "No social media avilable" = "لا يوجد وسائل تواصل";
-"Select one of the following options to continue browsing the application" = "حدد احد الخيارات التالية للمتابعة في تصفح التطبيق";
-"(maximum 2 video)" = "(حد أقصى 2 فيديو)";
-"Delete" = "حذف";
-"Disable" = "تعطيل";
-"Edit" = "نعديل";
-"Special" = "تمييز";
-"Ad number" = "اعلان رقم";
+"Ad number" = "رقم الإعلان";
+"Order number" = "رقم الطلب";
 "Description" = "الوصف";
-"Specifications" = "المميزات";
+"Specifications" = "المواصفات";
 "Address" = "العنوان";
 "Advertiser" = "المعلن";
 "Comments" = "التعليقات";
-"Add comment" = "اضف تعليق";
+"Add comment" = "اضافة تعليق";
 "Show more" = "المزيد";
 "Go now" = "انطلق الان";
 "Advertiser page" = "صفحة المعلن";
-"Km" = "كم";
 "ads" = "اعلانات";
+"Km" = "كم";
+"enter comment first" = "ادخل التعليق اولا";
+"Delete" = "حذف";
+"Edit" = "تعديل";
+"Disable" = "تعطيل";
+"Special" = "تمييز";
 "Ask Num." = "سؤال رقم";
-"Order number" = "طلب رقم";

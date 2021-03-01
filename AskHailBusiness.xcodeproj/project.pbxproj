@@ -90,6 +90,11 @@
 		4DBF180E25584D6400BBE39D /* AskTermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF180D25584D6400BBE39D /* AskTermsVC.swift */; };
 		4DBF18122558523800BBE39D /* AskAddPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF18112558523800BBE39D /* AskAddPhotoVC.swift */; };
 		4DBF1816255858F000BBE39D /* AskDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBF1815255858F000BBE39D /* AskDetailsVC.swift */; };
+		4DC5F49225EC4D4000F56614 /* Extentions+AskComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC5F49125EC4D4000F56614 /* Extentions+AskComment.swift */; };
+		4DC5F49525EC4DAA00F56614 /* Extentions+AskVC-MyAsk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC5F49425EC4DAA00F56614 /* Extentions+AskVC-MyAsk.swift */; };
+		4DC5F49825EC4EE800F56614 /* CommentPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC5F49725EC4EE800F56614 /* CommentPopupVC.swift */; };
+		4DC5F49B25EC51EF00F56614 /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC5F49A25EC51EF00F56614 /* CommentVC.swift */; };
+		4DC5F4F125EC699700F56614 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DC5F4F025EC699700F56614 /* Localizable.strings */; };
 		4DC901162555AD35007B1C88 /* BusinessProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC901152555AD35007B1C88 /* BusinessProfileVC.swift */; };
 		4DC9011B2555C96A007B1C88 /* MenuBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9011A2555C96A007B1C88 /* MenuBarVC.swift */; };
 		4DCDEE542561D00C0092D52F /* EditCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDEE532561D00C0092D52F /* EditCategoryVC.swift */; };
@@ -373,6 +378,11 @@
 		4DBF180D25584D6400BBE39D /* AskTermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskTermsVC.swift; sourceTree = "<group>"; };
 		4DBF18112558523800BBE39D /* AskAddPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAddPhotoVC.swift; sourceTree = "<group>"; };
 		4DBF1815255858F000BBE39D /* AskDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskDetailsVC.swift; sourceTree = "<group>"; };
+		4DC5F49125EC4D4000F56614 /* Extentions+AskComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+AskComment.swift"; sourceTree = "<group>"; };
+		4DC5F49425EC4DAA00F56614 /* Extentions+AskVC-MyAsk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions+AskVC-MyAsk.swift"; sourceTree = "<group>"; };
+		4DC5F49725EC4EE800F56614 /* CommentPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentPopupVC.swift; sourceTree = "<group>"; };
+		4DC5F49A25EC51EF00F56614 /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		4DC5F4F025EC699700F56614 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4DC901152555AD35007B1C88 /* BusinessProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileVC.swift; sourceTree = "<group>"; };
 		4DC9011A2555C96A007B1C88 /* MenuBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarVC.swift; sourceTree = "<group>"; };
 		4DCDEE532561D00C0092D52F /* EditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCategoryVC.swift; sourceTree = "<group>"; };
@@ -789,6 +799,8 @@
 				CC34123725AFE16B00752A8E /* StopedAdvVC.swift */,
 				CC7D88C425B0A845007A84BA /* AdvStateVC.swift */,
 				CCEC798325C444F000AAD9F7 /* StarAdDetailsVC.swift */,
+				4DC5F49725EC4EE800F56614 /* CommentPopupVC.swift */,
+				4DC5F49A25EC51EF00F56614 /* CommentVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1110,7 +1122,6 @@
 				CCCF186E25BE6D8F005B092C /* Localizable.strings */,
 				C191C43425B90A4C00A1357C /* TestAnimations */,
 				CC8993C525B1E5730014EED4 /* DynamicLinkModel */,
-				CC54F396257BB7AF003C8DD7 /* Localizable */,
 				C145043A241DA71C00C49BF2 /* Segue */,
 				C1BBA471245C56A000CBFA0F /* اوصلك.entitlements */,
 				4D656860253E3F310067D35A /* Cells */,
@@ -1128,6 +1139,7 @@
 				C1A2C682240B9E15003EE54F /* Manager */,
 				C191C43225B909D900A1357C /* WaitingVC.swift */,
 				C191C43725B90A9300A1357C /* SplashVC.swift */,
+				4DC5F4F025EC699700F56614 /* Localizable.strings */,
 			);
 			path = DemoProject;
 			sourceTree = "<group>";
@@ -1275,6 +1287,8 @@
 			isa = PBXGroup;
 			children = (
 				4D7FE449255A0DF300FE87CE /* AskHailDetailsVC.swift */,
+				4DC5F49125EC4D4000F56614 /* Extentions+AskComment.swift */,
+				4DC5F49425EC4DAA00F56614 /* Extentions+AskVC-MyAsk.swift */,
 			);
 			path = AskHailDetails;
 			sourceTree = "<group>";
@@ -1332,14 +1346,6 @@
 				CC2398F0256E83CE00310B54 /* ResetPasswordModel.swift */,
 			);
 			path = ForgetPasswordModels;
-			sourceTree = "<group>";
-		};
-		CC54F396257BB7AF003C8DD7 /* Localizable */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Localizable;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		CC66B3C62576D12500EA736B /* ImageCell */ = {
@@ -1585,6 +1591,7 @@
 				CCA214732572C386000DD7CA /* AddAds.storyboard in Resources */,
 				CC4514F82583977E005E8146 /* OrderCell.xib in Resources */,
 				CC91C49425AFB02F00FFEC90 /* SpicalPackageCell.xib in Resources */,
+				4DC5F4F125EC699700F56614 /* Localizable.strings in Resources */,
 				CCE66A0225739B6100358316 /* Notification.storyboard in Resources */,
 				4DA64C8B25646236003A3BFC /* SubAdsCell.xib in Resources */,
 				CCAD584625CDE45E0005BB29 /* PrayCell.xib in Resources */,
@@ -1739,6 +1746,7 @@
 				C1342361241A53F200713EEC /* LoaderView.swift in Sources */,
 				C17851AF2563BE38008F27E5 /* MessagesVC.swift in Sources */,
 				CC04156525966C83001978CD /* RealStateAppVC.swift in Sources */,
+				4DC5F49825EC4EE800F56614 /* CommentPopupVC.swift in Sources */,
 				4D346858254CAC41001F138E /* PaymentPolicyCell.swift in Sources */,
 				CC535B4E25717FE200594924 /* ContactUsModel.swift in Sources */,
 				4D7F3BCD254F18DF006E0376 /* PhotographyRequestVC.swift in Sources */,
@@ -1752,6 +1760,7 @@
 				CCA4C8232572361900F360C9 /* JobsModel.swift in Sources */,
 				C1342367241A53F200713EEC /* UIApplication + Extension.swift in Sources */,
 				4DA502E3255CB817003182C3 /* MyAdsDetailsVC.swift in Sources */,
+				4DC5F49525EC4DAA00F56614 /* Extentions+AskVC-MyAsk.swift in Sources */,
 				4DCF31552559D61000F8E18B /* Extention+UIButton.swift in Sources */,
 				CC013C722570409800B643BB /* PackagesModel.swift in Sources */,
 				4D7F3C63254F46FC006E0376 /* ContrabandListVC.swift in Sources */,
@@ -1873,6 +1882,7 @@
 				CC4514F72583977E005E8146 /* OrderCell.swift in Sources */,
 				4D1A267E2556352B00A6D4F7 /* ChoseGradeVC.swift in Sources */,
 				4D6A900C25509B6900859197 /* AdsPopUpVC.swift in Sources */,
+				4DC5F49B25EC51EF00F56614 /* CommentVC.swift in Sources */,
 				C1A2C671240B9C39003EE54F /* AppDelegate.swift in Sources */,
 				CCCF188B25BE74BE005B092C /* ChoseLocationOnMapVC.swift in Sources */,
 				CC4DE887256F7BF5008691C8 /* RegisterModel_2.swift in Sources */,
@@ -1899,6 +1909,7 @@
 				CC85BDCF258967BA003D1AD1 /* NotificationModel.swift in Sources */,
 				4D36C7A925571DFB003BCD71 /* BankCell.swift in Sources */,
 				CC4E2B152570FB5E000C831E /* BlocksModel.swift in Sources */,
+				4DC5F49225EC4D4000F56614 /* Extentions+AskComment.swift in Sources */,
 				C1A2C68C240BA1E7003EE54F /* Helper.swift in Sources */,
 				CC1E95C82580E57D002CE71B /* AdvEditSectionModel.swift in Sources */,
 				4D670B65256356AB00955392 /* PrayTimeVC.swift in Sources */,

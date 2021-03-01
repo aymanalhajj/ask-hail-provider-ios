@@ -6,6 +6,7 @@
 //  Copyright © 2020 MOHAB. All rights reserved.
 //
 
+
 import UIKit
 
 class CommentWithReplayCell: UITableViewCell {
@@ -13,14 +14,14 @@ class CommentWithReplayCell: UITableViewCell {
     @IBOutlet weak var CommentName: UILabel!
     @IBOutlet weak var CommentText: UILabel!
     @IBOutlet weak var CommentTime: UILabel!
-    @IBOutlet weak var Deletbtn: UIButton!
+    
     
     @IBOutlet weak var CommentReplayName: UILabel!
     @IBOutlet weak var CommentReplayText: UILabel!
     @IBOutlet weak var CommentReplayTime: UILabel!
     
     
-    
+    @IBOutlet weak var Deletbtn: UIButton!
     @IBOutlet weak var DeleteHight: NSLayoutConstraint!
     
     var DeletComment : (()->())?

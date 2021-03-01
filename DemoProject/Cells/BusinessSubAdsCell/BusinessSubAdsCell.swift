@@ -27,6 +27,7 @@ class BusinessSubAdsCell: UITableViewCell , FSPagerViewDelegate , FSPagerViewDat
     @IBOutlet weak var DeActiveBtn: UIButton!
     @IBOutlet weak var IsAvilabole: UILabel!
     @IBOutlet weak var CellRate: UILabel!
+    @IBOutlet weak var SARLbl: UILabel!
     
     
     var ImagesUrl = [Adv_media]()

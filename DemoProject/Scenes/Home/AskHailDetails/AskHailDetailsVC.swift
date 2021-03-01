@@ -11,169 +11,115 @@ import FirebaseDynamicLinks
 
 class AskHailDetailsVC: UIViewController ,UITextViewDelegate {
     
+    
+    @IBOutlet weak var ScrollBackGround: UIView!
+    @IBOutlet var MainBackRound: UIView!
+    @IBOutlet weak var buttomView: UIView!
+    
+    @IBOutlet weak var tableviewhight: NSLayoutConstraint!
+    @IBOutlet weak var MainView: UIScrollView!
+    
+    @IBOutlet weak var AskNumber: UILabel!
+    @IBOutlet weak var AskNom: UILabel!
+    
+    
+    @IBOutlet weak var OutheNam: UILabel!
+    
+    @IBOutlet weak var AskImageHight: NSLayoutConstraint!
+    @IBOutlet weak var AskImage: UIImageView!
+    @IBOutlet weak var DetailsView: UIView!
+    @IBOutlet weak var AskTitle: UILabel!
+    @IBOutlet weak var AskDate: UILabel!
+    
+    @IBOutlet weak var AskDistance: UILabel!
+    
+    @IBOutlet weak var CommemtView: UIView!
+    @IBOutlet weak var AdvCommentCount: UILabel!
+    @IBOutlet weak var CommentsTableView: UITableView!
+    @IBOutlet weak var addCommentBtn: UIButton!
+    @IBOutlet weak var ShowMoreBtn: UIButton!
+    @IBOutlet weak var NoCommentLable: UILabel!
+    
     @IBOutlet weak var EditView: UIView!
     
-    @IBOutlet weak var TableView: UITableView!
+    @IBOutlet weak var orderNomberLbl: UILabel!
+    @IBOutlet weak var detailsLbl: UILabel!
+    @IBOutlet weak var commentLbl: UILabel!
+    @IBOutlet weak var deleteLbl: UILabel!
+    @IBOutlet weak var editLbl: UILabel!
     
-    @IBOutlet var BackGround: UIView!
-    @IBOutlet weak var imageHeight: NSLayoutConstraint!
-    @IBOutlet weak var NoCommentLable: UILabel!
-    @IBOutlet weak var MainView: UIScrollView!
-    @IBOutlet weak var askId: UILabel!
-    @IBOutlet weak var askImage: UIImageView!
-    @IBOutlet weak var OtherName: UILabel!
-    @IBOutlet weak var askTitle: UILabel!
-    @IBOutlet weak var askDate: UILabel!
-    @IBOutlet weak var askDes: UILabel!
-    @IBOutlet weak var ShowMoreBtn: UIButton!
-    
-    @IBOutlet weak var CommentBtn: UIButton!
-    @IBOutlet weak var DetailsView: UIView!
-    
-    @IBOutlet weak var topView: NSLayoutConstraint!
-    @IBOutlet weak var CommentCount: UILabel!
-    @IBOutlet weak var ScrollView: NSLayoutConstraint!
-    @IBOutlet weak var titleHight: NSLayoutConstraint!
-    
-    var CommentArray : [Comments_data] = []
-    
-    @IBOutlet weak var AddCommentTV: UITextView!
-    
-    @IBOutlet weak var CommentView: UIView!
-    @IBOutlet weak var CommentViewHeight: NSLayoutConstraint!
     
     var asker_id = ""
     var imageUrl = ""
-    var CommentState = false
+    var ComentData = false
     
     var isActive = true
     var CommenstCount = 0
     
-    private func createSpinnerFooter() -> UIView {
-        let FooterView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
-        FooterView.backgroundColor = .clear
-        let spinner = UIActivityIndicatorView()
-        
-        spinner.style = .large
-        spinner.color = #colorLiteral(red: 0, green: 0.2846388221, blue: 0.497141242, alpha: 1)
-        
-        spinner.center = FooterView.center
-        FooterView.addSubview(spinner)
-        spinner.startAnimating()
-        
-        return FooterView
-        
-    }
-    
     var CurrentPage = 1
+    var CommentArray : [Comments_data] = []
     var lastPage = 1
     
     
     var ask_id = ""
     var height = 200
-    var isMyAsks = 0
     
     var AskData : Question_details?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        NoCommentLable.text = "No Commentns".localized
-        askId.text = ask_id
-        
-        if DynamicLinkModel.isDynamic {
-            self.ask_id = DynamicLinkModel.Product_id
-        }
-        
-        tabBarController?.tabBar.isHidden = true
-        BackGround.backgroundColor = Colors.ViewBackGroundColoer
-        
-        setShadow(view: EditView, width: 1, height: 1, shadowRadius: 5, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
-        
-        CommentView.alpha = 0
-        CommentViewHeight.constant = 0
-        
-        TableView.dataSource = self
-        TableView.delegate = self
-        TableView.RegisterNib(cell: ReplayCommentCell.self)
-        TableView.RegisterNib(cell: CommentWithReplayCell.self)
-        TableView.RegisterNib(cell: CommentCellTableViewCell.self)
-        
-        AddCommentTV.delegate = self
-        
-        
-        self.TableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        self.askDes.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        self.askTitle.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        self.askImage.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        
-        if L102Language.currentAppleLanguage() == "en" {
-            AddCommentTV.text = "Your awnser"
-            AddCommentTV.font = UIFont(name: "Tajawal-Regular", size: 16)
-        }else {
-            AddCommentTV.font = UIFont(name: "Tajawal-Regular", size: 16)
-            AddCommentTV.text = "اجباتك"
-        }
-        
-        AddCommentTV.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        getAskDetails()
-        ShowComment()
-        EditView.isHidden = true
-        MainView.isHidden = true
-        
-        if isMyAsks == 1 {
-            
-        }else{
-            
-        }
-    }
-    
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
-        
-        
-        TableView.layer.removeAllAnimations()
-        askDes.layer.removeAllAnimations()
-        askTitle.layer.removeAllAnimations()
-        
-        
-        
-        if imageUrl == "" {
-            imageHeight.constant = 0
-            titleHight.constant = askTitle.intrinsicContentSize.height
-            topView.constant = askDes.intrinsicContentSize.height + titleHight.constant + 240
-        }else{
-            imageHeight.constant = 200
-            titleHight.constant = askTitle.intrinsicContentSize.height
-            topView.constant = askDes.intrinsicContentSize.height + titleHight.constant + 440
-        }
-        
-        ScrollView.constant = TableView.contentSize.height + topView.constant + 190 + CommentViewHeight.constant
-        
-        UIView.animate(withDuration: 0.5) {
-            self.updateViewConstraints()
-            self.loadViewIfNeeded()
-        }
-        
-    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         .darkContent
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        
-        if AddCommentTV.textColor == #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5) {
-            AddCommentTV.text = ""
-            AddCommentTV.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 1)
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        EditView.isHidden = true
+        MainView.isHidden = true
+        CurrentPage = 1
+        lastPage = 1
+        CommentArray.removeAll()
+        getAskDetails()
+        ShowComment()
     }
     
-    @IBAction func backAction(_ sender: Any) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        
+        ScrollBackGround.backgroundColor = UIColor(hexString: "E5F2F7")
+        MainBackRound.backgroundColor = UIColor(hexString: "E5F2F7")
+        
+        NoCommentLable.text = "No Commentns".localized
+        
+        deleteLbl.text = "Delete".localized
+        editLbl.text = "Edit".localized
+        detailsLbl.text = "Description".localized
+        commentLbl.text = "Comments".localized
+        addCommentBtn.setTitle("Add comment".localized, for: .normal)
+        ShowMoreBtn.setTitle("Show more".localized, for: .normal)
+        AskNumber.text = "Ask Num.".localized
+        
+        setShadow(view: DetailsView, width: Int(0.1), height: Int(0.1), shadowRadius: 1, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+        setShadow(view: CommemtView, width: Int(0.1), height: Int(0.1), shadowRadius: 1, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+        setShadow(view: EditView, width: 1, height: 1, shadowRadius: 5, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
+        
+        AskNom.text = "\(ask_id)"
+        
+        if DynamicLinkModel.isDynamic {
+            self.ask_id = DynamicLinkModel.Product_id
+        }
+        tabBarController?.tabBar.isHidden = true
+        
+        CommentsTableView.delegate = self
+        CommentsTableView.dataSource = self
+        
+        CommentsTableView.RegisterNib(cell: CommentWithReplayCell.self)
+        
+        CommentsTableView.RegisterNib(cell: CommentCellTableViewCell.self)
+        
+        CommentsTableView.RegisterNib(cell: ReplayCommentCell.self)
+        
+    }
+    
+    @IBAction func BackAction(_ sender: Any) {
         
         if DynamicLinkModel.isDynamic {
             DynamicLinkModel.isDynamic = false
@@ -186,112 +132,84 @@ class AskHailDetailsVC: UIViewController ,UITextViewDelegate {
             
         }
         
-        navigationController?.popViewController(animated: true)
         tabBarController?.tabBar.isHidden = false
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func AddComment(_ sender: Any) {
+
+        guard Helper.getapitoken() != nil else {
+            alertSkipLogin()
+            return
+        }
+        
+        let storyboard = UIStoryboard(name: Home, bundle: nil)
+        
+        let vc  = storyboard.instantiateViewController(withIdentifier: "CommentPopupVC") as! CommentPopupVC
+        vc.Delegte = self
+        vc.action = "comment"
+        vc.modalPresentationStyle = .fullScreen
+        self.addChild(vc)
+        vc.view.frame = self.view.frame
+        self.view.addSubview(vc.view)
+        vc.didMove(toParent: self)
         
     }
     
-    @IBAction func ImageAction(_ sender: Any) {
-    
-        Helper.openZoomAbleImage(image: askImage.image ?? UIImage(), vc: self)
+    @IBAction func ShareAds(_ sender: Any) {
         
-    }
-    
-    @IBAction func shareAction(_ sender: Any) {
-        let longLinkUrl = "https://askHail.page.link/?link=4\(self.ask_id)"
+        guard let link = URL(string: "https://askhail.page.link/advert/\(ask_id)") else { return }
+        let dynamicLinksDomainURIPrefix = "https://askHail.page.link"
+        let linkBuilder = DynamicLinkComponents(link: link, domainURIPrefix: dynamicLinksDomainURIPrefix)
         
-        DynamicLinkComponents.shortenURL(URL(string: longLinkUrl)!, options: nil) { shortUrl, warnings, error in
-            if error != nil{
-                let shareText = "\(self.askTitle.text ?? "")" + "\n" + longLinkUrl
-                let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
-                if(UIDevice.current.userInterfaceIdiom == .pad){
-                    vc.popoverPresentationController?.sourceView = self.view
-                }else{
-                    self.present(vc, animated: true, completion: {})
-                }
-            }
-            guard let url = shortUrl, error == nil else { return }
-            print("The short URL is: \(shortUrl)")
-            let shareText = "See the product on the AskHail store" + "\n" + "\(shortUrl!)"
+        linkBuilder?.iOSParameters = DynamicLinkIOSParameters(bundleID: "com.wesal.askHail")
+        linkBuilder?.iOSParameters?.appStoreID = "1542462594"
+        linkBuilder?.iOSParameters?.minimumAppVersion = "1.1.0"
+        
+        linkBuilder?.navigationInfoParameters = DynamicLinkNavigationInfoParameters()
+        linkBuilder?.navigationInfoParameters?.isForcedRedirectEnabled = true
+        
+        linkBuilder?.androidParameters = DynamicLinkAndroidParameters(packageName: "com.wesal.askhail")
+        linkBuilder?.androidParameters?.minimumVersion = 1
+        
+        guard let longDynamicLink = linkBuilder?.url else {
+            return
+            
+        }
+        print(longDynamicLink)
+        
+        DynamicLinkComponents.shortenURL(longDynamicLink, options: nil) { url, warnings, error in
+          guard let url = url, error == nil else { return }
+          print("The short URL is: \(url)")
+            
+            let shareText = "\(self.AskTitle.text ?? "")" + "\n" + "\(url)"
+            
+            print(shareText)
             let vc = UIActivityViewController(activityItems: [shareText], applicationActivities: nil)
             if(UIDevice.current.userInterfaceIdiom == .pad){
                 vc.popoverPresentationController?.sourceView = self.view
             }else{
                 self.present(vc, animated: true, completion: {})
             }
+            
         }
         
-        print("Share")
     }
     
-    
-    
-    @IBAction func AddComment(_ sender: Any) {
+    @IBAction func openImageAction(_ sender: Any) {
         
-        guard Helper.getapitoken() != nil else {
-            
-            alertSkipLogin()
-            return
-        }
+        var imageV = UIImageView()
+        imageV.loadImage(URL(string: AskData?.question_image ?? ""))
+        Helper.openZoomAbleImage(image: imageV.image ?? UIImage(), vc: self)
         
-        if CommentState == false{
-            CommentState = true
-            
-            if L102Language.currentAppleLanguage() == "en" {
-                AddCommentTV.text = "Add New Comment"
-                AddCommentTV.font = UIFont(name: "Tajawal-Regular", size: 16)
-            }else {
-                AddCommentTV.text = "اضافة تعليق جديد"
-                AddCommentTV.font = UIFont(name: "Tajawal-Regular", size: 16)
-            }
-            AddCommentTV.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
-            
-            UIView.animate(withDuration: 0.6, animations: {
-                
-                self.CommentViewHeight.constant = 172
-                self.CommentView.alpha = 1
-                self.TableView.reloadData()
-                
-            }, completion: { _ in
-                
-                UIView.animate(withDuration: 0.3, animations: {
-                    
-                }, completion: { _ in
-                    
-                })
-            })
-            
-            CommentBtn.setTitle("Cancel".localized, for: .normal)
-        }else{
-            
-            CommentState = false
-            UIView.animate(withDuration: 0.3, animations: {
-                self.CommentViewHeight.constant = 0
-                self.CommentView.alpha = 0
-                self.TableView.reloadData()
-                
-                
-            }, completion: { _ in
-                UIView.animate(withDuration: 0.3, animations: {
-                    
-                }, completion: { _ in
-                    
-                    
-                })
-            })
-            CommentBtn.setTitle("Add comment".localized.localized, for: .normal)
-            
-        }
     }
-    
-    @IBAction func AddNewComment(_ sender: Any) {
+    @IBAction func ShoeMoreCommentAction(_ sender: Any) {
         
-        if AddCommentTV.text == "اضافة تعليق جديد" || AddCommentTV.text == "" || AddCommentTV.text == "" {
-            self.navigationController?.view.makeToast( "enter comment first".localized)
-
-        }else {
-            NewComment()
-        }
+        let storyboard = UIStoryboard(name: Home, bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "CommentVC") as! CommentVC
+        vc.Adv_Id = "\(AskData?.question_id ?? 0)"
+        vc.user_id = "\(AskData?.question_advertiser_id ?? 0)"
+        navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -321,28 +239,19 @@ class AskHailDetailsVC: UIViewController ,UITextViewDelegate {
         
     }
     
-    @IBAction func ShoeMoreCommentAction(_ sender: Any) {
-        
-        
-        if isActive {
-            print("Done")
-            isActive = false
-            
-            
-            if CurrentPage < lastPage {
-                
-                CurrentPage = CurrentPage + 1
-                
-                self.getAskDetails()
-                
-            }
-            self.TableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        }
-    }
-    
 }
 
-//MARK:Popup Protocol
+//MARK:- Protocol Controller
+
+extension AskHailDetailsVC : AddComent{
+    func addNewComment(comment_text: String, state: Int, comment_id: String) {
+        if state == 1 {
+            AddReplay(comment_id: comment_id, CommentText: comment_text)
+        }else{
+            NewComment(Ask_id: "\(AskData?.question_id ?? 0)", CommentText: comment_text)
+        }
+    }
+}
 
 extension AskHailDetailsVC : EditAsk {
     func openEditPopUp(state: Int) {
@@ -362,111 +271,7 @@ extension AskHailDetailsVC : EditAsk {
     }
 }
 
-//MARK: Comment TableView Controller
-
-extension AskHailDetailsVC : UITableViewDelegate,UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CommentArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let Model = CommentArray[indexPath.row]
-        if Model.comment_if_advertiser_reply_yet == true {
-            
-            let cell = tableView.dequeue() as CommentWithReplayCell
-            
-            cell.CommentName.text = Model.comment_voter_name ?? "" + "say".localized
-            cell.CommentTime.text = Model.comment_text_custom_date ?? ""
-            cell.CommentText.text = Model.comment_text ?? ""
-            
-            cell.CommentReplayName.text = "Advertiser's answer".localized
-            cell.CommentReplayText.text = Model.comment_advertiser_reply ?? ""
-            cell.CommentReplayTime.text = Model.comment_advertiser_reply_custom_date ?? ""
-            
-            cell.DeleteHight.constant = 0
-            
-            if "\(AskData?.question_advertiser_id ?? 0)" == Helper.getaUser_id(){
-                cell.DeleteHight.constant = 0
-                cell.Deletbtn.isHidden = true
-                
-            }else{
-                if "\(Model.comment_voter_id ?? 0)" == Helper.getaUser_id() {
-                    cell.Deletbtn.isHidden = true
-                    cell.DeleteHight.constant = 0
-                }else{
-                    cell.Deletbtn.isHidden = false
-                    cell.DeleteHight.constant = 24
-                }
-            }
-            
-            cell.DeletComment = {
-                self.RemoveComment(id: Model.comment_id ?? 0)
-                self.CommentArray.remove(at: indexPath.row)
-                self.TableView.reloadData()
-            }
-            
-            return cell
-            
-        }else{
-            
-            if asker_id == Helper.getaUser_id() {
-                
-                let cell = tableView.dequeue() as ReplayCommentCell
-                
-                cell.CommentName.text = Model.comment_voter_name ?? ""
-                cell.CommentText.text = Model.comment_text ?? ""
-                cell.CommentTime.text = Model.comment_text_custom_date ?? ""
-                
-                cell.ShowReplay = {
-                    self.TableView.reloadData()
-                }
-                
-                cell.AddReplay = {
-                    self.AddReplay(text: cell.AddCommentTV.text, id: "\(self.CommentArray[indexPath.row].comment_id ?? 0)", index: indexPath.row)
-                    self.TableView.reloadData()
-                }
-                
-                return cell
-                
-            }else{
-                
-                let cell = tableView.dequeue() as CommentCellTableViewCell
-                
-                cell.CommentName.text = Model.comment_voter_name ?? ""
-                cell.CommentText.text = Model.comment_text ?? ""
-                cell.CommentTime.text = Model.comment_text_custom_date ?? ""
-                
-
-                
-               
-                    if "\(Model.comment_voter_id ?? 0)" == Helper.getaUser_id() {
-                        cell.Deletbtn.isHidden = false
-                        cell.DeleteBtnHight.constant = 24
-                    }else{
-                        cell.Deletbtn.isHidden = true
-                        cell.DeleteBtnHight.constant = 0
-                    }
-                
-                cell.DeletComment = {
-                    self.RemoveComment(id: Model.comment_id ?? 0)
-                    self.CommentArray.remove(at: indexPath.row)
-                    self.TableView.reloadData()
-                    
-                }
-                
-                return cell
-            }
-            
-        }
-    }
-    
-    
-}
-
-
-//MARK:API
+//MARK:-API
 extension AskHailDetailsVC {
     
     func getAskDetails() {
@@ -474,7 +279,7 @@ extension AskHailDetailsVC {
         self.view.lock()
 
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-question/\(ask_id)") { [self] (data : ShowAskDetailsModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-question/\(ask_id)") { (data : ShowAskDetailsModel?, String) in
             
             self.view.unlock()
             
@@ -487,44 +292,34 @@ extension AskHailDetailsVC {
                 guard let data = data else {
                     return
                 }
-                                
+                
                 self.AskData = data.data?.question_details
                 
-                self.asker_id = "\(data.data?.question_details?.question_advertiser_id ?? 0)"
+                self.CheckIfMyAsk()
+                self.ComentData = true
                 
-                if "\(AskData?.question_advertiser_id ?? 0)" == Helper.getaUser_id() {
-                    self.EditView.isHidden = false
-                    self.CommentBtn.isHidden = true
-                }else{
-                    if self.isMyAsks == 1 {
-                        self.EditView.isHidden = false
-                        self.isMyAsks = 0
-                    }else{
-                        self.EditView.isHidden = false
-                    }
-                }
+                self.AskNom.text = "\(data.data?.question_details?.question_id ?? 0)"
                 
-                self.askId.text = "\(data.data?.question_details?.question_id ?? 0)"
+                self.AskImage.loadImage(URL(string: data.data?.question_details?.question_image ?? ""))
                 
-                self.askImage.loadImage(URL(string: data.data?.question_details?.question_image ?? ""))
                 self.imageUrl = data.data?.question_details?.question_image ?? ""
                 print(self.imageUrl)
                 
-                self.OtherName.text = data.data?.question_details?.question_advertiser_name
-                
-                self.OtherName.isHidden = true
+                self.OutheNam.text = data.data?.question_details?.question_advertiser_name
+                                
+                self.OutheNam.isHidden = true
                 
                 if data.data?.question_details?.question_show_name_status == "active" {
-                    self.OtherName.isHidden = false
+                    self.OutheNam.isHidden = false
                 }
                 
                 
-                self.askTitle.text = data.data?.question_details?.question_title ?? ""
+                self.AskTitle.text = data.data?.question_details?.question_title ?? ""
                 
-                self.askDate.text = "published ".localized + "\(data.data?.question_details?.question_custom_published_date ?? "") | " + "Modified ".localized + "\( data.data?.question_details?.question_custom_last_update_date ?? "")"
+                self.AskDate.text = "published ".localized + "\(data.data?.question_details?.question_custom_published_date ?? "") | " + "Modified ".localized + "\( data.data?.question_details?.question_custom_last_update_date ?? "")"
                 
-                self.askDes.text = data.data?.question_details?.question_description ?? ""
-                self.CommentCount.text = "( \(data.data?.comments_count ?? "") )"
+                self.AskDistance.text = data.data?.question_details?.question_description ?? ""
+                self.AdvCommentCount.text = "( \(data.data?.comments_count ?? "") )"
                 self.CommenstCount = Int(data.data?.comments_count ?? "") ?? 0
                 
                 self.CurrentPage = data.data?.comments_pagination?.last_page ?? 0
@@ -537,29 +332,19 @@ extension AskHailDetailsVC {
                     
                 }
                 
-                self.TableView.layer.removeAllAnimations()
-                self.askDes.layer.removeAllAnimations()
-                self.askTitle.layer.removeAllAnimations()
-                
-                
-                
                 if self.imageUrl == "" {
-                    self.imageHeight.constant = 0
-                    self.titleHight.constant = self.askTitle.intrinsicContentSize.height
-                    self.topView.constant = self.askDes.intrinsicContentSize.height + self.titleHight.constant + 240
+                    self.AskImageHight.constant = 0
                 }else{
-                    self.imageHeight.constant = 200
-                    self.titleHight.constant = self.askTitle.intrinsicContentSize.height
-                    self.topView.constant = self.askDes.intrinsicContentSize.height + self.titleHight.constant + 440
+                    self.AskImageHight.constant = 200
                 }
                 
-                self.ScrollView.constant = self.TableView.contentSize.height + self.topView.constant + 190 + self.CommentViewHeight.constant
-                
-                UIView.animate(withDuration: 0.5) {
-                    self.updateViewConstraints()
-                    self.loadViewIfNeeded()
+                DispatchQueue.main.async {
+                    self.CommentsTableView.reloadData()
+                    self.tableviewhight.constant = self.CommentsTableView.contentSize.height
+                    self.MainView.layoutIfNeeded()
                 }
-
+                self.CommentsTableView.reloadData()
+                self.MainView.layoutIfNeeded()
                 self.isActive = true
                 
                 self.MainView.isHidden = false
@@ -568,8 +353,6 @@ extension AskHailDetailsVC {
     }
     
     func ShowComment() {
-        
-       
         ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-question-comments/\(ask_id)?page=\(CurrentPage)") { (data : AllCommentModel?, String) in
             
             if String != nil {
@@ -591,22 +374,34 @@ extension AskHailDetailsVC {
                     self.CommentArray.append(item)
                 }
                 
-                
                 if data.data?.pagination?.has_more_pages == false {
-                    
                     self.ShowMoreBtn.isHidden = true
-                    
-                }
-                
-                if data.data?.data?.count ?? 0 == 0 {
-                    self.NoCommentLable.isHidden = false
-                    self.TableView.isHidden = true
                 }else{
-                    self.NoCommentLable.isHidden = true
-                    self.TableView.isHidden = false
+                    self.ShowMoreBtn.isHidden = false
                 }
                 
-                self.TableView.reloadData()
+                if self.CommentArray.count > 0 {
+                    self.CommentsTableView.reloadData()
+                    self.CommentsTableView.isHidden = false
+                    self.tableviewhight.constant = self.CommentsTableView.contentSize.height
+                    self.NoCommentLable.isHidden = true
+                }else {
+                    self.CommentsTableView.reloadData()
+                    self.CommentsTableView.isHidden = true
+                    self.NoCommentLable.isHidden = false
+                    self.tableviewhight.constant = 50
+                   
+                }
+                
+               
+                DispatchQueue.main.async {
+                    self.CommentsTableView.reloadData()
+                    self.tableviewhight.constant = self.CommentsTableView.contentSize.height
+                    self.MainView.layoutIfNeeded()
+                }
+                self.CommentsTableView.reloadData()
+                self.MainView.layoutIfNeeded()
+                
                 self.isActive = true
                 
                 print(data)
@@ -614,11 +409,11 @@ extension AskHailDetailsVC {
         }
     }
     
-    func NewComment() {
+    func NewComment(Ask_id : String , CommentText : String) {
         
         let Parameters = [
-            "question_id" : ask_id,
-            "comment" : AddCommentTV.text ?? ""
+            "question_id" : Ask_id,
+            "comment" : CommentText ?? ""
         ] as [String : Any]
         
         self.view.lock()
@@ -635,42 +430,16 @@ extension AskHailDetailsVC {
                 guard let data = data else {
                     return
                 }
-                
-                
-                
-                
-                UIView.animate(withDuration: 0.3, animations: {
-                    self.CommentViewHeight.constant = 0
-                    self.CommentView.alpha = 0
-                    self.TableView.reloadData()
-                    
-                    
-                }, completion: { _ in
-                    UIView.animate(withDuration: 0.3, animations: {
-                        
-                    }, completion: { _ in
-                        
-                        
-                    })
-                })
-                
-                
-                guard let model = data.data?.comment else {
-                    return
-                }
-                
-                self.CommentArray.insert(model, at: 0)
-                
                 self.CommenstCount += 1
-                self.CommentCount.text = "( \(self.CommenstCount) )"
-                self.NoCommentLable.isHidden = true
-                self.TableView.isHidden = false
-                
-                self.CommentBtn.setTitle("Add comment".localized.localized, for: .normal)
-                
+                self.AdvCommentCount.text = "( \(self.CommenstCount) )"
                 
                 self.NoCommentLable.isHidden = true
-                self.TableView.reloadData()
+                self.CommentsTableView.isHidden = false
+                
+                self.CurrentPage = 1
+                self.CommentArray.removeAll()
+                
+                self.ShowComment()
                 
                 print(data)
                 
@@ -701,17 +470,19 @@ extension AskHailDetailsVC {
                 
                 
                 self.CommenstCount -= 1
-                self.CommentCount.text = "( \(self.CommenstCount) )"
+                self.AdvCommentCount.text = "( \(self.CommenstCount) )"
                 
                 if self.CommentArray.count == 0 {
-                    self.TableView.isHidden = true
+                    self.CommentsTableView.isHidden = true
                     self.NoCommentLable.isHidden = false
                 }else{
-                    self.TableView.isHidden = false
+                    self.CommentsTableView.isHidden = false
                     self.NoCommentLable.isHidden = true
                 }
                 
-                self.TableView.reloadData()
+                self.CurrentPage = 1
+                self.CommentArray.removeAll()
+                self.ShowComment()
                 
                 print(data)
                 
@@ -719,11 +490,11 @@ extension AskHailDetailsVC {
         }
     }
     
-    func AddReplay(text : String , id : String , index : Int) {
+    func AddReplay(comment_id : String , CommentText : String) {
         
         let Parameters = [
-            "comment_id" : id,
-            "reply" : text
+            "comment_id" : comment_id,
+            "reply" : CommentText
         ]
         
         ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject] , url: "\(hostName)business/question-add-or-update-reply-on-comment") { (data : Level_6_Model?, String) in
@@ -738,11 +509,10 @@ extension AskHailDetailsVC {
                     return
                 }
                 
+                self.CurrentPage = 1
+                self.CommentArray.removeAll()
                 
-                self.CommentArray[index].comment_if_advertiser_reply_yet = true
-                self.CommentArray[index].comment_advertiser_reply = text
-                self.TableView.reloadData()
-                
+                self.ShowComment()
                 
                 print(data)
             }

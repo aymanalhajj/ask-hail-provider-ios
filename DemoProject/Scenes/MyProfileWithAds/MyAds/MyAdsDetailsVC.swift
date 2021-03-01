@@ -427,15 +427,15 @@ extension MyAdsDetailsVC : UITableViewDataSource , UITableViewDelegate {
             cell.CommentText.text = Model.comment_text ?? ""
             cell.CommentTime.text = Model.comment_text_custom_date ?? ""
             
-            cell.ShowReplay = {
-                
-                self.CommentTableView.reloadData()
-            }
+//            cell.ShowReplay = {
+//                
+//                self.CommentTableView.reloadData()
+//            }
             
-            cell.AddReplay = {
-                self.AddReplay(text: cell.AddCommentTV.text, id: "\(self.CommentArray[indexPath.row].comment_id ?? 0)", index: indexPath.row)
-                self.CommentTableView.reloadData()
-            }
+//            cell.AddReplay = {
+//                self.AddReplay(text: cell.AddCommentTV.text, id: "\(self.CommentArray[indexPath.row].comment_id ?? 0)", index: indexPath.row)
+//                self.CommentTableView.reloadData()
+//            }
             
             return cell
             

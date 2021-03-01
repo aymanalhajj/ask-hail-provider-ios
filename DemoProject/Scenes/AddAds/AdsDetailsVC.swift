@@ -181,7 +181,7 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
     
     @IBAction func ConfirmAction(_ sender: Any) {
         
-        if OrderTitleTf.text?.isEmpty != true , PriceTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , desTxt.text != "وصف الطلب" , desTxt.text != "Description of the request" , directionTf.text?.isEmpty != true ,RegionTf.text?.isEmpty != true ,
+        if OrderTitleTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , desTxt.text != "وصف الطلب" , desTxt.text != "Description of the request" , directionTf.text?.isEmpty != true ,RegionTf.text?.isEmpty != true ,
            LocationTf.text?.isEmpty != true{
             
             
@@ -192,9 +192,6 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
             
             if OrderTitleTf.text?.isEmpty == true {
                 ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
-            }
-            if PriceTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
             }
             if desTxt.text?.isEmpty == true || desTxt.text == "وصف الطلب" || desTxt.text == "Description of the request"{
                 ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)

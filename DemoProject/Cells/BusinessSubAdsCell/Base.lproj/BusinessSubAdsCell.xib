@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="327" height="200"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="X4f-l9-7UO">
-                                <rect key="frame" x="0.0" y="0.0" width="123" height="28"/>
+                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="27.5"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,26 +106,31 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="للبيع شاليه بحائل حي الشفاء" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjv-tB-tP3">
-                        <rect key="frame" x="133" y="154" width="178" height="14"/>
+                        <rect key="frame" x="16" y="150" width="295" height="14"/>
                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ر.س" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-gT-20e">
-                        <rect key="frame" x="240" y="177.5" width="29" height="14"/>
-                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32,658" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB7-t0-wha">
-                        <rect key="frame" x="273" y="174" width="38" height="21"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="pjj-uL-s2M"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-8J-3C7">
+                        <rect key="frame" x="240" y="171" width="71" height="21"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ر.س" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ds-gT-20e">
+                                <rect key="frame" x="0.0" y="0.0" width="29" height="21"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32,658" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KB7-t0-wha">
+                                <rect key="frame" x="33" y="0.0" width="38" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="pjj-uL-s2M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="views" translatesAutoresizingMaskIntoConstraints="NO" id="rgE-em-kzl">
                         <rect key="frame" x="45.5" y="171" width="18" height="18"/>
                         <constraints>
@@ -169,22 +174,21 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="hjv-tB-tP3" firstAttribute="centerY" secondItem="O4u-Ad-3xu" secondAttribute="centerY" constant="57" id="5DX-Vy-qdI"/>
                     <constraint firstAttribute="bottom" secondItem="Uny-qv-Bly" secondAttribute="bottom" id="EDa-bM-3Cy"/>
                     <constraint firstItem="4Rk-KQ-cQ7" firstAttribute="leading" secondItem="Gjz-9J-1F9" secondAttribute="trailing" constant="2" id="ESU-6H-4fY"/>
-                    <constraint firstItem="KB7-t0-wha" firstAttribute="trailing" secondItem="hjv-tB-tP3" secondAttribute="trailing" id="Hyj-xj-NgZ"/>
-                    <constraint firstItem="KB7-t0-wha" firstAttribute="top" secondItem="hjv-tB-tP3" secondAttribute="bottom" constant="6" id="J9L-wF-NDm"/>
                     <constraint firstAttribute="trailing" secondItem="R0n-zz-c4T" secondAttribute="trailing" id="Jpy-Aa-zQ2"/>
                     <constraint firstItem="spG-2v-nm8" firstAttribute="leading" secondItem="dNh-Hu-BT2" secondAttribute="trailing" id="LfT-zP-xDt"/>
+                    <constraint firstAttribute="bottom" secondItem="fBk-8J-3C7" secondAttribute="bottom" constant="8" id="Lyq-ug-f9Q"/>
                     <constraint firstItem="Uny-qv-Bly" firstAttribute="leading" secondItem="O4u-Ad-3xu" secondAttribute="leading" id="Na2-w4-GUY"/>
-                    <constraint firstItem="7Ds-gT-20e" firstAttribute="centerY" secondItem="KB7-t0-wha" secondAttribute="centerY" id="Obh-Tt-dgs"/>
                     <constraint firstItem="sap-Gu-FOz" firstAttribute="leading" secondItem="O4u-Ad-3xu" secondAttribute="leading" constant="16" id="Rbe-KT-bX3"/>
-                    <constraint firstItem="KB7-t0-wha" firstAttribute="leading" secondItem="7Ds-gT-20e" secondAttribute="trailing" constant="4" id="S1x-dh-Qnz"/>
                     <constraint firstItem="rgE-em-kzl" firstAttribute="leading" secondItem="sap-Gu-FOz" secondAttribute="trailing" constant="2" id="TMA-e5-h0U"/>
                     <constraint firstItem="58g-nn-XP0" firstAttribute="leading" secondItem="spG-2v-nm8" secondAttribute="trailing" constant="8" id="U9h-Mn-QVY"/>
                     <constraint firstItem="Gjz-9J-1F9" firstAttribute="centerY" secondItem="8hp-lC-qcU" secondAttribute="centerY" constant="1" id="UP6-NZ-HcS"/>
                     <constraint firstItem="R0n-zz-c4T" firstAttribute="leading" secondItem="O4u-Ad-3xu" secondAttribute="leading" id="UUL-A1-kjF"/>
                     <constraint firstAttribute="trailing" secondItem="avU-pX-Q6n" secondAttribute="trailing" constant="4" id="Ufw-2J-wVb"/>
                     <constraint firstItem="spG-2v-nm8" firstAttribute="centerY" secondItem="dNh-Hu-BT2" secondAttribute="centerY" constant="-2" id="VV3-jm-B2P"/>
+                    <constraint firstAttribute="trailing" secondItem="fBk-8J-3C7" secondAttribute="trailing" constant="16" id="XWe-Gq-aWc"/>
                     <constraint firstItem="8hp-lC-qcU" firstAttribute="centerY" secondItem="rgE-em-kzl" secondAttribute="centerY" constant="1" id="YL3-SB-Ynp"/>
                     <constraint firstItem="Gjz-9J-1F9" firstAttribute="leading" secondItem="8hp-lC-qcU" secondAttribute="trailing" constant="2" id="Yhd-QH-DKx"/>
                     <constraint firstItem="4Rk-KQ-cQ7" firstAttribute="centerY" secondItem="Gjz-9J-1F9" secondAttribute="centerY" constant="-2" id="aP0-Ll-BiM"/>
@@ -199,10 +203,10 @@
                     <constraint firstAttribute="bottom" secondItem="ban-1l-hWE" secondAttribute="bottom" id="p5X-sL-05x"/>
                     <constraint firstAttribute="trailing" secondItem="Uny-qv-Bly" secondAttribute="trailing" id="qt7-pQ-qNK"/>
                     <constraint firstItem="Uny-qv-Bly" firstAttribute="top" secondItem="O4u-Ad-3xu" secondAttribute="top" id="sGH-8I-CEc"/>
-                    <constraint firstAttribute="bottom" secondItem="KB7-t0-wha" secondAttribute="bottom" constant="5" id="uos-Mg-rwi"/>
+                    <constraint firstAttribute="trailing" secondItem="hjv-tB-tP3" secondAttribute="trailing" constant="16" id="sgJ-hY-lmX"/>
                     <constraint firstItem="avU-pX-Q6n" firstAttribute="top" secondItem="O4u-Ad-3xu" secondAttribute="top" constant="16" id="wb9-Zi-0oz"/>
-                    <constraint firstAttribute="trailing" secondItem="KB7-t0-wha" secondAttribute="trailing" constant="16" id="y2K-nY-5Wo"/>
                     <constraint firstAttribute="trailing" secondItem="ban-1l-hWE" secondAttribute="trailing" id="z2q-0h-18e"/>
+                    <constraint firstItem="hjv-tB-tP3" firstAttribute="leading" secondItem="O4u-Ad-3xu" secondAttribute="leading" constant="16" id="z9f-79-0cd"/>
                     <constraint firstItem="ban-1l-hWE" firstAttribute="leading" secondItem="O4u-Ad-3xu" secondAttribute="leading" id="zW4-cM-MJL"/>
                 </constraints>
             </tableViewCellContentView>
@@ -215,6 +219,7 @@
                 <outlet property="IsAvilabole" destination="58g-nn-XP0" id="6po-Dz-oO7"/>
                 <outlet property="PagerView" destination="ban-1l-hWE" id="8Yx-tj-c4F"/>
                 <outlet property="Price" destination="KB7-t0-wha" id="dsn-9y-Srl"/>
+                <outlet property="SARLbl" destination="7Ds-gT-20e" id="McH-fB-syG"/>
                 <outlet property="StarAdView" destination="avU-pX-Q6n" id="yaA-RG-3fq"/>
                 <outlet property="ViewsNumber" destination="sap-Gu-FOz" id="YPN-g4-8ER"/>
                 <outlet property="bgView" destination="R0n-zz-c4T" id="2AE-9W-PzV"/>

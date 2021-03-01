@@ -19,6 +19,7 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     
     @IBOutlet weak var noSocialLabel: UILabel!
     
+    @IBOutlet weak var SarLbl: UILabel!
     @IBOutlet weak var EditView: UIView!
     @IBOutlet weak var StarBtn: UIImageView!
     @IBOutlet weak var MapIcon: UIImageView!
@@ -578,7 +579,14 @@ extension BusinessAdsDetailsVC {
                 
                 self.AdsNumber.text = "  \(data.data?.advertisement_details?.adv_id ?? 0)".localized
                 self.AdsTitle.text = data.data?.advertisement_details?.adv_title ?? ""
-                self.AdvPrice.text = data.data?.advertisement_details?.adv_price ?? ""
+                
+                if data.data?.advertisement_details?.adv_price ?? "" == "0" {
+                    self.SarLbl.isHidden = true
+                    self.AdvPrice.isHidden = true
+                }else{
+                    self.AdvPrice.text = data.data?.advertisement_details?.adv_price ?? ""
+                }
+                
                 self.AdsDisnatce.text = data.data?.advertisement_details?.adv_distance ?? ""
                 print(data.data?.advertisement_details?.adv_distance ?? "")
                 self.ViewsNumber.text = data.data?.advertisement_details?.adv_views ?? ""
