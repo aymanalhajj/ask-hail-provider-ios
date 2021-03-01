@@ -2290,8 +2290,8 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="pkb-z2-QM9" secondAttribute="trailing" constant="24" id="0XO-pU-lLQ"/>
                                             <constraint firstItem="pkb-z2-QM9" firstAttribute="top" secondItem="hST-Er-sD1" secondAttribute="bottom" constant="24" id="7Oh-of-uR3"/>
+                                            <constraint firstAttribute="bottom" secondItem="pkb-z2-QM9" secondAttribute="bottom" constant="20" symbolic="YES" id="7m1-sA-GM7"/>
                                             <constraint firstAttribute="trailing" secondItem="RgX-6T-6eb" secondAttribute="trailing" constant="32" id="83t-QZ-DCH"/>
-                                            <constraint firstAttribute="height" constant="180" id="9SN-2v-sMV"/>
                                             <constraint firstItem="RgX-6T-6eb" firstAttribute="leading" secondItem="UPf-D3-XFG" secondAttribute="leading" constant="32" id="Ckh-wT-qQO"/>
                                             <constraint firstAttribute="trailing" secondItem="hST-Er-sD1" secondAttribute="trailing" constant="24" id="Dj2-Gt-rM3"/>
                                             <constraint firstItem="pkb-z2-QM9" firstAttribute="leading" secondItem="UPf-D3-XFG" secondAttribute="leading" constant="24" id="NB8-T6-M42"/>
@@ -2636,7 +2636,7 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="180" id="3pw-la-oJ2"/>
+                                            <constraint firstAttribute="bottom" secondItem="CQL-fU-5uh" secondAttribute="bottom" constant="20" symbolic="YES" id="AD0-8E-eat"/>
                                             <constraint firstItem="4Ua-MS-jrW" firstAttribute="leading" secondItem="ncj-QI-egt" secondAttribute="leading" constant="32" id="SvD-rI-aoz"/>
                                             <constraint firstItem="4Ua-MS-jrW" firstAttribute="top" secondItem="ncj-QI-egt" secondAttribute="top" constant="24" id="T1d-BH-8zd"/>
                                             <constraint firstAttribute="trailing" secondItem="CQL-fU-5uh" secondAttribute="trailing" constant="24" id="WWQ-5v-Pnq"/>
@@ -2898,7 +2898,6 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="C89-lK-3fF"/>
                                     <constraint firstItem="CJG-l5-DTC" firstAttribute="top" secondItem="6ja-gG-R7L" secondAttribute="bottom" constant="24" id="Ceq-cs-lbv"/>
                                     <constraint firstItem="uXK-BI-Kbq" firstAttribute="top" secondItem="SkA-m1-uwu" secondAttribute="top" constant="24" id="Lgn-Pr-hpx"/>
                                     <constraint firstItem="uXK-BI-Kbq" firstAttribute="leading" secondItem="SkA-m1-uwu" secondAttribute="leading" constant="32" id="MC2-jJ-LBa"/>
@@ -2907,6 +2906,7 @@
                                     <constraint firstAttribute="trailing" secondItem="CJG-l5-DTC" secondAttribute="trailing" constant="24" id="dFb-gB-2Qa"/>
                                     <constraint firstAttribute="trailing" secondItem="uXK-BI-Kbq" secondAttribute="trailing" constant="32" id="ff9-xP-iTA"/>
                                     <constraint firstItem="CJG-l5-DTC" firstAttribute="leading" secondItem="SkA-m1-uwu" secondAttribute="leading" constant="24" id="ijI-dj-057"/>
+                                    <constraint firstAttribute="bottom" secondItem="CJG-l5-DTC" secondAttribute="bottom" constant="20" symbolic="YES" id="lfd-Yc-v5R"/>
                                     <constraint firstItem="6ja-gG-R7L" firstAttribute="leading" secondItem="SkA-m1-uwu" secondAttribute="leading" constant="24" id="qg5-cG-ZMT"/>
                                 </constraints>
                             </view>

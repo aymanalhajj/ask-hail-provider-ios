@@ -121,7 +121,7 @@ extension SpecialPackageVC {
         
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)special-packages?special_with=\(displayPlace)") { (data : SpecialPackageModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)business-special-packages?special_with=\(displayPlace)") { (data : SpecialPackageModel?, String) in
             
             self.view.unlock()
             

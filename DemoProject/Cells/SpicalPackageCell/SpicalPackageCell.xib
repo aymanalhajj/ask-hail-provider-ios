@@ -56,7 +56,7 @@
                                     <constraint firstAttribute="height" constant="26" id="eqq-1d-o6b"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لمكاتب التسويق والإستثمارات العقارية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBT-Wv-5dX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لمكاتب التسويق والإستثمارات العقارية" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBT-Wv-5dX">
                                 <rect key="frame" x="24" y="54" width="323" height="14"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                 <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,10 +157,10 @@
                         <constraints>
                             <constraint firstItem="znz-kz-Ede" firstAttribute="leading" secondItem="mob-XH-RYb" secondAttribute="leading" constant="32" id="8pZ-VT-1A1"/>
                             <constraint firstItem="znz-kz-Ede" firstAttribute="top" secondItem="mob-XH-RYb" secondAttribute="top" constant="24" id="Dtl-ei-T8F"/>
+                            <constraint firstAttribute="bottom" secondItem="NmM-fq-7fa" secondAttribute="bottom" constant="24" id="EaZ-5O-at4"/>
                             <constraint firstItem="NmM-fq-7fa" firstAttribute="top" secondItem="KBT-Wv-5dX" secondAttribute="bottom" constant="24" id="Go1-NE-Gid"/>
                             <constraint firstAttribute="trailing" secondItem="znz-kz-Ede" secondAttribute="trailing" constant="32" id="Xbd-CY-R2I"/>
                             <constraint firstAttribute="trailing" secondItem="NmM-fq-7fa" secondAttribute="trailing" constant="24" id="cYX-Cb-qcf"/>
-                            <constraint firstAttribute="height" constant="180" id="dYY-Rs-MHc"/>
                             <constraint firstItem="KBT-Wv-5dX" firstAttribute="top" secondItem="znz-kz-Ede" secondAttribute="bottom" constant="4" id="eil-1w-GES"/>
                             <constraint firstAttribute="trailing" secondItem="KBT-Wv-5dX" secondAttribute="trailing" constant="24" id="kDN-Pb-h7B"/>
                             <constraint firstItem="NmM-fq-7fa" firstAttribute="leading" secondItem="mob-XH-RYb" secondAttribute="leading" constant="24" id="mZm-gN-Vqr"/>

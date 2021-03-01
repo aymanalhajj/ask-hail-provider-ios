@@ -109,7 +109,7 @@ extension SpectailPaymentWayVC {
         
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)special-package/\(Package_id)") { (data : PackageModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)business-special-package/\(Package_id)") { (data : PackageModel?, String) in
             
             self.view.unlock()
             self.LoadingView.isHidden = true

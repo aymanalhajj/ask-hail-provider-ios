@@ -255,7 +255,7 @@ extension SpecialConfirmTransActionVC {
         self.LoadingView.isHidden = false
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)special-package/\(Package_id)") { (data : PackageModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)business-special-package/\(Package_id)") { (data : PackageModel?, String) in
             
             self.LoadingView.isHidden = true
             self.view.unlock()

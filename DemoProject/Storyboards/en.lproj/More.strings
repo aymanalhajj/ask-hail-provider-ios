@@ -90,7 +90,7 @@
 "Z6A-pI-Cxd.text" = "+966";
 
 /* Class = "UIButton"; normalTitle = "عقود الإيجار"; ObjectID = "Z9E-tr-B9p"; */
-"Z9E-tr-B9p.normalTitle" = "Lease contracts";
+"Z9E-tr-B9p.normalTitle" = "public";
 
 /* Class = "UITextField"; placeholder = "وقت الزيارة"; ObjectID = "ZfB-w3-o2c"; */
 "ZfB-w3-o2c.placeholder" = "visit time";
@@ -138,7 +138,7 @@
 "sCM-Fl-bUT.text" = "We are happy with your inquiries and questions.";
 
 /* Class = "UIButton"; normalTitle = "أخرى"; ObjectID = "sZk-pP-Cna"; */
-"sZk-pP-Cna.normalTitle" = "Other";
+"sZk-pP-Cna.normalTitle" = "students";
 
 /* Class = "UILabel"; text = " اللغة العربية"; ObjectID = "t5e-Dp-lwy"; */
 "t5e-Dp-lwy.text" = "English";

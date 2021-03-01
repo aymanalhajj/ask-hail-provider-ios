@@ -158,7 +158,7 @@ extension SpecialChooseBanckVC {
         self.view.lock()
 
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)package/\(Package_id)") { (data : PackageModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)business-package/\(Package_id)") { (data : PackageModel?, String) in
             
             self.view.unlock()
             

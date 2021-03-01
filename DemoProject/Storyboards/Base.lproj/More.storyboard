@@ -1786,7 +1786,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBQ-hx-TXE">
                                         <rect key="frame" x="0.0" y="0.0" width="416" height="680"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نقوم بتصوير العقار من اجله نشره" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-uG-G8f">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نقوم بتصوير العقار من اجل نشره" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6l-uG-G8f">
                                                 <rect key="frame" x="24" y="16" width="368" height="16"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                                 <color key="textColor" red="0.0078431372550000003" green="0.2901960784" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2165,6 +2165,7 @@
         <!--ServicesVC-->
         <scene sceneID="Efa-ym-h9K">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhZ-2N-SjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ServicesVC" id="ZC3-Km-Zg0" customClass="ServicesVC" customModule="Markati" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQB-dq-Rrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2177,9 +2178,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZk-pP-Cna">
-                                                <rect key="frame" x="51.5" y="16" width="35" height="28"/>
+                                                <rect key="frame" x="40.5" y="16" width="57" height="28"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
-                                                <state key="normal" title="أخرى">
+                                                <state key="normal" title="الطلابية">
                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -2207,9 +2208,9 @@
                                         <rect key="frame" x="138" y="0.0" width="138" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9E-tr-B9p">
-                                                <rect key="frame" x="28" y="16" width="82" height="28"/>
+                                                <rect key="frame" x="46" y="16" width="46" height="28"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
-                                                <state key="normal" title="عقود الإيجار">
+                                                <state key="normal" title="العامة">
                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -2342,7 +2343,6 @@
                         <outlet property="tableView" destination="OX1-7P-iuD" id="bnw-ec-LBe"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FhZ-2N-SjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2612" y="830"/>
         </scene>

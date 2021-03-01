@@ -135,7 +135,7 @@ class PhotographyRequestVC: UIViewController, UITextFieldDelegate, UITextViewDel
             
         }else {
             
-            desTxt.text = "العوان بالكامل"
+            desTxt.text = "العنوان بالكامل"
         }
         
         desTxt.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
@@ -213,7 +213,7 @@ class PhotographyRequestVC: UIViewController, UITextFieldDelegate, UITextViewDel
                 desTxt.textAlignment = .left
             }else {
                 desTxt.textAlignment = .right
-                desTxt.text = "العوان بالكامل"
+                desTxt.text = "العنوان بالكامل"
             }
             
         }

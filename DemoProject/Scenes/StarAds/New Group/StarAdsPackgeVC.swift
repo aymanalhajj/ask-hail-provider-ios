@@ -138,7 +138,7 @@ extension StarAdsPackgeVC {
         
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)packages") { (data : PackagesModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)business-packages") { (data : PackagesModel?, String) in
             
             self.view.unlock()
             

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "200-1. الصفحة الإفتتاحية-2.png",
+      "filename" : "200-1. الصفحة الإفتتاحية.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "200-1. الصفحة الإفتتاحية-1.png",
+      "filename" : "200-1. الصفحة الإفتتاحية@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "200-1. الصفحة الإفتتاحية.png",
+      "filename" : "200-1. الصفحة الإفتتاحية@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

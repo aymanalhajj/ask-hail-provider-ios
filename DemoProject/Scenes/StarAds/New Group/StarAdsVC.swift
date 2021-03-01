@@ -230,7 +230,7 @@ extension StarAdsVC {
     func getSpecialDetailss() {
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)show-special-information") { (data : SpecialModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil , url: "\(hostName)business-show-special-information") { (data : SpecialModel?, String) in
             
             self.view.unlock()
             

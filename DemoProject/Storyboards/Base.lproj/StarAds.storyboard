@@ -512,12 +512,12 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="aJp-ll-iPo" secondAttribute="trailing" constant="24" id="3kv-fQ-kgD"/>
+                                    <constraint firstAttribute="bottom" secondItem="aJp-ll-iPo" secondAttribute="bottom" constant="20" symbolic="YES" id="BpG-LY-zoA"/>
                                     <constraint firstItem="aJp-ll-iPo" firstAttribute="leading" secondItem="R73-ZH-ihm" secondAttribute="leading" constant="24" id="FVm-ib-oKL"/>
                                     <constraint firstItem="aJp-ll-iPo" firstAttribute="top" secondItem="9cl-fu-ArF" secondAttribute="bottom" constant="24" id="Iof-6m-EeH"/>
                                     <constraint firstItem="OSj-GL-Na4" firstAttribute="top" secondItem="R73-ZH-ihm" secondAttribute="top" constant="24" id="WHz-WR-afR"/>
                                     <constraint firstItem="OSj-GL-Na4" firstAttribute="leading" secondItem="R73-ZH-ihm" secondAttribute="leading" constant="32" id="Z4B-I6-wDx"/>
                                     <constraint firstAttribute="trailing" secondItem="OSj-GL-Na4" secondAttribute="trailing" constant="32" id="ahT-eW-lWL"/>
-                                    <constraint firstAttribute="height" constant="180" id="dvx-EJ-inu"/>
                                     <constraint firstItem="9cl-fu-ArF" firstAttribute="leading" secondItem="R73-ZH-ihm" secondAttribute="leading" constant="24" id="qoK-xw-9n0"/>
                                     <constraint firstAttribute="trailing" secondItem="9cl-fu-ArF" secondAttribute="trailing" constant="24" id="rs2-9y-ALC"/>
                                     <constraint firstItem="9cl-fu-ArF" firstAttribute="top" secondItem="OSj-GL-Na4" secondAttribute="bottom" constant="4" id="wGo-Mk-ypo"/>
@@ -830,13 +830,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="hyT-3w-mcz" firstAttribute="top" secondItem="lpv-RW-w7B" secondAttribute="bottom" constant="4" id="6y4-Q0-qSy"/>
-                                    <constraint firstAttribute="height" constant="180" id="7su-5P-rdA"/>
                                     <constraint firstAttribute="trailing" secondItem="lpv-RW-w7B" secondAttribute="trailing" constant="32" id="BQz-bX-nyB"/>
                                     <constraint firstAttribute="trailing" secondItem="hyT-3w-mcz" secondAttribute="trailing" constant="24" id="E3T-DV-Gqk"/>
                                     <constraint firstItem="lpv-RW-w7B" firstAttribute="top" secondItem="Ed4-78-Z9S" secondAttribute="top" constant="24" id="FQr-VT-irC"/>
                                     <constraint firstItem="lpv-RW-w7B" firstAttribute="leading" secondItem="Ed4-78-Z9S" secondAttribute="leading" constant="32" id="GVQ-i2-vi1"/>
                                     <constraint firstAttribute="trailing" secondItem="u1X-5K-FSl" secondAttribute="trailing" constant="24" id="Heh-Wu-fEF"/>
                                     <constraint firstItem="u1X-5K-FSl" firstAttribute="leading" secondItem="Ed4-78-Z9S" secondAttribute="leading" constant="24" id="KnG-si-UMX"/>
+                                    <constraint firstAttribute="bottom" secondItem="u1X-5K-FSl" secondAttribute="bottom" constant="20" symbolic="YES" id="VYY-9l-Jx4"/>
                                     <constraint firstItem="u1X-5K-FSl" firstAttribute="top" secondItem="hyT-3w-mcz" secondAttribute="bottom" constant="24" id="ZD4-zJ-qE4"/>
                                     <constraint firstItem="hyT-3w-mcz" firstAttribute="leading" secondItem="Ed4-78-Z9S" secondAttribute="leading" constant="24" id="cyU-kx-E72"/>
                                 </constraints>
@@ -1064,6 +1064,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GDR-dg-nMV" secondAttribute="trailing" constant="24" id="1Pr-T8-kUS"/>
+                                    <constraint firstAttribute="bottom" secondItem="GDR-dg-nMV" secondAttribute="bottom" constant="20" symbolic="YES" id="5ua-WM-FkN"/>
                                     <constraint firstAttribute="trailing" secondItem="zxQ-LT-7l0" secondAttribute="trailing" constant="24" id="EFn-G0-V8S"/>
                                     <constraint firstItem="GDR-dg-nMV" firstAttribute="leading" secondItem="TMe-yO-hxf" secondAttribute="leading" constant="24" id="P2T-RF-8qI"/>
                                     <constraint firstItem="GDR-dg-nMV" firstAttribute="top" secondItem="zxQ-LT-7l0" secondAttribute="bottom" constant="24" id="PIZ-tH-hZh"/>
@@ -1071,7 +1072,6 @@
                                     <constraint firstItem="zxQ-LT-7l0" firstAttribute="top" secondItem="JqX-u9-fMw" secondAttribute="bottom" constant="4" id="St5-9L-Cx1"/>
                                     <constraint firstItem="JqX-u9-fMw" firstAttribute="top" secondItem="TMe-yO-hxf" secondAttribute="top" constant="24" id="Tcw-If-sqv"/>
                                     <constraint firstItem="zxQ-LT-7l0" firstAttribute="leading" secondItem="TMe-yO-hxf" secondAttribute="leading" constant="24" id="TgU-Yw-nEf"/>
-                                    <constraint firstAttribute="height" constant="180" id="Z9F-dY-lHp"/>
                                     <constraint firstAttribute="trailing" secondItem="JqX-u9-fMw" secondAttribute="trailing" constant="32" id="ZgC-ur-7Ad"/>
                                 </constraints>
                             </view>
