@@ -24,14 +24,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OHv-bp-iXp">
+                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OHv-bp-iXp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.01176470588" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-Bu-GDp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xZ-Bu-GDp">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="BackAction:" destination="cuT-BU-b78" eventType="touchUpInside" id="th6-QF-3KK"/>
@@ -257,10 +255,18 @@
                         <viewLayoutGuide key="safeArea" id="DH0-dn-rOA"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OHv-bp-iXp" firstAttribute="leading" secondItem="DH0-dn-rOA" secondAttribute="leading" id="3ZJ-ge-Moz"/>
+                            <constraint firstItem="5xZ-Bu-GDp" firstAttribute="top" secondItem="DH0-dn-rOA" secondAttribute="top" id="50f-YO-gER"/>
+                            <constraint firstItem="OHv-bp-iXp" firstAttribute="trailing" secondItem="DH0-dn-rOA" secondAttribute="trailing" id="5KG-MI-Ipq"/>
+                            <constraint firstAttribute="bottom" secondItem="OHv-bp-iXp" secondAttribute="bottom" id="Byj-4r-Pji"/>
+                            <constraint firstItem="OHv-bp-iXp" firstAttribute="top" secondItem="VhK-wN-5qT" secondAttribute="top" id="FZR-Uf-aK2"/>
                             <constraint firstItem="agi-Qd-9R6" firstAttribute="centerY" secondItem="VhK-wN-5qT" secondAttribute="centerY" id="K2X-uG-Sxt"/>
                             <constraint firstItem="DH0-dn-rOA" firstAttribute="trailing" secondItem="agi-Qd-9R6" secondAttribute="trailing" constant="36" id="KDD-6J-CUj"/>
                             <constraint firstItem="agi-Qd-9R6" firstAttribute="leading" secondItem="DH0-dn-rOA" secondAttribute="leading" constant="36" id="fdK-tS-7Ld"/>
                             <constraint firstItem="agi-Qd-9R6" firstAttribute="centerX" secondItem="VhK-wN-5qT" secondAttribute="centerX" id="fpp-RV-9In"/>
+                            <constraint firstItem="5xZ-Bu-GDp" firstAttribute="bottom" secondItem="DH0-dn-rOA" secondAttribute="bottom" id="kL2-Vf-LfL"/>
+                            <constraint firstItem="5xZ-Bu-GDp" firstAttribute="leading" secondItem="DH0-dn-rOA" secondAttribute="leading" id="njC-HS-nX9"/>
+                            <constraint firstItem="5xZ-Bu-GDp" firstAttribute="trailing" secondItem="DH0-dn-rOA" secondAttribute="trailing" id="qnS-Ta-CBK"/>
                         </constraints>
                     </view>
                 </viewController>

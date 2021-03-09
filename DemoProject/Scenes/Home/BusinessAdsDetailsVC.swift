@@ -17,6 +17,12 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     
     // MARK:OutLet
     
+    var TwitterLbl = ""
+    var InstgrameLbl = ""
+    var SnapLable = ""
+    var FaceBookLbl = ""
+    var WebSiteLbl = ""
+    
     @IBOutlet weak var noSocialLabel: UILabel!
     
     @IBOutlet weak var SarLbl: UILabel!
@@ -34,11 +40,7 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     @IBOutlet weak var AdsDate: UILabel!
     @IBOutlet weak var AdvState: UILabel!
     @IBOutlet weak var AdvPrice: UILabel!
-    @IBOutlet weak var TwitterLbl: UILabel!
-    @IBOutlet weak var InstgrameLbl: UILabel!
-    @IBOutlet weak var SnapLable: UILabel!
-    @IBOutlet weak var FaceBookLbl: UILabel!
-    @IBOutlet weak var WebSiteLbl: UILabel!
+    
     @IBOutlet weak var AdsDescribtion: UILabel!
     @IBOutlet weak var Addess: UILabel!
     @IBOutlet weak var NumberOfComments: UILabel!
@@ -58,7 +60,6 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     @IBOutlet weak var FeatuseTopTitle: UIStackView!
     
     @IBOutlet weak var SocialView: UIView!
-    @IBOutlet weak var SocialViewHight: NSLayoutConstraint!
     @IBOutlet weak var SocialStackView: UIStackView!
     
     
@@ -67,6 +68,9 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     @IBOutlet weak var snapChatView: UIView!
     @IBOutlet weak var facebookView: UIView!
     @IBOutlet weak var websiteView: UIView!
+    
+    
+    
     
     var refreshControl = UIRefreshControl()
     
@@ -99,6 +103,10 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     var isProfile = 0
     
     var x = 0.0
+    @IBOutlet weak var CollectionHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var tableHeight: NSLayoutConstraint!
+    
     
     private func createSpinnerFooter() -> UIView {
         let FooterView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
@@ -124,7 +132,7 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        SocialStackView.layoutIfNeeded()
+        
         MainView.isHidden = true
         CurrentPage = 1
         lastPage = 1
@@ -184,34 +192,34 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
         
         print(DetailsView.frame.height)
         
-        self.CommentsTableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        self.DetailsCollectionView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        self.AdsDescribtion.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-        
-        self.SocialView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//        self.CommentsTableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//        self.DetailsCollectionView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//        self.AdsDescribtion.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//        
+//        self.SocialView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
         
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        CommentsTableView.layer.removeAllAnimations()
-        DetailsCollectionView.layer.removeAllAnimations()
-        
-        if PromotionalPhotoBtn.isHidden == true {
-            featureHeight.constant = DetailsCollectionView.contentSize.height + 120 + AdsDescribtion.intrinsicContentSize.height
-            CollectionBottomhight.constant = 0
-        }else{
-            featureHeight.constant = DetailsCollectionView.contentSize.height + 180 +  AdsDescribtion.intrinsicContentSize.height
-            CollectionBottomhight.constant = 80
-        }
-        
-        
-        ScrollView.constant = CommentsTableView.contentSize.height + 900 + featureHeight.constant + SocialView.frame.height
-        
-        UIView.animate(withDuration: 0.5) {
-            self.updateViewConstraints()
-            self.loadViewIfNeeded()
-        }
-    }
+//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//        CommentsTableView.layer.removeAllAnimations()
+//        DetailsCollectionView.layer.removeAllAnimations()
+//
+//        if PromotionalPhotoBtn.isHidden == true {
+//            featureHeight.constant = DetailsCollectionView.contentSize.height + 120 + AdsDescribtion.intrinsicContentSize.height
+//            CollectionBottomhight.constant = 0
+//        }else{
+//            featureHeight.constant = DetailsCollectionView.contentSize.height + 180 +  AdsDescribtion.intrinsicContentSize.height
+//            CollectionBottomhight.constant = 80
+//        }
+//
+//
+//        ScrollView.constant = CommentsTableView.contentSize.height + 900 + featureHeight.constant + SocialView.frame.height
+//
+//        UIView.animate(withDuration: 0.5) {
+//            self.updateViewConstraints()
+//            self.loadViewIfNeeded()
+//        }
+//    }
     
     func numberOfItems(in pagerView: FSPagerView) -> Int {
         return media.count
@@ -338,24 +346,24 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     }
     
     @IBAction func ContactTwitterAcction(_ sender: Any) {
-        openUrl(link: TwitterLbl.text ?? "")
+        openUrl(link: TwitterLbl)
     }
     
     @IBAction func ContactInstgrameAction(_ sender: Any) {
-        openUrl(link: InstgrameLbl.text ?? "")
+        openUrl(link: InstgrameLbl)
     }
     
     
     @IBAction func ConractSnapAction(_ sender: Any) {
-        openUrl(link: SnapLable.text ?? "")
+        openUrl(link: SnapLable)
     }
     
     @IBAction func ContactFaceBookAction(_ sender: Any) {
-        openUrl(link: FaceBookLbl.text ?? "")
+        openUrl(link: FaceBookLbl)
     }
     
     @IBAction func WebSiteAction(_ sender: Any) {
-        openUrl(link: WebSiteLbl.text ?? "")
+        openUrl(link: WebSiteLbl)
         
     }
     
@@ -593,8 +601,14 @@ extension BusinessAdsDetailsVC {
                 
                 self.AdsDate.text = "published ".localized + "\(data.data?.advertisement_details?.adv_custom_published_date ?? "") | " + "Modified ".localized + "\( data.data?.advertisement_details?.adv_custom_last_update_date ?? "")"
                 
+                let style = NSMutableParagraphStyle()
+                style.lineSpacing = 10
+                let attributes = [NSAttributedString.Key.paragraphStyle : style]
+                self.AdsDescribtion.attributedText = NSAttributedString(string: data.data?.advertisement_details?.adv_description ?? "", attributes:attributes)
+                self.AdsDescribtion.textAlignment = .natural
+                self.AdsDescribtion.textColor = Colors.DarkBlue
                 self.AdsDescribtion.font = UIFont(name: "Tajawal-Regular", size: 16)
-                self.AdsDescribtion.text = data.data?.advertisement_details?.adv_description ?? ""
+                
                 self.Addess.text = data.data?.advertisement_details?.adv_location ?? ""
                 
                 self.NumberOfComments.text = data.data?.rates_count ?? ""
@@ -604,42 +618,47 @@ extension BusinessAdsDetailsVC {
                 
                 self.AdsRate.text = "\(net)"
                 
+                var x = 0
+                
                 if data.data?.advertisement_details?.adv_twitter ?? "" != ""{
-                    self.TwitterLbl.text = data.data?.advertisement_details?.adv_twitter ?? ""
+                    self.TwitterLbl = data.data?.advertisement_details?.adv_twitter ?? ""
                     self.twitterView.isHidden = false
                 }else{
                     self.twitterView.isHidden = true
+                    x = x + 1
                 }
                 
                 if data.data?.advertisement_details?.adv_instagram ?? "" != ""{
-                    self.InstgrameLbl.text = data.data?.advertisement_details?.adv_instagram ?? ""
+                    self.InstgrameLbl = data.data?.advertisement_details?.adv_instagram ?? ""
                     self.instgrameView.isHidden = false
                 }else{
                     self.instgrameView.isHidden = true
+                    x = x + 1
                 }
                 
                 if data.data?.advertisement_details?.adv_snapchat ?? "" != ""{
-                    self.SnapLable.text = data.data?.advertisement_details?.adv_snapchat ?? ""
+                    self.SnapLable = data.data?.advertisement_details?.adv_snapchat ?? ""
                     self.snapChatView.isHidden = false
                 }else{
                     self.snapChatView.isHidden = true
+                    x = x + 1
                 }
                 
                 if data.data?.advertisement_details?.adv_facebook ?? "" != ""{
-                    self.FaceBookLbl.text = data.data?.advertisement_details?.adv_facebook ?? ""
+                    self.FaceBookLbl = data.data?.advertisement_details?.adv_facebook ?? ""
                     self.facebookView.isHidden = false
                 }else{
                     self.facebookView.isHidden = true
+                    x = x + 1
                 }
                 
                 if data.data?.advertisement_details?.adv_website ?? "" != ""{
-                    self.WebSiteLbl.text = data.data?.advertisement_details?.adv_website ?? ""
+                    self.WebSiteLbl = data.data?.advertisement_details?.adv_website ?? ""
                     self.websiteView.isHidden = false
                 }else{
                     self.websiteView.isHidden = true
+                    x = x + 1
                 }
-                
-                
                 
                 self.FeatureArray = data.data?.advertisement_details?.adv_specifications ?? []
                 
@@ -649,8 +668,6 @@ extension BusinessAdsDetailsVC {
                 }else{
                     self.FeatuseTopTitle.isHidden = false
                 }
-                
-                
                 
                 self.phoneNumber = data.data?.advertisement_details?.adv_call_number ?? ""
                 self.whatsNumber = data.data?.advertisement_details?.adv_whatsapp_number ?? ""
@@ -721,16 +738,23 @@ extension BusinessAdsDetailsVC {
                 self.NumberOfComments.text = "( \(data.data?.rates_count ?? "") )"
                 self.TotalCommentsRate.text = data.data?.rates_average ?? ""
                 
-                self.SocialStackView.layoutIfNeeded()
-                if self.SocialStackView.frame.height == 24.0 {
+                
+                if self.PromotionalPhotoBtn.isHidden == true {
+                    self.CollectionBottomhight.constant = 0
+                        }else{
+                        
+                            self.CollectionBottomhight.constant = 80
+                        }
+                
+//                self.CommentsTableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//                self.DetailsCollectionView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//                self.AdsDescribtion.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+//                self.SocialStackView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
+                if x == 5 {
                     self.SocialStackView.isHidden = true
+                }else{
+                    self.SocialStackView.isHidden = false
                 }
-                
-                self.CommentsTableView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-                self.DetailsCollectionView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-                self.AdsDescribtion.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-                self.SocialStackView.addObserver(self, forKeyPath: "contentSize", options: NSKeyValueObservingOptions.new, context: nil)
-                
                 self.PagerView.reloadData()
                 self.FeatureData = true
                 self.isActive = true
@@ -739,8 +763,19 @@ extension BusinessAdsDetailsVC {
                 self.MainView.isHidden = false
                 
                 
-                print(self.SocialStackView.frame.height) // old height
-
+                DispatchQueue.main.async {
+                    self.CollectionHeight.constant = self.DetailsCollectionView.contentSize.height
+                    self.DetailsCollectionView.updateConstraints()
+                    self.tableHeight.constant = self.CommentsTableView.contentSize.height
+                    if self.CommentsTableView.contentSize.height == 0.0 {
+                        
+                        self.tableHeight.constant = 120
+                    }
+                 
+                    self.CommentsTableView.updateConstraints()
+                }
+            
+ 
                 print(data)
                 
             }

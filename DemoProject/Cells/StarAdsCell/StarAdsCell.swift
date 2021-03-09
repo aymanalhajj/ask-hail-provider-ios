@@ -19,6 +19,7 @@ class  StarAdsCell: UICollectionViewCell {
     @IBOutlet weak var distance: UILabel!
     @IBOutlet weak var ViewsNumber: UILabel!
     @IBOutlet weak var SaveBtn: UIButton!
+    @IBOutlet weak var SARLbl: UILabel!
     
     @IBOutlet weak var SubView: UIView!
     var SaveAcrion : (()->())?

@@ -882,7 +882,7 @@
                                                             <constraint firstAttribute="height" constant="26" id="xGf-fU-Ejx"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لمكاتب التسويق والإستثمارات العقارية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-bT-OQR">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لمكاتب التسويق والإستثمارات العقارية" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-bT-OQR">
                                                         <rect key="frame" x="24" y="76" width="318" height="14"/>
                                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="14"/>
                                                         <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1006,9 +1006,9 @@
                                                     <constraint firstItem="fZ7-bT-OQR" firstAttribute="top" secondItem="Dbs-Gs-H8F" secondAttribute="bottom" constant="4" id="bZi-bZ-dwL"/>
                                                     <constraint firstItem="Dbs-Gs-H8F" firstAttribute="top" secondItem="cSv-c2-anl" secondAttribute="bottom" constant="16" id="c1b-Nc-2Fj"/>
                                                     <constraint firstItem="Dbs-Gs-H8F" firstAttribute="leading" secondItem="jfN-dy-qGP" secondAttribute="leading" constant="32" id="db6-dF-X6P"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rAa-ZE-ulL" secondAttribute="bottom" constant="32" id="dbU-vD-fKy"/>
                                                     <constraint firstItem="rAa-ZE-ulL" firstAttribute="leading" secondItem="jfN-dy-qGP" secondAttribute="leading" constant="24" id="gXP-9r-yDC"/>
                                                     <constraint firstAttribute="trailing" secondItem="Dbs-Gs-H8F" secondAttribute="trailing" constant="32" id="lgb-pE-yxQ"/>
-                                                    <constraint firstAttribute="height" constant="210" id="umE-l8-rH6"/>
                                                 </constraints>
                                             </view>
                                         </subviews>

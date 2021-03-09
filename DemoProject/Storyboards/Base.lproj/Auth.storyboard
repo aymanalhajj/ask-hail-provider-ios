@@ -227,7 +227,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="200-1. الصفحة الإفتتاحية" translatesAutoresizingMaskIntoConstraints="NO" id="gkx-3i-Orr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome" translatesAutoresizingMaskIntoConstraints="NO" id="gkx-3i-Orr">
                                 <rect key="frame" x="-5" y="0.0" width="424" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwZ-o1-M2H">
@@ -2242,7 +2242,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="200-1. الصفحة الإفتتاحية" width="375" height="812"/>
         <image name="auth_login" width="24" height="24"/>
         <image name="auth_new_user" width="24" height="24"/>
         <image name="back" width="24" height="24"/>
@@ -2256,6 +2255,7 @@
         <image name="phone" width="24" height="24"/>
         <image name="success" width="503" height="503"/>
         <image name="user" width="24" height="24"/>
+        <image name="welcome" width="375" height="812"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

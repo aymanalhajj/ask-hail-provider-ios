@@ -69,6 +69,7 @@ class   HomeVC: BaseViewController {
         MyAdvTableView.delegate = self
         MyAdvTableView.dataSource = self
         MyAdvTableView.RegisterNib(cell: BusinessSubAdsCell.self)
+        MyAdvTableView.RegisterNib(cell: emptyCell.self)
         
         MyAdvTableView.backgroundColor = Colors.ViewBackGroundColoer
         
@@ -127,12 +128,13 @@ class   HomeVC: BaseViewController {
 
 extension HomeVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MyAdvArray.count
+        return MyAdvArray.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeue() as BusinessSubAdsCell
+        let cell1 = tableView.dequeue() as emptyCell
         
         if MyAdvArray.count > indexPath.row {
             
@@ -202,10 +204,16 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource {
                 self.navigationController?.pushViewController(vc, animated: true)
                 
             }
+           
+            
+        } else if indexPath.row == MyAdvArray.count {
+            
+            return cell1
             
         }
         
         return cell
+    
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
