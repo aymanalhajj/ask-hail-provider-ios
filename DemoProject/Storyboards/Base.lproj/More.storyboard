@@ -650,13 +650,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="جاري مراجعة طلبك من قبل الإدارة وسيتم التواصل معك في أقرب فرصة" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-Hq-m63">
-                                <rect key="frame" x="64" y="472" width="286" height="32"/>
+                                <rect key="frame" x="64" y="476" width="286" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
                                 <color key="textColor" red="0.0078431372550000003" green="0.2901960784" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xh8-Wm-ln4">
-                                <rect key="frame" x="64" y="568" width="286" height="28"/>
+                                <rect key="frame" x="64" y="577.5" width="286" height="31"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                 <state key="normal" title="عودة للرئيسية">
                                     <color key="titleColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -666,7 +666,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تم الإرسال بنجاح" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FQ-MY-zFp">
-                                <rect key="frame" x="64" y="432" width="286" height="24"/>
+                                <rect key="frame" x="64" y="432" width="286" height="28"/>
                                 <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="24"/>
                                 <color key="textColor" red="0.0078431372550000003" green="0.2901960784" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2165,7 +2165,6 @@
         <!--ServicesVC-->
         <scene sceneID="Efa-ym-h9K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FhZ-2N-SjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ServicesVC" id="ZC3-Km-Zg0" customClass="ServicesVC" customModule="Markati" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQB-dq-Rrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -2343,6 +2342,7 @@
                         <outlet property="tableView" destination="OX1-7P-iuD" id="bnw-ec-LBe"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhZ-2N-SjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2612" y="830"/>
         </scene>

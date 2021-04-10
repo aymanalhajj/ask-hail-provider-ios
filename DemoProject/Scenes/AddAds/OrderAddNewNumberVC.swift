@@ -41,6 +41,7 @@ class OrderAddNewNumberVC: UIViewController, UITextFieldDelegate {
         PhoneTf.delegate = self
         PhoneTf.setPadding(left: 16, right: 16)
         
+        setShadowButton(view: ConfirmBtn, width: 0, height: 5, shadowRadius: 5, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.7725490196, green: 0.8235294118, blue: 0.8862745098, alpha: 1))
         ConfirmBtn.setGradientTopToButtom(ColorTop: Colors.TopGradBtnColoer, ColorButtom: Colors.ButtomGradBtnColoer)
         
         

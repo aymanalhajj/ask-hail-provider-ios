@@ -53,9 +53,11 @@ class ChoseLocationOnMapVC: UIViewController , GMSMapViewDelegate {
             lang = "ar"
         }
     }
+    @IBOutlet weak var getMyLocationBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mapView.addSubview(getMyLocationBtn)
         
         
         mapView.addSubview(IMGView)
@@ -77,6 +79,21 @@ class ChoseLocationOnMapVC: UIViewController , GMSMapViewDelegate {
         
         
         
+    }
+    
+    @IBAction func CurrentLocation(_ sender: Any) {
+        
+        if let coor = locationManager.location?.coordinate{
+            
+            
+            let camera = GMSCameraPosition.camera(withLatitude: coor.latitude,
+                                                  longitude: coor.longitude,
+                                                  zoom: zoomLevel)
+            
+            mapView.animate(to: camera)
+            
+            
+        }
     }
     
     

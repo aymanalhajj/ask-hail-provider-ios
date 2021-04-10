@@ -60,6 +60,20 @@ class WelcomeVC: UIViewController , GMSMapViewDelegate {
         setShadow(view: LoginView, width: 0, height: 2, shadowRadius: 5, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.8974673004, green: 0.911144314, blue: 0.922011104, alpha: 1))
         setShadow(view: RegisterView, width: 0, height: 2, shadowRadius: 5, shadowOpacity: 0.5, shadowColor: #colorLiteral(red: 0.8974673004, green: 0.911144314, blue: 0.922011104, alpha: 1))
         
+        if let coor = locationManager.location?.coordinate{
+            
+            
+            let camera = GMSCameraPosition.camera(withLatitude: coor.latitude,
+                                                  longitude: coor.longitude,
+                                                  zoom: zoomLevel)
+            
+            Helper.SaveUser_lat(phone: "\(self.lat ?? 0)")
+
+            Helper.SaveUser_Lng(phone: "\(self.lon ?? 0)")
+            
+            
+        }
+        
     }
     
     
@@ -108,13 +122,13 @@ extension WelcomeVC : CLLocationManagerDelegate {
         let camera = GMSCameraPosition.camera(withLatitude: location.coordinate.latitude,
                                               longitude: location.coordinate.longitude,
                                               zoom: zoomLevel)
-        self.lat = location.coordinate.latitude
-        self.lon = location.coordinate.longitude
-        print(self.lat , self.lon)
-        
-        Helper.SaveUser_lat(phone: "\(self.lat ?? 0)")
-
-        Helper.SaveUser_Lng(phone: "\(self.lon ?? 0)")
+//        self.lat = location.coordinate.latitude
+//        self.lon = location.coordinate.longitude
+//        print(self.lat , self.lon)
+//        
+//        Helper.SaveUser_lat(phone: "\(self.lat ?? 0)")
+//
+//        Helper.SaveUser_Lng(phone: "\(self.lon ?? 0)")
         
       }
 

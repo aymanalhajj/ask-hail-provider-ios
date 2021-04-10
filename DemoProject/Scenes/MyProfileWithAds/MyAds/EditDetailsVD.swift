@@ -249,17 +249,17 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             
             EnableLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: true)
             
-            if DirectionArray.count > 0 {
-                directionTf.text = DirectionArray[Int(Direction_id) ?? 0].side_name
-            }
+//            if DirectionArray.count > 0 {
+//                directionTf.text = DirectionArray[Int(Direction_id) ?? 0].side_name
+//            }
             
         } else if textField == RegionTf {
             
             EnableLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: true)
             
-            if RegionArray.count > 0 {
-                RegionTf.text = RegionArray[Int(Region_id) ?? 0].block_name
-            }
+//            if RegionArray.count > 0 {
+//                RegionTf.text = RegionArray[Int(Region_id) ?? 0].block_name
+//            }
             
         }else if textField == LocationTf {
             
