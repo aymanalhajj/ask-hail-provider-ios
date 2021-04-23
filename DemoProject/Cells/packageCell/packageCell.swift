@@ -34,7 +34,7 @@ class packageCell: UITableViewCell {
     override func layoutSubviews() {
               super.layoutSubviews()
 
-              contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 24, bottom: 8, right: 24))
+            //  contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 24, bottom: 8, right: 24))
           }
     
 }

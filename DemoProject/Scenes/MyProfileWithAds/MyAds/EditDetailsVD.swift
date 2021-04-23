@@ -79,8 +79,7 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         super.viewDidLoad()
         
         getAdvDetails()
-        getRegion()
-        getDirection()
+       
         getFeature()
         
         
@@ -612,6 +611,13 @@ extension EditDetailsVD {
                     self.desTxt.textColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
                 }
                 
+                
+                self.Region_id = "\(data.data?.adv_block_id ?? 0)"
+                self.Direction_id = "\(data.data?.adv_side_id ?? 0)"
+                
+                self.getRegion()
+                self.getDirection()
+                
                 print(data)
                 
             }
@@ -636,10 +642,23 @@ extension EditDetailsVD {
                 
                 self.RegionArray = data.data ?? []
                 
-                if self.RegionArray.count > 0 {
+//                if self.RegionArray.count > 0 {
+//
+//
+//
+//                    self.RegionTf.text = self.RegionArray[0].block_name ?? ""
+//                    self.Region_id = "\(self.DetialsData?.adv_block_id ?? 0)"
+//
+//                }
+                
+                
+                for item in self.RegionArray {
                     
-                    self.RegionTf.text = self.RegionArray[0].block_name ?? ""
-                    self.Region_id = "\(self.DetialsData?.adv_block_id ?? 0)"
+                    if "\(item.block_id ?? 0)" == self.Region_id {
+                        
+                        self.RegionTf.text = item.block_name ?? ""
+                      
+                    }
                     
                 }
                 
@@ -668,10 +687,16 @@ extension EditDetailsVD {
                 self.DirectionArray = data.data ?? []
                 
                 
-                if self.DirectionArray.count > 0 {
+               
+                
+                
+                for item in self.DirectionArray {
                     
-                    self.directionTf.text = self.DirectionArray[0].side_name ?? ""
-                    self.Direction_id = "\(self.DetialsData?.adv_side_id ?? 0)"
+                    if "\(item.side_id ?? 0)" == self.Direction_id {
+                        
+                        self.directionTf.text = item.side_name ?? ""
+                      
+                    }
                     
                 }
                 

@@ -66,6 +66,8 @@ class WelcomeVC: UIViewController , GMSMapViewDelegate {
             let camera = GMSCameraPosition.camera(withLatitude: coor.latitude,
                                                   longitude: coor.longitude,
                                                   zoom: zoomLevel)
+            self.lat = coor.latitude
+            self.lon = coor.longitude
             
             Helper.SaveUser_lat(phone: "\(self.lat ?? 0)")
 
