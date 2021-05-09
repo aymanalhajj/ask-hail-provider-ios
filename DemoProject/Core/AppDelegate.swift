@@ -34,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
         }
         UIApplication.shared.statusBarStyle = .lightContent
         
-        GMSServices.provideAPIKey("AIzaSyCwOy-NiunTQ7Q8D_d6eCUAeX2caw6oqQ0")
-        GMSPlacesClient.provideAPIKey("AIzaSyCwOy-NiunTQ7Q8D_d6eCUAeX2caw6oqQ0")
+        GMSServices.provideAPIKey(GoogleKey)
+        GMSPlacesClient.provideAPIKey(GoogleKey)
         
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
@@ -181,7 +181,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
                 guard let window = UIApplication.shared.keyWindow else{return}
                 let sb = UIStoryboard(name: Home, bundle: nil)
                 var vc : UIViewController
-                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsVC")
+                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsV")
                 window.rootViewController = vc
                 UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
                 
@@ -420,7 +420,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
                 guard let window = UIApplication.shared.keyWindow else{return}
                 let sb = UIStoryboard(name: Home, bundle: nil)
                 var vc : UIViewController
-                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsVC")
+                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsV")
                 window.rootViewController = vc
                 UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
                 
@@ -496,7 +496,7 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
                 guard let window = UIApplication.shared.keyWindow else{return}
                 let sb = UIStoryboard(name: Home, bundle: nil)
                 var vc : UIViewController
-                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsVC")
+                vc = sb.instantiateViewController(withIdentifier: "BusinessAdsDetailsV")
                 window.rootViewController = vc
                 UIView.transition(with: window, duration: 0.5, options: .showHideTransitionViews, animations: nil, completion: nil)
                 

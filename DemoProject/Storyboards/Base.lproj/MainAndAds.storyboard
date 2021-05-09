@@ -1311,6 +1311,7 @@
                             <constraint firstItem="G7y-gd-Wqp" firstAttribute="top" secondItem="QW1-4S-VNh" secondAttribute="bottom" id="vF9-iB-Wi0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1eY-Bn-YHv"/>
                     <size key="freeformSize" width="414" height="2400"/>
                     <connections>
                         <outlet property="Addess" destination="8d5-38-aEJ" id="Za7-ut-tYk"/>
@@ -1356,7 +1357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTU-vw-erF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4084" y="422"/>
+            <point key="canvasLocation" x="4992.753623188406" y="421.875"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="jsU-5v-fbf">
@@ -4126,6 +4127,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Yq-Tx-472" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4616" y="-763"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gMO-1Q-KrY">
+            <objects>
+                <navigationController storyboardIdentifier="BusinessAdsDetailsV" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WgV-CF-Qtl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ehq-QA-sT9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KMs-zN-Zge" kind="relationship" relationship="rootViewController" id="emH-5u-cHA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V1w-9L-cpD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4082.6086956521744" y="421.875"/>
         </scene>
     </scenes>
     <designables>

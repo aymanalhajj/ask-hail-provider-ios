@@ -29,7 +29,7 @@ class ChoseLocationOnMapVC: UIViewController , GMSMapViewDelegate {
     @IBOutlet weak var selectBtn: UIButton!
     
     var Delegate : ChooseLocation?
-    
+    var isFirstMap = true
     
     @IBOutlet weak var SelectView: UIView!
     
@@ -110,14 +110,15 @@ class ChoseLocationOnMapVC: UIViewController , GMSMapViewDelegate {
     
     
     
-    func CreateMarker(_ lat : Double ,_ lng : Double ){
-        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: lat, longitude: lng))
-        
-        marker.tracksViewChanges = true
-        marker.appearAnimation = .pop
-        marker.groundAnchor = CGPoint(x: 0.5, y: 0.5)
-        marker.icon = #imageLiteral(resourceName: "mapsAndFlags")
+    func CreateMarker(Lat : Double , lng : Double){
+        let marker = GMSMarker()
+        mapView.clear()
+        marker.iconView = CustomMarkerView2(frame: CGRect(x: 0, y: 0, width: 36, height: 48), image: #imageLiteral(resourceName: "locationInAds"), borderColor: UIColor.darkGray, tag: 0)
+        marker.position = CLLocationCoordinate2D(latitude: Lat, longitude: lng)
+        let cameraPosition = GMSCameraPosition.camera(withLatitude: Lat, longitude: lng, zoom: 15.0)
         marker.map = mapView
+        mapView.animate(to: cameraPosition)
+        
         
     }
     
@@ -157,6 +158,11 @@ extension ChoseLocationOnMapVC: CLLocationManagerDelegate {
             mapView.camera = camera
         } else {
             mapView.animate(to: camera)
+            if isFirstMap {
+                isFirstMap = false
+                CreateMarker(Lat: location.coordinate.latitude, lng: location.coordinate.longitude)
+                getLocation(location.coordinate.latitude,location.coordinate.longitude)
+            }
         }
         
         
@@ -218,19 +224,19 @@ extension ChoseLocationOnMapVC: CLLocationManagerDelegate {
         print("Error: \(error)")
     }
     
-    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        
-        lat = mapView.camera.target.latitude
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+       
+        lat = coordinate.latitude
         print(lat)
+        lon = coordinate.longitude
+        let camera = GMSCameraPosition.camera(withLatitude: lat ?? 0.0,
+                                              longitude: lon ?? 0.0,
+                                              zoom: zoomLevel)
+        mapView.animate(to: camera)
         
-        lon = mapView.camera.target.longitude
-        print(lon)
-        
-        
-        
+        CreateMarker(Lat: lat ?? 0.0, lng: lon ?? 0.0)
         getLocation(lat ?? 0.0, lon ?? 0.0)
-        
-        
+      
     }
     
     
@@ -265,3 +271,47 @@ extension ChoseLocationOnMapVC  {
         }
     }
 }
+
+import Foundation
+import Foundation
+import Foundation
+import UIKit
+
+class CustomMarkerView2: UIView {
+    var img: UIImage!
+    var borderColor_Map: UIColor!
+    
+    init(frame: CGRect, image: UIImage?, borderColor: UIColor, tag: Int) {
+        super.init(frame: frame)
+        self.img = #imageLiteral(resourceName: "neighbourhood")
+     
+        setupViews()
+    }
+    
+    func setupViews() {
+        let imgView = UIImageView(image: img)
+        imgView.frame=CGRect(x: 0, y: 0, width: 36, height: 36)
+       
+        imgView.clipsToBounds=false
+       
+        
+        
+        
+        self.addSubview(imgView)
+       
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+
+
+
+
+
+
+
+

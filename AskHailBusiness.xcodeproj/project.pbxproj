@@ -2255,7 +2255,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;
@@ -2278,7 +2278,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.8;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;

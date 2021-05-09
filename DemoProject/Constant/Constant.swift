@@ -51,7 +51,7 @@ let Notification_Pay_time = "SelectBalance"
 let Currency = "دينار"
 
 
-let GoogleKey = "AIzaSyBY08SqhqCzeLdDgeK2_zeOh4ikGQr7R9E"
+let GoogleKey = "AIzaSyA0_jgPxZjZ46PDL28qDgrR67neUuujhP4"
 
 
 
