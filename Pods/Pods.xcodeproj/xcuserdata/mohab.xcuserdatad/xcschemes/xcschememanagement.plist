@@ -105,7 +105,7 @@
 		<key>FirebaseCrashlytics.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>56</integer>
+			<integer>57</integer>
 		</dict>
 		<key>FirebaseDatabase.xcscheme</key>
 		<dict>
@@ -250,12 +250,12 @@
 		<key>PMAlertController-PMAlertController.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>54</integer>
+			<integer>56</integer>
 		</dict>
 		<key>PMAlertController.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>55</integer>
+			<integer>54</integer>
 		</dict>
 		<key>PageControls.xcscheme</key>
 		<dict>
@@ -337,7 +337,7 @@
 		<key>Toast-Swift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>57</integer>
+			<integer>55</integer>
 		</dict>
 		<key>UIView+Shake.xcscheme</key>
 		<dict>

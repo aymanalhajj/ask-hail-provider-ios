@@ -158,7 +158,7 @@ class AskHailDetailsVC: UIViewController ,UITextViewDelegate {
     
     @IBAction func ShareAds(_ sender: Any) {
         
-        guard let link = URL(string: "https://askhail.page.link/advert/\(ask_id)") else { return }
+        guard let link = URL(string: "https://askhail.page.link/question/\(ask_id)") else { return }
         let dynamicLinksDomainURIPrefix = "https://askHail.page.link"
         let linkBuilder = DynamicLinkComponents(link: link, domainURIPrefix: dynamicLinksDomainURIPrefix)
         
