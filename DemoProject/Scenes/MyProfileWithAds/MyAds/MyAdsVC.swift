@@ -286,7 +286,7 @@ extension MyAdsVC {
     
     func CkeckIfHaveOldAds() {
         
-        ApiServices.instance.getPosts(methodType: .post, parameters: nil , url: "\(hostName)user-add-advertisement/level1-check-last-not-completed-advertisement") { (data : Level_1_Model?, String) in
+        ApiServices.instance.getPosts(methodType: .post, parameters: nil , url: "\(hostName)business-add-advertisement/level1-check-last-not-completed-advertisement") { (data : Level_1_Model?, String) in
             
             if String != nil {
                 
@@ -377,7 +377,7 @@ extension MyAdsVC {
             "desire" : state
         ]
         
-        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject] , url: "\(hostName)user-add-advertisement/choose-continue-or-new") { (data : RealEstateShotModel?, String) in
+        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject] , url: "\(hostName)business-add-advertisement/choose-continue-or-new") { (data : RealEstateShotModel?, String) in
             
             if String != nil {
                 

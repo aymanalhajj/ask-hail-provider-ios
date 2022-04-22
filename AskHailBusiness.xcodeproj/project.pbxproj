@@ -2249,13 +2249,14 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QS4RD9C4D4;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.0]" = arm64;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoProject/Configrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;
@@ -2272,13 +2273,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = QS4RD9C4D4;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator15.0]" = arm64;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoProject/Configrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;

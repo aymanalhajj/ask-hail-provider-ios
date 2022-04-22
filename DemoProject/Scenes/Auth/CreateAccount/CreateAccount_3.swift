@@ -15,34 +15,54 @@ class CreateAccount_3: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var FullNameTf: UITextField!
     @IBOutlet weak var MailTf: UITextField!
     @IBOutlet weak var PasswordFt: UITextField!
+   
+    
+    
+    
     @IBOutlet weak var FullnameImage: UIImageView!
     @IBOutlet weak var MailImage: UIImageView!
     @IBOutlet weak var PasswordImage: UIImageView!
+   
+    
     @IBOutlet weak var FullnameLineView: UIView!
     @IBOutlet weak var MailLineView: UIView!
     @IBOutlet weak var PasswordLineView: UIView!
+   
+    
     @IBOutlet weak var ConfirmBtn: UIButton!
+    
     
     @IBOutlet weak var FullNameView: UIView!
     @IBOutlet weak var MailView: UIView!
     @IBOutlet weak var PasswordView: UIView!
     
-    @IBOutlet weak var checkBoxBtn: UIButton!
     
-    @IBOutlet weak var Lable: UILabel!
+    @IBOutlet weak var checkBoxBtn: UIButton!
+    @IBOutlet weak var TermsLable: UILabel!
+    
+    
+    
     
     var checkBox = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        
+        
         FullNameTf.delegate = self
         MailTf.delegate = self
         PasswordFt.delegate = self
+      
+        
         
         FullNameTf.placeHolderColor = Colors.PlaceHolderColoer
         MailTf.placeHolderColor = Colors.PlaceHolderColoer
         PasswordFt.placeHolderColor = Colors.PlaceHolderColoer
+       
+        
+        
         
         ConfirmBtn.setGradientTopToButtom(ColorTop: Colors.TopGradBtnColoer , ColorButtom: Colors.ButtomGradBtnColoer)
         
@@ -51,11 +71,14 @@ class CreateAccount_3: UIViewController, UITextFieldDelegate {
         setShadow(view: FullNameView, width: 0, height: 2, shadowRadius: 3, shadowOpacity: 0.3, shadowColor: #colorLiteral(red: 0.7725490196, green: 0.8235294118, blue: 0.8862745098, alpha: 1))
         setShadow(view: MailView, width: 0, height: 2, shadowRadius: 3, shadowOpacity: 0.3, shadowColor: #colorLiteral(red: 0.7725490196, green: 0.8235294118, blue: 0.8862745098, alpha: 1))
         setShadow(view: PasswordView, width: 0, height: 2, shadowRadius: 2, shadowOpacity: 0.3, shadowColor: #colorLiteral(red: 0.7725490196, green: 0.8235294118, blue: 0.8862745098, alpha: 1))
+       
         
         
         FullNameTf.setPadding(left: 16, right: 16)
         MailTf.setPadding(left: 16, right: 16)
         PasswordFt.setPadding(left: 16, right: 16)
+        
+        
         
         
         let attrs1 = [NSAttributedString.Key.font : UIFont(name: "Tajawal-Bold", size: 16), NSAttributedString.Key.foregroundColor : Colors.DarkBlue]
@@ -82,7 +105,8 @@ class CreateAccount_3: UIViewController, UITextFieldDelegate {
             ))
         
         attributedString1.append(attributedString2)
-        Lable.attributedText = attributedString1
+        TermsLable.attributedText = attributedString1
+        
         
     }
     
@@ -131,6 +155,9 @@ class CreateAccount_3: UIViewController, UITextFieldDelegate {
                 ErrorLineAnimite(text: PasswordFt, ImageView: PasswordImage, imageEnable: #imageLiteral(resourceName: "password"), lineView: PasswordLineView, ishidden: false)
                 
             }
+           
+            
+            
             self.view.shake()
         }
         
@@ -182,26 +209,27 @@ class CreateAccount_3: UIViewController, UITextFieldDelegate {
             }else if textField == PasswordFt {
                 EnableLineAnimite(text: PasswordFt, ImageView: PasswordImage, imageEnable: #imageLiteral(resourceName: "password"), lineView: PasswordLineView, ishidden: true)
             }
-            
         }
         return true;
     }
+    
 }
 
 extension CreateAccount_3 {
     
     func CompleteRegister() {
         
-        let Parameters = [
+        var Parameters = [
             "advertiser_id" : Helper.getaUser_id() ?? "",
             "name" : FullNameTf.text ?? "",
             "password":PasswordFt.text ?? "",
             "password_confirmation" : PasswordFt.text ?? "",
             "firebase_token" : Helper.getFcmtoken() ?? "token",
-            "email" : "\(MailTf.text ?? "")"
+            "email" : "\(MailTf.text ?? "")" ,
+            
         ]
         
-        print(Parameters)
+      
         
         ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject] , url: "\(hostName)business/register-level3-add-details") { (data : RegisterModel_3?, String) in
             
@@ -251,5 +279,6 @@ extension CreateAccount_3 {
     }
     
 }
+
 
 

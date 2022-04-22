@@ -58,7 +58,7 @@ extension AdsPaymentAlertVC {
             "payment_time": "later"
         ]
         
-        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject], url: "\(hostName)user-add-advertisement/add-package") { (data : Level_1_Model?, String) in
+        ApiServices.instance.getPosts(methodType: .post, parameters: Parameters as [String : AnyObject], url: "\(hostName)business-add-advertisement/add-package") { (data : Level_1_Model?, String) in
             
             
             if String != nil {

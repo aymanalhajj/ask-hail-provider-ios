@@ -122,3 +122,13 @@
 "Disable" = "تعطيل";
 "Special" = "تمييز";
 "Ask Num." = "سؤال رقم";
+
+"District Name" = "إسم المنطقة";
+"City Name" = "إسم المدينة";
+"Neighbourhood Name" = "إسم الحي";
+"Street Name" = "إسم الشارع";
+"Real estate license number" = "رقم الترخيص العقاري";
+"type id" = "نوع المعلن";
+"id number" = "رقم الهوية الشخصية";
+"media and celebrities" = "الاعلام والمشاهير";
+"Updated Successfully" = "تم التعديل بنجاح";

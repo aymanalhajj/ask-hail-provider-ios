@@ -14,6 +14,7 @@ private func checkConnection() -> Bool {
     let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "www.google.com")
     return (reachabilityManager?.isReachable)!
 }
+//https://www.test.askhail.com/api/v1/
 let hostName = "https://askhail.com/api/v1/"
 
 
