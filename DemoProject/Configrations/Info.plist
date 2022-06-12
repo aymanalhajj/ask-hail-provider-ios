@@ -36,11 +36,11 @@
 	<key>NSCameraUsageDescription</key>
 	<string>we will use your photo to add product or change profile picture </string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Ask Hail would like to access your Location to get Listings and search properties Near your Location</string>
+	<string>Ask Hail would like to access your Location to get Ads Location</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Ask Hail would like to access your Location to get Listings and search properties Near your Location</string>
+	<string>Ask Hail would like to access your Location to get Ads Location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Ask Hail would like to access your Location to get Listings and search properties Near your Location</string>
+	<string>Ask Hail would like to access your Location to get Ads Location</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>We need Access Microphone if you want to send voice message</string>
 	<key>NSPhotoLibraryUsageDescription</key>

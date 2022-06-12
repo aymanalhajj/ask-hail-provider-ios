@@ -129,6 +129,10 @@
 		C1342365241A53F200713EEC /* gif+image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134235B241A53F200713EEC /* gif+image.swift */; };
 		C1342366241A53F200713EEC /* Extention+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134235C241A53F200713EEC /* Extention+CollectionView.swift */; };
 		C1342367241A53F200713EEC /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C134235D241A53F200713EEC /* UIApplication + Extension.swift */; };
+		C1359287285415EF003CE570 /* Pods_AskHailBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1359286285415EF003CE570 /* Pods_AskHailBusiness.framework */; };
+		C135928B28541A8D003CE570 /* PickerSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135928A28541A8D003CE570 /* PickerSearchVC.swift */; };
+		C135928E28541AD5003CE570 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135928C28541AD5003CE570 /* SearchCell.swift */; };
+		C135928F28541AD5003CE570 /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C135928D28541AD5003CE570 /* SearchCell.xib */; };
 		C140CB5224D68D52001B4A2F /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C140CB5124D68D52001B4A2F /* APIServices.swift */; };
 		C145043C241DA72E00C49BF2 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C145043B241DA72E00C49BF2 /* Segue.swift */; };
 		C14C769D2422622B005B1105 /* sideMenue+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C769C2422622B005B1105 /* sideMenue+Extentions.swift */; };
@@ -155,7 +159,6 @@
 		C191C43825B90A9300A1357C /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191C43725B90A9300A1357C /* SplashVC.swift */; };
 		C19A2CB725B646A700784B8E /* PushNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19A2CB625B646A700784B8E /* PushNotificationModel.swift */; };
 		C19D5D7425B91017008C07B2 /* WaitingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C191C43225B909D900A1357C /* WaitingVC.swift */; };
-		C19D5DAF25B915D7008C07B2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = C19D5DAE25B915D7008C07B2 /* Lottie */; };
 		C19D5E5525B917B4008C07B2 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D065BA62560232F005597AA /* Auth.storyboard */; };
 		C19FC25A24226BBC00009A58 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FC25924226BBC00009A58 /* LeftMenuViewController.swift */; };
 		C1A2C671240B9C39003EE54F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2C670240B9C39003EE54F /* AppDelegate.swift */; };
@@ -285,7 +288,6 @@
 		CCEC798425C444F000AAD9F7 /* StarAdDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC798325C444F000AAD9F7 /* StarAdDetailsVC.swift */; };
 		CCEC798725C4458500AAD9F7 /* SpecialAdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEC798625C4458500AAD9F7 /* SpecialAdModel.swift */; };
 		CCFC0F4B257EC8090049AA47 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFC0F4A257EC8090049AA47 /* TabBar.swift */; };
-		D6C843E35818A0F7FC88F589 /* Pods_AskHailBusiness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64EE38756BBDD4C6D75EB1A /* Pods_AskHailBusiness.framework */; };
 		FA4405E42509454A00DC24B2 /* Extention+UIViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4405E32509454A00DC24B2 /* Extention+UIViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
@@ -422,6 +424,10 @@
 		C134235B241A53F200713EEC /* gif+image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "gif+image.swift"; sourceTree = "<group>"; };
 		C134235C241A53F200713EEC /* Extention+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extention+CollectionView.swift"; sourceTree = "<group>"; };
 		C134235D241A53F200713EEC /* UIApplication + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
+		C1359286285415EF003CE570 /* Pods_AskHailBusiness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AskHailBusiness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C135928A28541A8D003CE570 /* PickerSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSearchVC.swift; sourceTree = "<group>"; };
+		C135928C28541AD5003CE570 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		C135928D28541AD5003CE570 /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		C140CB5124D68D52001B4A2F /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		C145043B241DA72E00C49BF2 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		C14C769C2422622B005B1105 /* sideMenue+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "sideMenue+Extentions.swift"; sourceTree = "<group>"; };
@@ -603,8 +609,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C843E35818A0F7FC88F589 /* Pods_AskHailBusiness.framework in Frameworks */,
-				C19D5DAF25B915D7008C07B2 /* Lottie in Frameworks */,
+				C1359287285415EF003CE570 /* Pods_AskHailBusiness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +771,8 @@
 				4DE6B1AD254A498500521F9A /* SubAdsCell */,
 				4D3B5B7C254A1ED0004843B1 /* BusinessSectorCell */,
 				4DAB212A2549ECE500CF1BB1 /* StarAdsCell */,
+				C135928C28541AD5003CE570 /* SearchCell.swift */,
+				C135928D28541AD5003CE570 /* SearchCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -935,6 +942,7 @@
 		52F0DD6F536B4DDFB3CEFA2C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1359286285415EF003CE570 /* Pods_AskHailBusiness.framework */,
 				D64EE38756BBDD4C6D75EB1A /* Pods_AskHailBusiness.framework */,
 			);
 			name = Frameworks;
@@ -1196,6 +1204,7 @@
 				4D4C052525547C0000F84A18 /* BusinessAds */,
 				4DFFA41725561CF000D56614 /* AddAds */,
 				CC98B006257EE2D800AFDD88 /* ExtraMore.swift */,
+				C135928A28541A8D003CE570 /* PickerSearchVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -1526,7 +1535,6 @@
 			);
 			name = AskHailBusiness;
 			packageProductDependencies = (
-				C19D5DAE25B915D7008C07B2 /* Lottie */,
 			);
 			productName = DemoProject;
 			productReference = C1A2C66D240B9C39003EE54F /* Markati.app */;
@@ -1627,6 +1635,7 @@
 				CCA5CB422573C26800EAA78B /* EditAds.storyboard in Resources */,
 				CC03D1F825779E5400A52D18 /* CommentCellTableViewCell.xib in Resources */,
 				4D91C4232548C01700E74A8B /* Tajawal-ExtraLight.ttf in Resources */,
+				C135928F28541AD5003CE570 /* SearchCell.xib in Resources */,
 				4D36C7AA25571DFB003BCD71 /* BankCell.xib in Resources */,
 				CC8993C225B1E0020014EED4 /* GoogleService-Info.plist in Resources */,
 			);
@@ -1873,6 +1882,7 @@
 				4D3A874925606ED6006D8F72 /* MyInfoVC.swift in Sources */,
 				C1571EE1254B37ED00C268F1 /* MapVC.swift in Sources */,
 				CCCF190625BE941A005B092C /* ShowDetailsCell.swift in Sources */,
+				C135928B28541A8D003CE570 /* PickerSearchVC.swift in Sources */,
 				C1342364241A53F200713EEC /* String + Extension.swift in Sources */,
 				4DD493A4256316D0006141FB /* DeletePopUpVC.swift in Sources */,
 				4D011C6D255DF18200AD54ED /* MyPackgeVC.swift in Sources */,
@@ -1927,6 +1937,7 @@
 				CC4E2B152570FB5E000C831E /* BlocksModel.swift in Sources */,
 				4DC5F49225EC4D4000F56614 /* Extentions+AskComment.swift in Sources */,
 				C1A2C68C240BA1E7003EE54F /* Helper.swift in Sources */,
+				C135928E28541AD5003CE570 /* SearchCell.swift in Sources */,
 				CC1E95C82580E57D002CE71B /* AdvEditSectionModel.swift in Sources */,
 				4D670B65256356AB00955392 /* PrayTimeVC.swift in Sources */,
 				CCDD9C2425A622E9001EAEBD /* AdsMediaModel.swift in Sources */,
@@ -2156,6 +2167,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2219,6 +2231,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -2246,9 +2259,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DemoProject/اوصلك.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = QS4RD9C4D4;
+				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator15.0]" = arm64;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoProject/Configrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2256,7 +2270,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.7;
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;
@@ -2271,8 +2285,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DemoProject/اوصلك.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0;
+				CURRENT_PROJECT_VERSION = 1.2;
 				DEVELOPMENT_TEAM = QS4RD9C4D4;
+				ENABLE_BITCODE = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator15.0]" = arm64;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoProject/Configrations/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -2280,7 +2295,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.7;
+				MARKETING_VERSION = 2.8;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = Markati;
 				SWIFT_VERSION = 5.0;
@@ -2321,14 +2336,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C19D5DAE25B915D7008C07B2 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C19D5DAD25B915D7008C07B2 /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1A2C665240B9C39003EE54F /* Project object */;
 }

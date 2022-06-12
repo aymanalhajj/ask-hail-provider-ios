@@ -107,6 +107,20 @@ class PrayTimeVC: UIViewController {
         
         //  print(myDate.dayOfTheWeek())
         
+        let hijriCalendar = Calendar(identifier: .islamicTabular)
+
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en")
+        formatter.calendar = hijriCalendar
+        formatter.dateFormat = "dd"
+        arDaylable.text = formatter.string(from: Date())
+        
+        
+       
+        egDaylable.text = "\(Date().today())"
+
+        print(formatter.string(from: Date()))
+        
     }
     
     @IBAction func BackAction(_ sender: Any) {
@@ -115,6 +129,16 @@ class PrayTimeVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+}
+
+extension Date {
+
+   func today(format : String = "dd") -> String{
+      let date = Date()
+      let formatter = DateFormatter()
+      formatter.dateFormat = format
+      return formatter.string(from: date)
+   }
 }
 
 //MARK:Collectionview
@@ -198,10 +222,10 @@ extension PrayTimeVC {
                     self.egMonthLable.text = nameOfMonth
                 }
                 
-                self.egDaylable.text = data.data?.date?.gregorian?.day ?? ""
+               // self.egDaylable.text = data.data?.date?.gregorian?.day ?? ""
                 self.egYearLable.text = data.data?.date?.gregorian?.year ?? ""
                 
-                self.arDaylable.text = data.data?.date?.hijri?.day ?? ""
+          //      self.arDaylable.text = data.data?.date?.hijri?.day ?? ""
                 self.arYearLable.text = data.data?.date?.hijri?.year ?? ""
                 
                 let dateFormatter = DateFormatter()

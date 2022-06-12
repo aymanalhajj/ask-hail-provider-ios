@@ -197,7 +197,29 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         if OrderTitleTf.text?.isEmpty != true , PriceTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , directionTf.text?.isEmpty != true ,RegionTf.text?.isEmpty != true ,
            LocationTf.text?.isEmpty != true {
             
-            updateDetail()
+           
+            
+            var skip_status = true
+            var x = 0
+            for item in FeatureArray {
+                if item.feature_options == "required" {
+                    let indexPath = IndexPath.init(row: x, section: 0)
+                       let cell = DetailsCollectionView.cellForItem(at: indexPath) as! AddDetailsCell
+                    
+                    if cell.DetailTf.text == "" {
+                        
+                        skip_status = false
+                        
+                        ErrorLineAnimiteNoimage(text: cell.DetailTf, lineView: cell.LineView, ishidden: false)
+                    }
+                }
+                
+                x = x + 1
+            }
+            
+            if skip_status {
+                updateDetail()
+            }
             
         } else {
             
@@ -354,6 +376,71 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         return true;
     }
+    @IBAction func DistrictNameAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: Authontication, bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "PickerSearchVC") as! PickerSearchVC
+        vc.Delegate = self
+        vc.Search_type = .Region
+        vc.RegionArray = self.RegionArray
+        vc.Search_region_Array = self.RegionArray
+        vc.modalPresentationStyle = .fullScreen
+        self.addChild(vc)
+        vc.view.frame = self.view.frame
+        self.view.addSubview(vc.view)
+        vc.didMove(toParent: self)
+    }
+    
+    @IBAction func CityNameAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: Authontication, bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "PickerSearchVC") as! PickerSearchVC
+        vc.Delegate = self
+        vc.Search_type = .City
+        vc.CitArray = self.CitArray
+        vc.Search_rcity_Array = self.CitArray
+        vc.modalPresentationStyle = .fullScreen
+        self.addChild(vc)
+        vc.view.frame = self.view.frame
+        self.view.addSubview(vc.view)
+        vc.didMove(toParent: self)
+        
+    }
+    
+    @IBAction func NeighbourAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: Authontication, bundle: nil)
+        let vc  = storyboard.instantiateViewController(withIdentifier: "PickerSearchVC") as! PickerSearchVC
+        vc.BlocksArray = self.BlocksArray
+        vc.Delegate = self
+        vc.Search_type = .Neighbour
+        vc.Search_Block_Array = self.BlocksArray
+        vc.modalPresentationStyle = .fullScreen
+        self.addChild(vc)
+        vc.view.frame = self.view.frame
+        self.view.addSubview(vc.view)
+        vc.didMove(toParent: self)
+    }
+    
+}
+
+extension EditDetailsVD : Choose_search_key {
+    func Choose_Search_key(id: String, name: String, searchtype: search_type) {
+        switch searchtype {
+        case .Region:
+            Region_id = id
+            self.RegionTf.text = name
+        getCities()
+        case .City:
+            City_id = id
+            self.CityTf.text = name
+            getBlocks()
+        case .Neighbour:
+            Block_id = id
+            self.BlockTf.text = name
+        }
+    }
+    
+  
+    
+    
 }
 
 extension EditDetailsVD : UIPickerViewDelegate, UIPickerViewDataSource  {

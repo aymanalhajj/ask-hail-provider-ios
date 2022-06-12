@@ -86,8 +86,8 @@
 /* Class = "UILabel"; text = "500"; ObjectID = "CwC-of-Ygz"; */
 "CwC-of-Ygz.text" = "500";
 
-/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "DAb-Ro-CFZ"; */
-"DAb-Ro-CFZ.text" = "Enter Adv details";
+/* Class = "UILabel"; text = "تفاصيل الإعلان"; ObjectID = "DAb-Ro-CFZ"; */
+"DAb-Ro-CFZ.text" = "Adv details";
 
 /* Class = "UILabel"; text = "ادفع الأن"; ObjectID = "DSP-rI-8aM"; */
 "DSP-rI-8aM.text" = "Pay now";
@@ -287,8 +287,8 @@
 /* Class = "UILabel"; text = "SA01234567899876543210"; ObjectID = "iaA-Gn-YOa"; */
 "iaA-Gn-YOa.text" = "SA01234567899876543210";
 
-/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "iaK-4I-G5U"; */
-"iaK-4I-G5U.text" = "Enter Adv details";
+/* Class = "UILabel"; text = "تفاصيل الإعلان"; ObjectID = "iaK-4I-G5U"; */
+"iaK-4I-G5U.text" = "Adv details";
 
 /* Class = "UITextField"; placeholder = "الحي"; ObjectID = "jfd-dl-ENa"; */
 "jfd-dl-ENa.placeholder" = "region";

@@ -32,21 +32,19 @@ pod 'TextFieldEffects'
 pod 'IQKeyboardManager'
 pod "PageControls/PillPageControl"
 pod 'Firebase/Core'
-pod 'Firebase/Database'
-pod 'Firebase/Messaging'
-pod 'Firebase/Auth'
-pod 'ar
 pod 'FirebaseMessaging'
 pod 'NotificationBannerSwift'
 pod 'GoogleMaps' , '~> 3.9.0'
 pod 'GooglePlaces'
 pod 'STTabbar'
-pod 'Socket.IO-Client-Swift'
+pod 'Socket.IO-Client-Swift', '~> 15.2.0'
 pod 'Firebase/DynamicLinks'
+
 pod 'Toast-Swift', '~> 5.0.1'
 pod 'lottie-ios'
 pod 'PMAlertController'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Analytics'
+
 
 end

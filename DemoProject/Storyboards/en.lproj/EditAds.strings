@@ -122,7 +122,7 @@
 /* Class = "UIButton"; normalTitle = "إضافة الصور"; ObjectID = "g1R-ub-vX5"; */
 "g1R-ub-vX5.normalTitle" = "Add photos";
 
-/* Class = "UILabel"; text = "أدخل تفاصيل العقار"; ObjectID = "i7O-7o-efD"; */
+/* Class = "UILabel"; text = "تفاصيل الإعلان"; ObjectID = "i7O-7o-efD"; */
 "i7O-7o-efD.text" = "Enter Ad details";
 
 /* Class = "UITextField"; placeholder = "انستاغرام"; ObjectID = "j2j-q9-vhj"; */

@@ -34,6 +34,7 @@ struct FeaturesData : Codable {
     let feature_name : String?
     let feature_type : String?
     let feature_data : [Feature_data]?
+    let feature_options : String?
 
     enum CodingKeys: String, CodingKey {
 
@@ -42,6 +43,7 @@ struct FeaturesData : Codable {
         case feature_name = "feature_name"
         case feature_type = "feature_type"
         case feature_data = "feature_data"
+        case feature_options = "feature_options"
     }
 
     init(from decoder: Decoder) throws {
@@ -51,6 +53,7 @@ struct FeaturesData : Codable {
         feature_name = try values.decodeIfPresent(String.self, forKey: .feature_name)
         feature_type = try values.decodeIfPresent(String.self, forKey: .feature_type)
         feature_data = try values.decodeIfPresent([Feature_data].self, forKey: .feature_data)
+        feature_options = try values.decodeIfPresent(String.self, forKey: .feature_options)
     }
 
 }
