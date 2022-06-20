@@ -178,9 +178,9 @@ extension ChoseLocationOnMapVC: CLLocationManagerDelegate {
         case .denied:
             print("User denied access to location.")
             
-            let alertController = UIAlertController(title: "Ask Hail", message: "Ask Hail would like to access your Location to get Listings and search properties Near your Location", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Ask Hail", message: "Ask Hail would like to access your Location to get Listings and search properties Near your Location".localized, preferredStyle: .alert)
 
-                let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
+            let settingsAction = UIAlertAction(title: "Settings".localized, style: .default) { (_) -> Void in
                     guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
                         return
                     }
@@ -188,13 +188,13 @@ extension ChoseLocationOnMapVC: CLLocationManagerDelegate {
                         UIApplication.shared.open(settingsUrl, completionHandler: { (success) in })
                      }
                 }
-                let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (_) -> Void in
-                    self.navigationController?.popViewController(animated: true)
+            let cancelAction = UIAlertAction(title: "Cancel".localized, style: .default) { (_) -> Void in
+                   // self.navigationController?.popViewController(animated: true)
                 }
 
                 alertController.addAction(cancelAction)
                 alertController.addAction(settingsAction)
-            
+
             self.present(alertController, animated: true, completion: nil)
             
             mapView.isHidden = false
