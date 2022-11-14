@@ -48,6 +48,12 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
     
     @IBOutlet weak var ScrollHeight: NSLayoutConstraint!
     
+    
+    @IBOutlet weak var districtView: UIView!
+    @IBOutlet weak var distinationView: UIView!
+    @IBOutlet weak var cityNameView: UIView!
+    @IBOutlet weak var districtNameView: UIView!
+    
     var DirectionPicker = UIPickerView()
     var RegionPicker = UIPickerView()
     var CityPicker = UIPickerView()
@@ -58,15 +64,17 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
     var RegionArray : [RegionData] = []
     var CitArray : [CitiesData] = []
     var BlocksArray : [BlocksData] = []
-    
-    var FeatureArray : [FeaturesData] = []
-    var SelectedFeature = [Int : Feature_data]()
+//    var FeatureArray : [FeaturesData] = []
+//    var SelectedFeature = [Int : Feature_data]()
+    var FeatureArray : [AdvertFeaturesModel] = []
+    var advertisement: Advertisement?
+    var SelectedFeature = [Int : FeatureDataModel]()
     var cellArray = [AddDetailsCell]()
     
-    var Direction_id = ""
-    var Region_id = ""
-    var City_id = ""
-    var Block_id = ""
+    var Direction_id:String?
+    var Region_id :String?
+    var City_id :String?
+    var Block_id :String?
     var FeatureData = false
     var Ad_id = ""
     
@@ -198,13 +206,12 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
     
     @IBAction func ConfirmAction(_ sender: Any) {
         
-        if OrderTitleTf.text?.isEmpty != true , PriceTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , desTxt.text != "وصف الطلب" , desTxt.text != "Description of the request" , directionTf.text?.isEmpty != true ,RegionTf.text?.isEmpty != true ,CityTf.text?.isEmpty != true ,BlockTf.text?.isEmpty != true ,
-           LocationTf.text?.isEmpty != true{
+        if OrderTitleTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , desTxt.text != "وصف الاعلان" , desTxt.text != "Description of the Advertising" { //, directionTf.text?.isEmpty != true
             
             var skip_status = true
             var x = 0
             for item in FeatureArray {
-                if item.feature_options == "required" {
+             //   if item.feature_options == "required" {
                     let indexPath = IndexPath.init(row: x, section: 0)
                        let cell = DetailsCollectionView.cellForItem(at: indexPath) as! AddDetailsCell
                     
@@ -214,7 +221,7 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
                         
                         ErrorLineAnimiteNoimage(text: cell.DetailTf, lineView: cell.LineView, ishidden: false)
                     }
-                }
+               // }
                 
                 x = x + 1
             }
@@ -230,29 +237,29 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
             if OrderTitleTf.text?.isEmpty == true {
                 ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
             }
-            if PriceTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
-            }
-            if desTxt.text?.isEmpty == true || desTxt.text == "وصف الطلب" || desTxt.text == "Description of the request"{
+//            if PriceTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
+//            }
+            if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
                 ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
             }
-            if directionTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: false)
-            }
-            if LocationTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: LocationTf, ImageView: LocationImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: LocationLineView, ishidden: false)
-            }
-            if RegionTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
-            }
+//            if directionTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: false)
+//            }
+//            if LocationTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: LocationTf, ImageView: LocationImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: LocationLineView, ishidden: false)
+//            }
+//            if RegionTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
+//            }
+//
+//            if CityTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: CityTf, ImageView: CityImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: CityLineView, ishidden: false)
+//            }
             
-            if CityTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: CityTf, ImageView: CityImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: CityLineView, ishidden: false)
-            }
-            
-            if BlockTf.text?.isEmpty == true {
-                ErrorLineAnimite(text: BlockTf, ImageView: BlockImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: BlockLineView, ishidden: false)
-            }
+//            if BlockTf.text?.isEmpty == true {
+//                ErrorLineAnimite(text: BlockTf, ImageView: BlockImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: BlockLineView, ishidden: false)
+//            }
             
             self.view.shake()
             
@@ -483,11 +490,12 @@ extension AdsDetailsVC : UICollectionViewDataSource , UICollectionViewDelegate {
             let model = FeatureArray[indexPath.row]
             
             if cell.DetailTf.text == "" {
-                cell.DetailTf.placeholder = model.feature_name ?? ""
+               // cell.DetailTf.placeholder = model.feature_name ?? ""
+                cell.DetailTf.placeholder = model.featureName ?? ""
             }
            
-            
-            if model.feature_type == "choose" {
+            //if model.feature_type == "choose" {
+            if model.featureType == "choose" {
                 cell.ChoseDetailsBtn.isHidden = false
                 cell.arrow_doun.isHidden = false
             }else{
@@ -502,8 +510,10 @@ extension AdsDetailsVC : UICollectionViewDataSource , UICollectionViewDelegate {
                 vc.modalPresentationStyle = .fullScreen
                 vc.Delegte = self
                 vc.index = indexPath.row
-                vc.FeatureData = self.FeatureArray[indexPath.row].feature_data ?? []
-                vc.pageTitle = self.FeatureArray[indexPath.row].feature_name ?? ""
+//                vc.FeatureData = self.FeatureArray[indexPath.row].feature_data ?? []
+//                vc.pageTitle = self.FeatureArray[indexPath.row].feature_name ?? ""
+                vc.FeatureData = self.FeatureArray[indexPath.row].featureData ?? []
+                vc.pageTitle = self.FeatureArray[indexPath.row].featureName ?? ""
                 self.addChild(vc)
                 vc.view.frame = self.view.frame
                 self.view.addSubview(vc.view)
@@ -531,7 +541,8 @@ extension AdsDetailsVC : UICollectionViewDelegateFlowLayout {
 //MARK:- Protocol Controller
 
 extension AdsDetailsVC : ChoseFromFeature {
-    func choseFeature(data: Feature_data, index: Int) {
+    //func choseFeature(data: Feature_data, index: Int) {
+    func choseFeature(data: FeatureDataModel, index: Int) {
         SelectedFeature[index] = data
         print(SelectedFeature)
         let indexPath = IndexPath.init(row: index, section: 0)
@@ -685,10 +696,11 @@ extension AdsDetailsVC {
             "lat" : "\(lat)",
             "lng" : "\(lng)",
             "price" : PriceTf.text ?? "",
-            "side_id" : Direction_id,
-            "region_id" : Region_id,
-            "city_id" : City_id ,
-            "district_id" : Block_id
+            "side_id" : Direction_id ?? "0",
+            "block_id": Block_id ?? "0",
+//            "region_id" : Region_id,
+//            "city_id" : City_id ,
+//            "district_id" : Block_id
            
         ] as [String : Any]
         
@@ -697,12 +709,12 @@ extension AdsDetailsVC {
         var selected_ides = [Int]()
         var x = 0
         for item in SelectedFeature {
-            
-            Parameters["features[\(x)]['feature_id']"] = "\(self.FeatureArray[item.key].feature_id ?? 0)"
+            // Parameters["features[\(x)]['feature_id']"] = "\(self.FeatureArray[item.key].feature_id ?? 0)"
+            Parameters["features[\(x)]['feature_id']"] = "\(self.FeatureArray[item.key].featureId ?? 0)"
             Parameters["features[\(x)]['answer']"] = "\(item.value.data_id ?? 0)"
             
-            
-            print(self.FeatureArray[item.key].feature_id ?? 0 , item.value.data_feature_id ?? 0)
+           //print(self.FeatureArray[item.key].feature_id ?? 0 , item.value.data_feature_id ?? 0)
+            print(self.FeatureArray[item.key].featureId ?? 0 , item.value.data_feature_id ?? 0)
             x = x + 1
         }
            
@@ -714,8 +726,8 @@ extension AdsDetailsVC {
         var y = 0
         for item in cellArray {
     
-            
-            if FeatureArray[y].feature_type == "text" {
+            // if FeatureArray[y].feature_type == "text" {
+            if FeatureArray[y].featureType == "text" {
                 let index = NSIndexPath(row: y, section: 0) as! IndexPath
                 
                 let cell = item as! AddDetailsCell
@@ -723,8 +735,8 @@ extension AdsDetailsVC {
                 if cell.DetailTf.text != "" {
                     
                     print(y)
-                    
-                    Parameters["features[\(y)]['feature_id']"] = "\( FeatureArray[y].feature_id ?? 0)"
+                  //Parameters["features[\(y)]['feature_id']"] = "\( FeatureArray[y].feature_id ?? 0)"
+                    Parameters["features[\(y)]['feature_id']"] = "\( FeatureArray[y].featureId ?? 0)"
                     Parameters["features[\(y)]['answer']"] = cell.DetailTf.text ?? ""
                 }
                 
@@ -889,11 +901,38 @@ extension AdsDetailsVC {
                     return
                 }
                 
-                if data.data?.count ?? 0 > 0 {
-                    self.FeatureArray = data.data ?? []
+//                if data.data?.count ?? 0 > 0 {
+//                    self.FeatureArray = data.data ?? []
+                if data.data?.section_features?.count ?? 0 > 0{
+                    self.FeatureArray = data.data?.section_features ?? []
                     self.FeatureData = true
                 }
+               self.advertisement = data.data?.advertisement
+//                if data.data?.section_features?.count ?? 0 > 0 {
+//                    self.FeatureArray = data.data ?? []
+//                    self.FeatureData = true
+//                }
                 
+                print("adccc:: \(data.data?.advertisement)")
+                
+                if var advertisement = data.data?.advertisement {
+
+                  //  advertisement.main_section?.business_type = "real_estate"
+                    print("adccc::2 \(advertisement.main_section?.business_type)")
+                    if advertisement.main_section?.business_type == "real_estate" {
+                        self.distinationView.isHidden = false
+                        self.districtView.isHidden = false
+                        self.cityNameView.isHidden = false
+                        self.districtNameView.isHidden = false
+                    }else{
+                        self.distinationView.isHidden = true
+                        self.districtView.isHidden = true
+                        self.cityNameView.isHidden = true
+                        self.districtNameView.isHidden = true
+                    }
+                    
+                }
+          
                 self.DetailsCollectionView.reloadData()
                 print(data)
             }

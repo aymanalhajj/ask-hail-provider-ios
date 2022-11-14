@@ -3221,13 +3221,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="إضافة اعلان جديد" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nao-VU-TFG">
-                                        <rect key="frame" x="156" y="18.5" width="102" height="19"/>
+                                        <rect key="frame" x="146.5" y="20" width="121" height="16"/>
                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksi-Mz-IU7">
-                                        <rect key="frame" x="24" y="18.5" width="23.5" height="19"/>
+                                        <rect key="frame" x="24" y="20" width="22" height="16"/>
                                         <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -3255,7 +3255,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bmF-RV-pcd">
-                                                <rect key="frame" x="24" y="61" width="366" height="607"/>
+                                                <rect key="frame" x="24" y="58" width="366" height="607"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF2-Jd-wBF">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
@@ -3381,7 +3381,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="السعر" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Xn-HK-7j7">
-                                                                <rect key="frame" x="66.5" y="8" width="247.5" height="40"/>
+                                                                <rect key="frame" x="70" y="8" width="244" height="40"/>
                                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="hdm-t5-DYE"/>
@@ -3398,7 +3398,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ر . س" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOK-GD-1cS">
-                                                                <rect key="frame" x="16" y="18.5" width="34.5" height="19"/>
+                                                                <rect key="frame" x="16" y="20" width="38" height="16"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
                                                                 <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -3672,7 +3672,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل الإعلان" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Go7-yy-1Yl">
-                                                <rect key="frame" x="24" y="24" width="366" height="21"/>
+                                                <rect key="frame" x="24" y="24" width="366" height="18"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -3694,7 +3694,7 @@
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i39-xd-qKG">
-                                                <rect key="frame" x="24" y="684" width="366" height="22"/>
+                                                <rect key="frame" x="24" y="681" width="366" height="25"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="Nxs-XX-kho">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -3774,11 +3774,15 @@
                         <outlet property="RegionLineView" destination="fXy-Li-ERF" id="qyh-BO-ArP"/>
                         <outlet property="RegionTf" destination="NoV-7j-jww" id="ag5-fM-hs9"/>
                         <outlet property="ScrollHeight" destination="wve-ob-nfG" id="3WK-4D-K9t"/>
+                        <outlet property="cityNameView" destination="o9l-Ua-DXu" id="eez-mc-iPd"/>
                         <outlet property="desLineView" destination="GDB-Yp-Ewe" id="KU0-VM-URy"/>
                         <outlet property="desTxt" destination="yf1-Fz-Ndb" id="gHI-ET-IaA"/>
                         <outlet property="directionImage" destination="1fp-QJ-tOb" id="HaY-Fh-xBE"/>
                         <outlet property="directionLineView" destination="bxR-bP-0Wj" id="RT6-DQ-xA4"/>
                         <outlet property="directionTf" destination="Bu8-uH-U1G" id="ONT-kZ-qnQ"/>
+                        <outlet property="distinationView" destination="Rzm-TX-SSn" id="p0G-aX-OJL"/>
+                        <outlet property="districtNameView" destination="Sah-W4-G9p" id="TT2-Qe-6X8"/>
+                        <outlet property="districtView" destination="2dA-Qz-u1I" id="Kgl-1F-bap"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELj-Ce-7Pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

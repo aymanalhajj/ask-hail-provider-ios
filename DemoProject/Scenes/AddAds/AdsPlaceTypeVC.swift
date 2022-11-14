@@ -282,8 +282,7 @@ extension AdsPlaceTypeVC {
     }
     
     func getMainSection() {
-        
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)main-sections/business") { (data : SectionsModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)main-sections/business?package_id=\(Helper.getPackage_Id() ?? "0")") { (data : SectionsModel?, String) in
             
             if String != nil {
                 

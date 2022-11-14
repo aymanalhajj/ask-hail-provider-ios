@@ -61,8 +61,8 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     var CitArray : [CitiesData] = []
     var BlocksArray : [BlocksData] = []
     
-    var FeatureArray : [FeaturesData] = []
-    var SelectedFeature = [Int : Feature_data]()
+    var FeatureArray : [AdvertFeaturesModel] = []
+    var SelectedFeature = [Int : FeatureDataModel]()
     var cellArray = [AddDetailsCell]()
     
     var CurrentFeatureArray : [Adv_specifications] = []
@@ -202,7 +202,7 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             var skip_status = true
             var x = 0
             for item in FeatureArray {
-                if item.feature_options == "required" {
+               // if item.feature_options == "required" {
                     let indexPath = IndexPath.init(row: x, section: 0)
                        let cell = DetailsCollectionView.cellForItem(at: indexPath) as! AddDetailsCell
                     
@@ -212,7 +212,7 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
                         
                         ErrorLineAnimiteNoimage(text: cell.DetailTf, lineView: cell.LineView, ishidden: false)
                     }
-                }
+               // }
                 
                 x = x + 1
             }
@@ -578,16 +578,16 @@ extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
             
             var x = 0
             for item in CurrentFeatureArray {
-                if FeatureArray[indexPath.row].feature_id == item.specification_section_feature?.feature_id {
+                if FeatureArray[indexPath.row].featureId == item.specification_section_feature?.feature_id {
                     
                     cell.DetailTf.text = CurrentFeatureArray[x].specification_answer ?? ""
                     
-                    if FeatureArray[indexPath.row].feature_type == "choose" {
+                    if FeatureArray[indexPath.row].featureType == "choose" {
                         
                         
                         print("dssd")
                         
-                        for item1 in FeatureArray[indexPath.row].feature_data ?? [] {
+                        for item1 in FeatureArray[indexPath.row].featureData ?? [] {
                                                         
                             if item1.data_title == item.specification_answer {
                                 self.SelectedFeature[indexPath.row] = item1
@@ -601,11 +601,11 @@ extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
                 x = x + 1
             }
             if cell.DetailTf.text == "" {
-                cell.DetailTf.placeholder = model.feature_name ?? ""
+                cell.DetailTf.placeholder = model.featureName ?? ""
             }
            
             
-            if model.feature_type == "choose" {
+            if model.featureType == "choose" {
                 cell.ChoseDetailsBtn.isHidden = false
                 cell.arrow_doun.isHidden = false
             }else{
@@ -620,8 +620,8 @@ extension EditDetailsVD: UICollectionViewDataSource , UICollectionViewDelegate {
                 vc.modalPresentationStyle = .fullScreen
                 vc.Delegte = self
                 vc.index = indexPath.row
-                vc.FeatureData = self.FeatureArray[indexPath.row].feature_data ?? []
-                vc.pageTitle = self.FeatureArray[indexPath.row].feature_name ?? ""
+                vc.FeatureData = self.FeatureArray[indexPath.row].featureData ?? []
+                vc.pageTitle = self.FeatureArray[indexPath.row].featureName ?? ""
                 self.addChild(vc)
                 vc.view.frame = self.view.frame
                 self.view.addSubview(vc.view)
@@ -654,7 +654,7 @@ extension EditDetailsVD : UICollectionViewDelegateFlowLayout {
 //MARK:- Protocol Controller
 
 extension EditDetailsVD : ChoseFromFeature {
-    func choseFeature(data: Feature_data, index: Int) {
+    func choseFeature(data: FeatureDataModel, index: Int) {
         SelectedFeature[index] = data
         print(SelectedFeature)
         let indexPath = IndexPath.init(row: index, section: 0)
@@ -707,11 +707,11 @@ extension EditDetailsVD {
         
         for item in SelectedFeature {
             
-            Parameters["features[\(x)]['feature_id']"] = "\(self.FeatureArray[item.key].feature_id ?? 0)"
+            Parameters["features[\(x)]['feature_id']"] = "\(self.FeatureArray[item.key].featureId ?? 0)"
             Parameters["features[\(x)]['answer']"] = "\(item.value.data_id ?? 0)"
             
             
-            print(self.FeatureArray[item.key].feature_id ?? 0 , item.value.data_id ?? 0)
+            print(self.FeatureArray[item.key].featureId ?? 0 , item.value.data_id ?? 0)
             x = x + 1
         }
         
@@ -722,14 +722,14 @@ extension EditDetailsVD {
             let cell = DetailsCollectionView.cellForItem(at: indexPath) as! AddDetailsCell
             
             
-            if FeatureArray[y].feature_type == "text" {
+            if FeatureArray[y].featureType == "text" {
                 
                 if cell.DetailTf.text == "" {
 //                    Parameters["features[\(x)]['feature_id']"] = ""
 //                    Parameters["features[\(x)]['answer']"] = ""
                     
                 }else{
-                    Parameters["features[\(x)]['feature_id']"] = "\(FeatureArray[y].feature_id ?? 0)"
+                    Parameters["features[\(x)]['feature_id']"] = "\(FeatureArray[y].featureId ?? 0)"
                     Parameters["features[\(x)]['answer']"] = cell.DetailTf.text ?? ""
                     
                     x = x + 1
@@ -956,8 +956,13 @@ extension EditDetailsVD {
                     return
                 }
                 
-                if data.data?.count ?? 0 > 0 {
-                    self.FeatureArray = data.data ?? []
+//                if data.data?.count ?? 0 > 0 {
+//                    self.FeatureArray = data.data ?? []
+//                    self.FeatureData = true
+//                }
+                
+                if data.data?.section_features?.count ?? 0 > 0{
+                    self.FeatureArray = data.data?.section_features ?? []
                     self.FeatureData = true
                 }
                 
