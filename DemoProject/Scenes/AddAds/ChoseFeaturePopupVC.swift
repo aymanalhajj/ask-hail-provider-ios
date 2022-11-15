@@ -9,7 +9,8 @@
 import UIKit
 
 protocol ChoseFromFeature {
-    func choseFeature(data : Feature_data , index : Int)
+    //    func choseFeature(data : Feature_data , index : Int)
+    func choseFeature(data : FeatureDataModel , index : Int)
 }
 
 class ChoseFeaturePopupVC: UIViewController {
@@ -19,7 +20,8 @@ class ChoseFeaturePopupVC: UIViewController {
     
     
     var Delegte : ChoseFromFeature?
-    var FeatureData : [Feature_data] = []
+    //var FeatureData : [Feature_data] = []
+    var FeatureData : [FeatureDataModel] = []
     var selectedIndex : Int?
     var pageTitle = ""
     
