@@ -888,7 +888,7 @@
 		A3423ADEDFB20D72E2C608221A26D3C6 /* UICollectionView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03A54D40B9B87CF6C0FF9FD5A277680 /* UICollectionView+Rx.swift */; };
 		A3577C4B3E097F42D4735BCFC4CF79A9 /* AJMessage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BED56FE9E49CC86B4E5D3A1DA12D71 /* AJMessage-dummy.m */; };
 		A37D3661369446F3AA978C8FD342A83A /* UIActivityIndicatorView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53108025DFD47BA3C2620DEAE68529E /* UIActivityIndicatorView+Rx.swift */; };
-		A3BB5CC45FD1F0CB11B839828E426F98 /* PMAlertController-PMAlertController in Resources */ = {isa = PBXBuildFile; fileRef = ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController-PMAlertController */; };
+		A3BB5CC45FD1F0CB11B839828E426F98 /* PMAlertController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController.bundle */; };
 		A3C150403C90C7C871EC85FE1DE1B67F /* StatusBarNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421401C457C1931446C8622E5BF334A9 /* StatusBarNotificationBanner.swift */; };
 		A3D50B5B21A568574359409C95CA0A5D /* FirebaseCoreInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7C54142E3F944BE18ACEF8037CABD1 /* FirebaseCoreInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A41E81FF9031E80B223DA9C3C4A8644E /* FIRInstallationsHTTPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B58F4D7600EE56BB0FBA9552F00E770 /* FIRInstallationsHTTPError.m */; };
@@ -3266,7 +3266,7 @@
 		EC70CB5D420E856C8B66AFF22A9C9E6C /* FBLPromise+Always.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FBLPromise+Always.m"; path = "Sources/FBLPromises/FBLPromise+Always.m"; sourceTree = "<group>"; };
 		EC72B5207ADC8712C1F5F9026F8642E5 /* nanopb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.debug.xcconfig; sourceTree = "<group>"; };
 		ECD4A60C92859BDAFC0D8C2BC474F9FC /* FIRComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponent.h; path = FirebaseCore/Sources/Private/FIRComponent.h; sourceTree = "<group>"; };
-		ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController-PMAlertController */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "PMAlertController-PMAlertController"; path = PMAlertController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMAlertController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED42046D64ABF642F62737750AC1CC08 /* FBLPromise+Async.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBLPromise+Async.h"; path = "Sources/FBLPromises/include/FBLPromise+Async.h"; sourceTree = "<group>"; };
 		EDA47969F1A47624AAFD84F0D650AB06 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		EDB9D0CAA3047CC372AB82095F550078 /* GULKeychainUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULKeychainUtils.m; path = GoogleUtilities/Environment/SecureStorage/GULKeychainUtils.m; sourceTree = "<group>"; };
@@ -5604,7 +5604,7 @@
 				FD1309C85A2B4DD96C17CEE227B41C92 /* OTPFieldView */,
 				94D92A4A2B631DB8FAA47AD85774E4D1 /* PageControls */,
 				C896D3D249F15B7280D3A50AA603D70F /* PMAlertController */,
-				ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController-PMAlertController */,
+				ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController.bundle */,
 				35A269ECC8724BEE568B09B089BE32D0 /* Pods-AskHailBusiness */,
 				3347A1AB6546F0A3977529B8F199DC41 /* PromisesObjC */,
 				BC432FD48A5932251F1CAFBC4BF74894 /* RxCocoa */,
@@ -7409,7 +7409,7 @@
 			);
 			name = "PMAlertController-PMAlertController";
 			productName = PMAlertController;
-			productReference = ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController-PMAlertController */;
+			productReference = ECE1D4E8E06362E959CA9683CBD7C694 /* PMAlertController.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		E78B17C6DDC46B873852A827DF9E8DC6 /* BottomPopup */ = {
@@ -7921,7 +7921,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3BB5CC45FD1F0CB11B839828E426F98 /* PMAlertController-PMAlertController in Resources */,
+				A3BB5CC45FD1F0CB11B839828E426F98 /* PMAlertController.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -12387,7 +12387,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7384B54B507AD0F168CF8875C9024BAE /* PMAlertController.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PMAlertController";
 				DEVELOPMENT_TEAM = 9645VBV259;
@@ -12396,6 +12396,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesal.askHailBusiness;
 				PRODUCT_NAME = PMAlertController;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
