@@ -115,6 +115,9 @@
 		4DFFA3DA255611C600D56614 /* AddNewPopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFA3D9255611C600D56614 /* AddNewPopUpVC.swift */; };
 		4DFFA4102556175500D56614 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFA40F2556175500D56614 /* BaseViewController.swift */; };
 		4DFFA41B2556202500D56614 /* AdsTermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DFFA41A2556202500D56614 /* AdsTermsVC.swift */; };
+		8E7776C6292BD62500321D88 /* ci_post_xcodebuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8E7776C3292BD62500321D88 /* ci_post_xcodebuild.sh */; };
+		8E7776C7292BD62500321D88 /* ci_pre_xcodebuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8E7776C4292BD62500321D88 /* ci_pre_xcodebuild.sh */; };
+		8E7776C8292BD62500321D88 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8E7776C5292BD62500321D88 /* ci_post_clone.sh */; };
 		B847D545254B1DFF004985E3 /* RealtySaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B847D543254B1DFF004985E3 /* RealtySaleCell.swift */; };
 		B847D546254B1DFF004985E3 /* RealtySaleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B847D544254B1DFF004985E3 /* RealtySaleCell.xib */; };
 		B850ECB42577C87200D52284 /* ShowBusinessAdvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B850ECB32577C87200D52284 /* ShowBusinessAdvModel.swift */; };
@@ -407,6 +410,9 @@
 		4DFFA41A2556202500D56614 /* AdsTermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsTermsVC.swift; sourceTree = "<group>"; };
 		61CD2A035888F5C27E15F903 /* Pods-AskHailBusiness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskHailBusiness.debug.xcconfig"; path = "Target Support Files/Pods-AskHailBusiness/Pods-AskHailBusiness.debug.xcconfig"; sourceTree = "<group>"; };
 		6657745DE08D79853E4AD727 /* Pods-AskHailBusiness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskHailBusiness.release.xcconfig"; path = "Target Support Files/Pods-AskHailBusiness/Pods-AskHailBusiness.release.xcconfig"; sourceTree = "<group>"; };
+		8E7776C3292BD62500321D88 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
+		8E7776C4292BD62500321D88 /* ci_pre_xcodebuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci_pre_xcodebuild.sh; sourceTree = "<group>"; };
+		8E7776C5292BD62500321D88 /* ci_post_clone.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		B847D543254B1DFF004985E3 /* RealtySaleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtySaleCell.swift; sourceTree = "<group>"; };
 		B847D544254B1DFF004985E3 /* RealtySaleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealtySaleCell.xib; sourceTree = "<group>"; };
 		B850ECB32577C87200D52284 /* ShowBusinessAdvModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBusinessAdvModel.swift; sourceTree = "<group>"; };
@@ -940,6 +946,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8E7776C2292BD62500321D88 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				8E7776C3292BD62500321D88 /* ci_post_xcodebuild.sh */,
+				8E7776C4292BD62500321D88 /* ci_pre_xcodebuild.sh */,
+				8E7776C5292BD62500321D88 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 		B847D541254B1DA7004985E3 /* RealtySaleCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1115,6 +1131,7 @@
 		C1A2C664240B9C39003EE54F = {
 			isa = PBXGroup;
 			children = (
+				8E7776C2292BD62500321D88 /* ci_scripts */,
 				C1A2C66F240B9C39003EE54F /* DemoProject */,
 				C1A2C66E240B9C39003EE54F /* Products */,
 				52F0DD6F536B4DDFB3CEFA2C /* Frameworks */,
@@ -1583,7 +1600,9 @@
 				4D80D7B825F6E79F0072270A /* emptyCell.xib in Resources */,
 				4D346859254CAC41001F138E /* PaymentPolicyCell.xib in Resources */,
 				C1A2C678240B9C39003EE54F /* Assets.xcassets in Resources */,
+				8E7776C8292BD62500321D88 /* ci_post_clone.sh in Resources */,
 				CC0631722590EA6300B43C1A /* CommentWithReplayCell.xib in Resources */,
+				8E7776C6292BD62500321D88 /* ci_post_xcodebuild.sh in Resources */,
 				CC66B3CA2576D14D00EA736B /* ImageCell.xib in Resources */,
 				4DCDEED42561FA3A0092D52F /* MainAndAds.storyboard in Resources */,
 				4DAFF72425648775005479B5 /* BusinessAds.storyboard in Resources */,
@@ -1613,6 +1632,7 @@
 				C17851AB2563BDFB008F27E5 /* MessagesCell.xib in Resources */,
 				4DA64C9925646F8E003A3BFC /* OrederAndAddOreder.storyboard in Resources */,
 				C17851A02563BD95008F27E5 /* SenderCell.xib in Resources */,
+				8E7776C7292BD62500321D88 /* ci_pre_xcodebuild.sh in Resources */,
 				4D91C41F2548C01300E74A8B /* Tajawal-Bold.ttf in Resources */,
 				CCCF188825BE73C7005B092C /* AddDetailsCell.xib in Resources */,
 				C19D5E5525B917B4008C07B2 /* Auth.storyboard in Resources */,
