@@ -43,7 +43,7 @@ pod 'Firebase/DynamicLinks'
 pod 'Toast-Swift', '~> 5.0.1'
 pod 'lottie-ios'
 pod 'PMAlertController'
-pod 'Firebase/Crashlytics'
+# pod 'Firebase/Crashlytics'
 pod 'Firebase/Analytics'
 
 
