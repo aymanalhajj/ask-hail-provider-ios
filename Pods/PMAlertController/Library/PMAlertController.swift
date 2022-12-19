@@ -69,10 +69,6 @@ import UIKit
         self.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
         
         alertView.layer.cornerRadius = 5
-        alertTitle.font = UIFont(name: "Tajawal-Medium", size: 18)
-        alertDescription.font = UIFont(name: "Tajawal-Regular", size: 16)
-        alertDescription.textColor = #colorLiteral(red: 0.009207268246, green: 0.2938053012, blue: 0.5373800993, alpha: 1)
-        alertTitle.textColor = #colorLiteral(red: 0.009207268246, green: 0.2938053012, blue: 0.5373800993, alpha: 1)
         (image != nil) ? (alertImage.image = image) : (headerViewHeightConstraint.constant = 0)
         
         if let title = title {
@@ -132,7 +128,7 @@ import UIKit
         let textField = textField ?? UITextField()
         textField.delegate = self
         textField.returnKeyType = .done
-        textField.font = UIFont(name: "Tajawal-Medium", size: 20)
+        textField.font = UIFont(name: "Avenir-Heavy", size: 17)
         textField.textAlignment = .center
         configuration (textField)
         _addTextField(textField)

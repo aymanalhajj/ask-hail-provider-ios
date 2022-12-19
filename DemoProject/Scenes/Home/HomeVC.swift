@@ -220,10 +220,11 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource {
         
         let storyboard = UIStoryboard(name: Home, bundle: nil)
         let vc  = storyboard.instantiateViewController(withIdentifier: "BusinessAdsDetailsVC") as! BusinessAdsDetailsVC
-        vc.AdId = "\(MyAdvArray[indexPath.row].adv_id ?? 0)"
-        navigationController?.pushViewController(vc, animated: true)
-        
-        return tableView.deselectRow(at: indexPath, animated: true)
+        if MyAdvArray.indices.contains(indexPath.row) == true {
+            vc.AdId = "\(MyAdvArray[indexPath.row].adv_id ?? 0)"
+            navigationController?.pushViewController(vc, animated: true)
+            return tableView.deselectRow(at: indexPath, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

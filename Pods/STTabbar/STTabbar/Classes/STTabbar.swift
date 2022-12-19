@@ -9,28 +9,24 @@ import Foundation
 import UIKit
 
 @IBDesignable
-public final class STTabbar: UITabBar, UITabBarDelegate {
+public final class STTabbar: UITabBar {
     
     // MARK:- Variables -
     @objc public var centerButtonActionHandler: ()-> () = {}
 
-    @IBInspectable public var centerButtonColor: UIColor? = #colorLiteral(red: 0, green: 0.8405352831, blue: 0.9516475797, alpha: 1)
-    @IBInspectable public var centerButtonHeight: CGFloat = 90.0
-    @IBInspectable public var padding: CGFloat = 9.0
-    @IBInspectable public var buttonImage: UIImage? = #imageLiteral(resourceName: "plus")
+    @IBInspectable public var centerButtonColor: UIColor?
+    @IBInspectable public var centerButtonHeight: CGFloat = 50.0
+    @IBInspectable public var padding: CGFloat = 5.0
+    @IBInspectable public var buttonImage: UIImage?
     @IBInspectable public var buttonTitle: String?
     
+    @IBInspectable public var selectionColor: UIColor = UIColor.white
     @IBInspectable public var tabbarColor: UIColor = UIColor.white
-    @IBInspectable public var unselectedItemColor: UIColor = #colorLiteral(red: 0.01176470588, green: 0.2941176471, blue: 0.537254902, alpha: 0.5)
+    @IBInspectable public var unselectedItemColor: UIColor = UIColor.lightGray
 
     private var shapeLayer: CALayer?
     
-    
-    
     private func addShape() {
-     
-    
-        
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath()
         shapeLayer.strokeColor = UIColor.clear.cgColor
@@ -52,7 +48,6 @@ public final class STTabbar: UITabBar, UITabBarDelegate {
         self.tintColor = centerButtonColor
         self.unselectedItemTintColor = unselectedItemColor
         self.setupMiddleButton()
-        
     }
     
     override public func draw(_ rect: CGRect) {
@@ -95,7 +90,7 @@ public final class STTabbar: UITabBar, UITabBarDelegate {
     
     private func setupMiddleButton() {
         
-        let centerButton = UIButton(frame: CGRect(x: (self.bounds.width / 2)-(centerButtonHeight/2), y: -35, width: centerButtonHeight, height: centerButtonHeight))
+        let centerButton = UIButton(frame: CGRect(x: (self.bounds.width / 2) - (centerButtonHeight / 2), y: -20, width: centerButtonHeight, height: centerButtonHeight))
         
         centerButton.layer.cornerRadius = centerButton.frame.size.width / 2.0
         centerButton.setTitle(buttonTitle, for: .normal)
@@ -106,13 +101,11 @@ public final class STTabbar: UITabBar, UITabBarDelegate {
         //add to the tabbar and add click event
         self.addSubview(centerButton)
         centerButton.addTarget(self, action: #selector(self.centerButtonAction), for: .touchUpInside)
-        
     }
     
     // Menu Button Touch Action
      @objc func centerButtonAction(sender: UIButton) {
         self.centerButtonActionHandler()
      }
-    
 }
 

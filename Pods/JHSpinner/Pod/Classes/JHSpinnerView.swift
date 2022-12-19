@@ -148,7 +148,7 @@ open class JHSpinnerView: UIView {
             myOverlayColor = overlayColor
         }else {
             if let bgColor = view.backgroundColor {
-                if bgColor.isLight() {
+                if bgColor.isLight(){
                     myOverlayColor = defaultWhite.withAlphaComponent(0.5)
                 }else {
                     myOverlayColor = defaultBlack.withAlphaComponent(0.5)
@@ -380,7 +380,7 @@ private class JHSpinner : UIView {
     line3.layer.cornerRadius = lineWidth/2.0
     containerView.addSubview(line3)
     
-    bringSubviewToFront(containerView)
+      bringSubviewToFront(containerView)
    
     overlayView.addSubview(messageLabel)
     
