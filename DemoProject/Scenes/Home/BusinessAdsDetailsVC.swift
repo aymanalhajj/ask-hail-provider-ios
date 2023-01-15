@@ -25,6 +25,9 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     
     @IBOutlet weak var noSocialLabel: UILabel!
     
+    @IBOutlet weak var locationTopConstrains: NSLayoutConstraint!
+    @IBOutlet weak var locationContainerHeight: NSLayoutConstraint!
+    @IBOutlet weak var locationContainerView: UIView!
     @IBOutlet weak var SarLbl: UILabel!
     @IBOutlet weak var EditView: UIView!
     @IBOutlet weak var StarBtn: UIImageView!
@@ -69,8 +72,10 @@ class BusinessAdsDetailsVC: UIViewController, FSPagerViewDataSource, FSPagerView
     @IBOutlet weak var facebookView: UIView!
     @IBOutlet weak var websiteView: UIView!
     
-    
-    
+    @IBOutlet weak var distanceImage: UIImageView!
+    @IBOutlet weak var kmLabel: UILabel!
+    @IBOutlet weak var mapHeight: NSLayoutConstraint!
+    @IBOutlet weak var btnHeight: NSLayoutConstraint!
     
     var refreshControl = UIRefreshControl()
     
@@ -595,7 +600,22 @@ extension BusinessAdsDetailsVC {
                     self.AdvPrice.text = data.data?.advertisement_details?.adv_price ?? ""
                 }
                 
-                self.AdsDisnatce.text = data.data?.advertisement_details?.adv_distance ?? ""
+                if (data.data?.advertisement_details?.adv_location ?? "") == "" {
+                    self.AdsDisnatce.text = ""
+                    self.distanceImage.isHidden = true
+                    self.kmLabel.isHidden = true
+                    self.locationTopConstrains.constant = -105
+                    self.locationContainerHeight.constant = 0
+                    self.locationContainerView.isHidden = true
+                    self.mapHeight.constant = 0
+                    self.btnHeight.constant = 0
+                    
+                }else {
+                    self.distanceImage.isHidden = false
+                    self.kmLabel.isHidden = false
+                    self.AdsDisnatce.text = data.data?.advertisement_details?.adv_distance ?? ""
+                }
+                
                 print(data.data?.advertisement_details?.adv_distance ?? "")
                 self.ViewsNumber.text = data.data?.advertisement_details?.adv_views ?? ""
                 

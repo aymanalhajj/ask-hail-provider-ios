@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1480,10 +1480,10 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="1062"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROJ-nN-BTx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="909"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jgO-e5-3YM">
-                                                <rect key="frame" x="24" y="61" width="366" height="607"/>
+                                                <rect key="frame" x="24" y="58" width="366" height="607"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efc-OC-50C">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="56"/>
@@ -1609,7 +1609,7 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="السعر" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dh-Cm-ibH">
-                                                                <rect key="frame" x="66.5" y="8" width="247.5" height="40"/>
+                                                                <rect key="frame" x="70" y="8" width="244" height="40"/>
                                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="r6Y-CM-2WN"/>
@@ -1626,7 +1626,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ر . س" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHR-Vp-QXb">
-                                                                <rect key="frame" x="16" y="18.5" width="34.5" height="19"/>
+                                                                <rect key="frame" x="16" y="20" width="38" height="16"/>
                                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="16"/>
                                                                 <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -1909,13 +1909,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفاصيل الإعلان" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPR-ok-brG">
-                                                <rect key="frame" x="24" y="24" width="366" height="21"/>
+                                                <rect key="frame" x="24" y="24" width="366" height="18"/>
                                                 <fontDescription key="fontDescription" name="Tajawal-Regular" family="Tajawal" pointSize="18"/>
                                                 <color key="textColor" red="0.0092072682459999992" green="0.29380530119999998" blue="0.53738009929999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7T-wp-EIe">
-                                                <rect key="frame" x="57" y="813" width="300" height="56"/>
+                                                <rect key="frame" x="57" y="810" width="300" height="56"/>
                                                 <color key="backgroundColor" red="0.97647058819999999" green="0.70588235290000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="ChM-9S-6uK"/>
@@ -1931,7 +1931,7 @@
                                                 </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pht-Km-jWi">
-                                                <rect key="frame" x="24" y="684" width="366" height="81"/>
+                                                <rect key="frame" x="24" y="681" width="366" height="81"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="81" id="UzL-WD-aMz"/>
@@ -1985,7 +1985,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تعديل تفاصيل الإعلان" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaI-tg-BHd">
-                                        <rect key="frame" x="147" y="20.5" width="120.5" height="19"/>
+                                        <rect key="frame" x="130" y="22" width="154" height="16"/>
                                         <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
                                         <color key="textColor" red="0.0078431372550000003" green="0.2901960784" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2049,6 +2049,7 @@
                         <outlet property="RegionView" destination="ZVB-OR-MDO" id="P8f-5h-sDh"/>
                         <outlet property="ScrollHeight" destination="UzL-WD-aMz" id="A4d-UN-5Q0"/>
                         <outlet property="TopBar" destination="1jT-df-KFX" id="b3F-Bc-ZkH"/>
+                        <outlet property="cityNameView" destination="0OX-IO-Rcw" id="zYD-w0-Mfx"/>
                         <outlet property="desLineView" destination="qtL-eP-qep" id="bcu-x1-kBc"/>
                         <outlet property="desTxt" destination="toS-aZ-Mgb" id="C5f-Fw-3WT"/>
                         <outlet property="desView" destination="cMB-ru-Yn4" id="ywx-Q4-HZy"/>
@@ -2056,6 +2057,7 @@
                         <outlet property="directionLineView" destination="8ks-bk-Z7I" id="ewn-dE-0sw"/>
                         <outlet property="directionTf" destination="H4c-o2-UfX" id="jX5-Pc-6c9"/>
                         <outlet property="directionView" destination="ss2-mh-yGj" id="khV-Dj-uVY"/>
+                        <outlet property="districtNameView" destination="YtT-Oy-V7Q" id="vsL-zS-zMT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M67-Dt-IMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

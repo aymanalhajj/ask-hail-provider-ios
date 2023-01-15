@@ -149,6 +149,17 @@ extension HomeVC : UITableViewDelegate , UITableViewDataSource {
             cell.ViewsNumber.text = Model.adv_views
             cell.CellRate.text = Model.adv_total_rate
             
+            if Model.adv_location == "" {
+                
+                cell.distanceImage.isHidden = true
+                cell.kmLabel.isHidden = true
+                cell.distance.isHidden = true
+                cell.distance.text = ""
+            }else {
+                cell.distanceImage.isHidden = false
+                cell.kmLabel.isHidden = false
+                cell.distance.isHidden = false
+            }
             if Model.adv_price ?? "" == "0" {
                 cell.SARLbl.isHidden = true
                 cell.Price.isHidden = true

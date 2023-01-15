@@ -67,6 +67,7 @@ struct AdvData : Codable {
     let adv_available_status : String?
     let adv_available_custom_status : String?
     let adv_total_rate : String?
+    let adv_location : String?
     
     enum CodingKeys: String, CodingKey {
 
@@ -83,6 +84,8 @@ struct AdvData : Codable {
         case adv_available_status = "adv_available_status"
         case adv_available_custom_status = "adv_available_custom_status"
         case adv_total_rate = "adv_total_rate"
+        case adv_location = "adv_location"
+
     }
 
     init(from decoder: Decoder) throws {
@@ -100,6 +103,8 @@ struct AdvData : Codable {
         adv_available_status = try values.decodeIfPresent(String.self, forKey: .adv_available_status)
         adv_available_custom_status = try values.decodeIfPresent(String.self, forKey: .adv_available_custom_status)
         adv_total_rate = try values.decodeIfPresent(String.self, forKey: .adv_total_rate)
+        adv_location = try values.decodeIfPresent(String.self, forKey: .adv_location)
+
     }
 
 }

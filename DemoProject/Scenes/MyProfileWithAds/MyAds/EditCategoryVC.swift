@@ -322,7 +322,7 @@ extension EditCategoryVC{
                     }
                 }
 
-                
+
                 self.getSubSection()
                 print(data)
                 
@@ -334,6 +334,12 @@ extension EditCategoryVC{
     func getSubSection() {
         
         print(Section_id)
+        
+        if Section_id == "" {
+            self.view.unlock()
+            self.LoadingView.isHidden =  true
+            return
+        }
         
         ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)sub-sections/\(Section_id)") { (data : SectionsModel?, String) in
             

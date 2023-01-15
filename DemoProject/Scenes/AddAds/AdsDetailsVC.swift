@@ -203,66 +203,73 @@ class AdsDetailsVC: UIViewController,  UITextFieldDelegate, UITextViewDelegate {
         
         
     }
-    
+        
     @IBAction func ConfirmAction(_ sender: Any) {
         
-        if OrderTitleTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , desTxt.text != "وصف الاعلان" , desTxt.text != "Description of the Advertising" { //, directionTf.text?.isEmpty != true
-            
-            var skip_status = true
-            var x = 0
-            for item in FeatureArray {
-             //   if item.feature_options == "required" {
-                    let indexPath = IndexPath.init(row: x, section: 0)
-                       let cell = DetailsCollectionView.cellForItem(at: indexPath) as! AddDetailsCell
-                    
-                    if cell.DetailTf.text == "" {
-                        
-                        skip_status = false
-                        
-                        ErrorLineAnimiteNoimage(text: cell.DetailTf, lineView: cell.LineView, ishidden: false)
-                    }
-               // }
+        //            if PriceTf.text?.isEmpty == true {
+        //                ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
+        //            }
+
+         if (advertisement?.main_section?.business_type ?? "") == "real_estate" {
+            if OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, desTxt.text != "وصف الاعلان", desTxt.text != "Description of the Advertising", OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, directionTf.text?.isEmpty != true, RegionTf.text?.isEmpty != true, CityTf.text?.isEmpty != true, BlockTf.text?.isEmpty != true , LocationTf.text?.isEmpty != true {
                 
-                x = x + 1
-            }
-            
-            if skip_status {
                 setDetails()
+
+            } else {
+                
+                if OrderTitleTf.text?.isEmpty == true {
+                    ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
+                }
+                
+                if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
+                    ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
+                }
+                
+                if directionTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: false)
+                }
+    
+                if LocationTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: LocationTf, ImageView: LocationImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: LocationLineView, ishidden: false)
+                }
+    
+                if RegionTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
+                }
+    
+                if CityTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: CityTf, ImageView: CityImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: CityLineView, ishidden: false)
+                }
+    
+                if BlockTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: BlockTf, ImageView: BlockImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: BlockLineView, ishidden: false)
+                }
+    
+//                if PriceTf.text?.isEmpty == true {
+//                    ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
+//                }
+    
+                self.view.shake()
+                
             }
-            
-            
-            
-        } else {
-            
-            if OrderTitleTf.text?.isEmpty == true {
-                ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
+        }else { // "famous"
+            if OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, desTxt.text != "وصف الاعلان", desTxt.text != "Description of the Advertising", OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true {
+                
+                setDetails()
+
+            } else {
+                
+                if OrderTitleTf.text?.isEmpty == true {
+                    ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
+                }
+                
+                if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
+                    ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
+                }
+                
+                self.view.shake()
+                
             }
-//            if PriceTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: PriceTf, ImageView: PriceImage, imageEnable: #imageLiteral(resourceName: "money"), lineView: PriceLineView, ishidden: false)
-//            }
-            if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
-                ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
-            }
-//            if directionTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: false)
-//            }
-//            if LocationTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: LocationTf, ImageView: LocationImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: LocationLineView, ishidden: false)
-//            }
-//            if RegionTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
-//            }
-//
-//            if CityTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: CityTf, ImageView: CityImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: CityLineView, ishidden: false)
-//            }
-            
-//            if BlockTf.text?.isEmpty == true {
-//                ErrorLineAnimite(text: BlockTf, ImageView: BlockImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: BlockLineView, ishidden: false)
-//            }
-            
-            self.view.shake()
-            
         }
         
     }
@@ -697,13 +704,22 @@ extension AdsDetailsVC {
             "lng" : "\(lng)",
             "price" : PriceTf.text ?? "",
             "side_id" : Direction_id ?? "0",
-            "block_id": Block_id ?? "0",
-//            "region_id" : Region_id,
-//            "city_id" : City_id ,
-//            "district_id" : Block_id
-           
+            "region_id" : Region_id ?? "0",
+            "city_id" : City_id ?? "0",
+            "district_id" : Block_id ?? "0"
         ] as [String : Any]
         
+        if (advertisement?.main_section?.business_type ?? "") != "real_estate" {
+            Parameters = [
+                "advertisement_id": Ad_id,
+                "title" : OrderTitleTf.text ?? "",
+                "description" : desTxt.text ?? "",
+                "location" : Address,
+                "lat" : "\(lat)",
+                "lng" : "\(lng)",
+                "price" : PriceTf.text ?? ""
+            ]
+        }
         
         var features = self.SelectedFeature.values
         var selected_ides = [Int]()
@@ -916,21 +932,18 @@ extension AdsDetailsVC {
                 print("adccc:: \(data.data?.advertisement)")
                 
                 if var advertisement = data.data?.advertisement {
-
-                  //  advertisement.main_section?.business_type = "real_estate"
                     print("adccc::2 \(advertisement.main_section?.business_type)")
                     if advertisement.main_section?.business_type == "real_estate" {
                         self.distinationView.isHidden = false
                         self.districtView.isHidden = false
                         self.cityNameView.isHidden = false
                         self.districtNameView.isHidden = false
-                    }else{
+                    }else {
                         self.distinationView.isHidden = true
                         self.districtView.isHidden = true
                         self.cityNameView.isHidden = true
                         self.districtNameView.isHidden = true
                     }
-                    
                 }
           
                 self.DetailsCollectionView.reloadData()

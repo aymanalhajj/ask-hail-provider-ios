@@ -21,7 +21,6 @@ class BusinessSubAdsCell: UITableViewCell , FSPagerViewDelegate , FSPagerViewDat
     
     @IBOutlet weak var CellTitle: UILabel!
     @IBOutlet weak var Price: UILabel!
-    @IBOutlet weak var distance: UILabel!
     @IBOutlet weak var ViewsNumber: UILabel!
     @IBOutlet weak var SaveBtn: UIButton!
     @IBOutlet weak var DeActiveBtn: UIButton!
@@ -29,7 +28,10 @@ class BusinessSubAdsCell: UITableViewCell , FSPagerViewDelegate , FSPagerViewDat
     @IBOutlet weak var CellRate: UILabel!
     @IBOutlet weak var SARLbl: UILabel!
     
-    
+    @IBOutlet weak var distanceImage: UIImageView!
+    @IBOutlet weak var kmLabel: UILabel!
+    @IBOutlet weak var distance: UILabel!
+
     var ImagesUrl = [Adv_media]()
     
     var SaveAcrion : (()->())?

@@ -34,7 +34,6 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     @IBOutlet weak var directionTf: UITextField!
     @IBOutlet weak var directionImage: UIImageView!
     @IBOutlet weak var directionLineView: UIView!
-    @IBOutlet weak var directionView: UIView!
     
     @IBOutlet weak var RegionTf: UITextField!
     @IBOutlet weak var CityTf: UITextField!
@@ -43,13 +42,18 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     @IBOutlet weak var RegionImage: UIImageView!
     @IBOutlet weak var RegionLineView: UIView!
-    @IBOutlet weak var RegionView: UIView!
     
     @IBOutlet weak var DetailsCollectionView: UICollectionView!
     
     @IBOutlet weak var ScrollHeight: NSLayoutConstraint!
     
     @IBOutlet weak var ConfirmBtn: UIButton!
+    
+    @IBOutlet weak var cityNameView: UIView!
+    @IBOutlet weak var districtNameView: UIView!
+    @IBOutlet weak var RegionView: UIView!
+    @IBOutlet weak var directionView: UIView!
+
     
     var DirectionPicker = UIPickerView()
     var RegionPicker = UIPickerView()
@@ -68,7 +72,7 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     var CurrentFeatureArray : [Adv_specifications] = []
     
     var DetialsData : EditDetailsData?
-    
+    var FeaturesDataModel: FeaturesData?
     var FeatureData = false
     
     var lat = 0.0
@@ -194,9 +198,71 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     @IBAction func ConfirmAction(_ sender: Any) {
         
+        if (self.FeaturesDataModel?.advertisement?.main_section?.business_type ?? "") == "real_estate" {
+            if OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, desTxt.text != "وصف الاعلان", desTxt.text != "Description of the Advertising", OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, directionTf.text?.isEmpty != true, RegionTf.text?.isEmpty != true, CityTf.text?.isEmpty != true, BlockTf.text?.isEmpty != true , LocationTf.text?.isEmpty != true {
+                
+                updateDetail()
+
+            } else {
+                
+                if OrderTitleTf.text?.isEmpty == true {
+                    ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
+                }
+                
+                if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
+                    ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
+                }
+                
+                if directionTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: directionTf, ImageView: directionImage, imageEnable: #imageLiteral(resourceName: "direction"), lineView: directionLineView, ishidden: false)
+                }
+    
+                if LocationTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: LocationTf, ImageView: LocationImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: LocationLineView, ishidden: false)
+                }
+
+                if RegionTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
+                }
+    
+                if CityTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
+                }
+                
+                
+                if BlockTf.text?.isEmpty == true {
+                    ErrorLineAnimite(text: RegionTf, ImageView: RegionImage, imageEnable: #imageLiteral(resourceName: "distance-1"), lineView: RegionLineView, ishidden: false)
+                }
+                
+    
+                self.view.shake()
+                
+            }
+        }else { // "famous"
+            if OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true, desTxt.text != "وصف الاعلان", desTxt.text != "Description of the Advertising", OrderTitleTf.text?.isEmpty != true, desTxt.text?.isEmpty != true {
+                
+                updateDetail()
+
+            } else {
+                
+                if OrderTitleTf.text?.isEmpty == true {
+                    ErrorLineAnimiteNoimage(text: OrderTitleTf, lineView: OrderTitleLineView, ishidden: false)
+                }
+                
+                if desTxt.text?.isEmpty == true || desTxt.text == "وصف الاعلان" || desTxt.text == "Description of the Advertising"{
+                    ErrorLineAnimiteTextView(text: desTxt, lineView: desLineView, ishidden: false)
+                }
+                
+                self.view.shake()
+                
+            }
+        }
+        
+    }
+    /* {
+        
         if OrderTitleTf.text?.isEmpty != true , PriceTf.text?.isEmpty != true , desTxt.text?.isEmpty != true , directionTf.text?.isEmpty != true ,RegionTf.text?.isEmpty != true ,
            LocationTf.text?.isEmpty != true {
-            
            
             
             var skip_status = true
@@ -255,7 +321,7 @@ class EditDetailsVD: UIViewController, UITextFieldDelegate, UITextViewDelegate {
             
         }
         
-    }
+    } */
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
@@ -682,7 +748,6 @@ extension EditDetailsVD {
         
         self.view.lock()
         
-        
         var Parameters = [
             "advertisement_id": Ad_id,
             "title" : OrderTitleTf.text ?? "",
@@ -696,6 +761,19 @@ extension EditDetailsVD {
             "city_id" : City_id ,
             "district_id" : Block_id
         ] as [String : Any]
+
+        if (self.FeaturesDataModel?.advertisement?.main_section?.business_type ?? "") != "real_estate" {
+            Parameters = [
+                "advertisement_id": Ad_id,
+                "title" : OrderTitleTf.text ?? "",
+                "description" : desTxt.text ?? "",
+                "location" : Address,
+                "lat" : "\(lat)",
+                "lng" : "\(lng)",
+                "price" : PriceTf.text ?? ""
+            ]
+        }
+        
         
         var features = self.SelectedFeature.values
         var selected_ides = [Int]()
@@ -857,7 +935,7 @@ extension EditDetailsVD {
         
         self.view.lock()
         
-        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)cities?region_id=\(Region_id)") { (data : CitiesModel?, String) in
+        ApiServices.instance.getPosts(methodType: .get, parameters: nil, url: "\(hostName)cities?region_id=\(Region_id ?? "")") { (data : CitiesModel?, String) in
             
             self.view.unlock()
             if String != nil {
@@ -960,12 +1038,24 @@ extension EditDetailsVD {
 //                    self.FeatureArray = data.data ?? []
 //                    self.FeatureData = true
 //                }
-                
+                self.FeaturesDataModel = data.data
                 if data.data?.section_features?.count ?? 0 > 0{
                     self.FeatureArray = data.data?.section_features ?? []
                     self.FeatureData = true
                 }
                 
+                if (data.data?.advertisement?.main_section?.business_type ?? "") == "real_estate" {
+                    self.cityNameView.isHidden = false
+                    self.districtNameView.isHidden = false
+                    self.RegionView.isHidden = false
+                    self.directionView.isHidden = false
+                }else {
+                    self.cityNameView.isHidden = true
+                    self.districtNameView.isHidden = true
+                    self.RegionView.isHidden = true
+                    self.directionView.isHidden = true
+                }
+
                 self.DetailsCollectionView.reloadData()
                 print(data)
             }
