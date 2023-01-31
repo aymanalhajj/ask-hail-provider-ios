@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
 import UserNotifications
 import FirebaseMessaging
 import UserNotifications

@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import Lottie
 import CoreLocation
 import GoogleMaps
 import GooglePlaces
+import Lottie
 
 class SplashVC: UIViewController {
     let animationView = AnimationView()

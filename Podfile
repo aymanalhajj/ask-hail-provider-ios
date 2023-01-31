@@ -12,6 +12,7 @@ target 'AskHailBusiness' do
   use_frameworks!
 
   # Pods for AskHailBusiness
+  
 
 pod 'MBProgressHUD'
 pod 'Alamofire', '~> 4.2'
@@ -31,20 +32,23 @@ pod 'OTPFieldView'
 pod 'TextFieldEffects'
 pod 'IQKeyboardManager'
 pod "PageControls/PillPageControl"
-pod 'Firebase/Core'
-pod 'FirebaseMessaging'
 pod 'NotificationBannerSwift'
 pod 'GoogleMaps' , '~> 3.9.0'
 pod 'GooglePlaces'
 pod 'STTabbar'
 pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-pod 'Firebase/DynamicLinks'
 
 pod 'Toast-Swift', '~> 5.0.1'
-pod 'lottie-ios'
+pod 'lottie-ios' , '~> 3.1.9'
 pod 'PMAlertController'
-# pod 'Firebase/Crashlytics'
-pod 'Firebase/Analytics'
+
+
+pod 'FirebaseAnalytics'
+pod 'FirebaseFirestore'
+pod 'FirebaseMessaging'
+pod 'FirebaseCrashlytics'
+pod 'FirebaseDynamicLinks'
+pod 'FirebaseCore'
 
 
 end
