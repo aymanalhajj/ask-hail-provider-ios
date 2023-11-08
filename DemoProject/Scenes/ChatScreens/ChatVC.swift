@@ -52,7 +52,8 @@ class chatVC: UIViewController , UITextFieldDelegate{
     var s: SocketIOClient!
     var manager:SocketManager!
     
-    let SocketUrl = "https://chat.askhail.com"
+    //let SocketUrl = "https://chat.askhail.com"
+    let SocketUrl = "https://askhail.com.sa:8090"
     
     var chat_type_id = ""
     var chat_type = ""

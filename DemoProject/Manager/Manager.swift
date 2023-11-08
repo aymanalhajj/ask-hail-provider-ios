@@ -15,7 +15,7 @@ private func checkConnection() -> Bool {
     return (reachabilityManager?.isReachable)!
 }
 //https://www.test.askhail.com/api/v1/
-let hostName = "https://askhail.com/api/v1/"
+let hostName = "https://askhail.com.sa/api/v1/"
 
 
 
